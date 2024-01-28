@@ -90,6 +90,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("lastNames")]
     public string LastNames { get; private set; } = "names_last";
 
+    // Corvax-LastnameGender-Start: Split lastname field by gender
+    [DataField("maleLastNames")]
+    public string MaleLastNames { get; private set; } = "names_last_male";
+
+    [DataField("femaleLastNames")]
+    public string FemaleLastNames { get; private set; } = "names_last_female";
+    // Corvax-LastnameGender-End
+
     [DataField("naming")]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
 

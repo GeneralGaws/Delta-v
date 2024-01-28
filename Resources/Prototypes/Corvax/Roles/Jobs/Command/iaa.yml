@@ -15,7 +15,6 @@
   canBeAntag: false
   access:
   - Service
-  - Brig
   - Maintenance
   - Command
   - External
