@@ -4,9 +4,13 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 12 # DeltaV - was 10
+    weight: 10
     startDelay: 30
     duration: 35
+    startAudio: # Corvax-Announcements
+      path: /Audio/Corvax/Announcements/flux.ogg
+      params:
+        volume: -4
   - type: AnomalySpawnRule
 
 - type: entity
@@ -18,6 +22,10 @@
     weight: 5
     startDelay: 30
     duration: 35
+    startAudio: # Corvax-Announcements
+      path: /Audio/Corvax/Announcements/blusp_anomalies.ogg
+      params:
+        volume: -4
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -43,17 +51,17 @@
     minimumPlayers: 15
   - type: BreakerFlipRule
 
-# - type: entity
-#   id: BureaucraticError # DeltaV - Prevent the BureaucraticError event to happen.
-#   parent: BaseGameRule
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-bureaucratic-error-announcement
-#     minimumPlayers: 25
-#     weight: 5
-#     duration: 1
-#   - type: BureaucraticErrorRule
+- type: entity
+  id: BureaucraticError
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bureaucratic-error-announcement
+    minimumPlayers: 25
+    weight: 5
+    duration: 1
+  - type: BureaucraticErrorRule
 
 - type: entity
   id: ClericalError
@@ -67,16 +75,16 @@
     duration: 1
   - type: ClericalErrorRule
 
-#- type: entity
-#  parent: BaseGameRule # DeltaV - this shit is busted most of the time
-#  id: ClosetSkeleton
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    weight: 10
-#    duration: 1
-#  - type: RandomEntityStorageSpawnRule
-#    prototype: MobSkeletonCloset
+- type: entity
+  parent: BaseGameRule
+  id: ClosetSkeleton
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+  - type: RandomEntityStorageSpawnRule
+    prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -84,7 +92,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 1 # DeltaV - was 5
+    weight: 5
     duration: 1
     earliestStart: 45
     reoccurrenceDelay: 60
@@ -98,9 +106,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 3 # DeltaV - was 10
+    weight: 10
     duration: 1
-    earliestStart: 45 # DeltaV - was 30
+    earliestStart: 30
     reoccurrenceDelay: 60
     minimumPlayers: 40
   - type: NinjaSpawnRule
@@ -136,8 +144,14 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/Announcements/gas_leak.ogg # DeltaV - custom announcer
+      path: /Audio/Announcements/gasleak_start.ogg # Corvax-Announcements
+      params:
+        volume: -4
     endAnnouncement: station-event-gas-leak-end-announcement
+    endAudio:
+      path: /Audio/Announcements/gasleak_end.ogg # Corvax-Announcements
+      params:
+        volume: -4
     earliestStart: 10
     minimumPlayers: 5
     weight: 10
@@ -169,7 +183,11 @@
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
     startAudio:
-      path: /Audio/Announcements/meteors.ogg
+      path: /Audio/Announcements/meteors_start.ogg
+      params:
+        volume: -4
+    endAudio:
+      path: /Audio/Announcements/meteors_end.ogg # Corvax-Announcements
       params:
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
@@ -239,17 +257,19 @@
     maxDuration: 120
   - type: PowerGridCheckRule
 
-# - type: entity # DeltaV - Removes the random sentience.
-#   id: RandomSentience
-#   parent: BaseGameRule
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     weight: 10
-#     duration: 1
-#     startAudio:
-#       path: /Audio/Announcements/attention.ogg
-#   - type: RandomSentienceRule
+- type: entity
+  id: RandomSentience
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+    startAudio:
+      path: /Audio/Announcements/sentience.ogg # Corvax-Announcements
+      params:
+        volume: -4
+  - type: RandomSentienceRule
 
 - type: entity
   parent: BaseGameRule
@@ -260,8 +280,10 @@
     weight: 10
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
+    startAudio: # Corvax-Announcements
+      path: /Audio/Corvax/Announcements/comms_blackout.ogg
+      params:
+        volume: -4
     duration: 120
     maxDuration: 240
   - type: SolarFlareRule
@@ -280,18 +302,18 @@
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
-# - type: entity
-#   parent: BaseGameRule
-#   id: TerminatorSpawn
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     weight: 8
-#     duration: 1
-#     earliestStart: 30
-#     minimumPlayers: 20
-#   - type: RandomSpawnRule
-#    prototype: SpawnPointGhostTerminator
+- type: entity
+  parent: BaseGameRule
+  id: TerminatorSpawn
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 8
+    duration: 1
+    earliestStart: 30
+    minimumPlayers: 20
+  - type: RandomSpawnRule
+    prototype: SpawnPointGhostTerminator
 
 - type: entity
   id: VentClog
@@ -301,7 +323,9 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/Announcements/ventclog.ogg # DeltaV - custom announcer
+      path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
+      params:
+        volume: -4
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -374,24 +398,24 @@
     - id: MobGiantSpiderAngry
       prob: 0.05
 
-# - type: entity # DeltaV - Prevent normal spawning of MobClownSpider
-#  id: SpiderClownSpawn
-#  parent: BaseGameRule
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: station-event-vent-creatures-start-announcement
-#    startAudio:
-#      path: /Audio/Announcements/attention.ogg
-#    startDelay: 10
-#    earliestStart: 20
-#    minimumPlayers: 15
-#    weight: 1
-#    duration: 60
-#  - type: VentCrittersRule
-#    entries:
-#    - id: MobClownSpider
-#      prob: 0.05
+- type: entity
+  id: SpiderClownSpawn
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 1
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobClownSpider
+      prob: 0.05
 
 - type: entity
   id: ZombieOutbreak
@@ -399,9 +423,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 90 # DeltaV - was 50
+    earliestStart: 50
     minimumPlayers: 15
-    weight: 2.5 # DeltaV - was 5
+    weight: 5
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
@@ -416,8 +440,8 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 60 # DeltaV - was 45
-    weight: 3 # DeltaV - was 5
+    earliestStart: 45
+    weight: 5
     minimumPlayers: 10
     reoccurrenceDelay: 30
     duration: 1
@@ -460,7 +484,7 @@
   id: IonStorm
   components:
   - type: StationEvent
-    weight: 10
+    weight: 5
     earliestStart: 20
     reoccurrenceDelay: 60
     duration: 1
