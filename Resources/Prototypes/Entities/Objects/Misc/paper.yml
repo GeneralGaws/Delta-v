@@ -56,6 +56,10 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SheetPrinter: 100
 
 - type: entity
   name: paper scrap
