@@ -1,8 +1,8 @@
-command-glimmershow-description = Show the current glimmer level.
-command-glimmershow-help = No arguments.
+command-glimmershow-description = Показать текущий уровень мерцания.
+command-glimmershow-help = Нет аргументов.
 
-command-glimmerset-description = Set glimmer to a number.
+command-glimmerset-description = Установить уровень мерцания (число).
 command-glimmerset-help = glimmerset (integer)
 
-command-lspsionic-description = List psionics.
-command-lspsionic-help = No arguments.
+command-lspsionic-description = Показать всех псиоников.
+command-lspsionic-help = Нет аргументов.

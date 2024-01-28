@@ -1,7 +1,7 @@
 ## Whiskey Echoes
-barsign-prototype-name-whiskeyecho = Whiskey Echoes
-barsign-prototype-description-whiskeyecho = Wew lad! Sit down and have a drink! No matter your affiliation, the slogan here is 'Death to sobriety!'
+barsign-prototype-name-whiskeyecho = Эхо виски
+barsign-prototype-description-whiskeyecho = Ух ты, парень! Садись и выпей! Независимо от вашей принадлежности, лозунг здесь - (Смерть трезвости!)
 
 ## Klub Skub
-barsign-prototype-name-klubskub = Klub Skub
-barsign-prototype-description-klubskub = Skub!
+barsign-prototype-name-klubskub = Клуб Скаб
+barsign-prototype-description-klubskub = Скаб!

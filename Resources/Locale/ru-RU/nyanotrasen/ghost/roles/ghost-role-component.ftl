@@ -1,5 +1,8 @@
-ghost-role-information-giant-spider-vampire-name = Oneirophage
-ghost-role-information-giant-spider-vampire-description = Nest. Lure. Ambush. Consume.
+ghost-role-information-mothroach-name = Мотылек
+ghost-role-information-mothroach-description = Милый, но озорной мотылек.
 
-ghost-role-information-cancer-mouse-name = Cancer Mouse
-ghost-role-information-cancer-mouse-description = Make off color comments, but not so edgy that they break the rules of the server.
+ghost-role-information-giant-spider-vampire-name = Паук вампир
+ghost-role-information-giant-spider-vampire-description = Гнездо. Приманка. Засада. Потреблять.
+
+ghost-role-information-cancer-mouse-name = Раковая мышь
+ghost-role-information-cancer-mouse-description = Делать нелицеприятные комментарии, но не настолько резкие, чтобы они нарушали правила сервера.

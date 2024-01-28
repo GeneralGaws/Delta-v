@@ -1,6 +1,6 @@
-objective-condition-raise-glimmer-title = Ensure glimmer reaches {$target}Ψ.
-objective-condition-raise-glimmer-description = We need you to pump the noösphere surrounding the station to at least {$target}Ψ and keep it that way.
-objective-condition-become-psionic-title = Become psionic
-objective-condition-become-psionic-description = We need you to acquire psionics and keep them until your mission is complete.
-objective-condition-become-golem-title = Get golemized
-objective-condition-become-golem-description = We'd like to understand more of the golemization process. Become a golem, survive, and we'll debrief you.
+objective-condition-raise-glimmer-title = Убедитесь, что мерцание достигло {$target}Ψ
+objective-condition-raise-glimmer-description = Нам нужно, чтобы вы накачали ноосферу вокруг станции по крайней мере до {$target}Ψ и поддерживали ее в таком состоянии.
+objective-condition-become-psionic-title = Стать псиоником
+objective-condition-become-psionic-description = Нам нужно, чтобы вы приобрели псионику и сохранили ее до завершения миссии.
+objective-condition-become-golem-title = Стать големом
+objective-condition-become-golem-description = Мы хотели бы побольше узнать о процессе големизации. Станьте големом, выживите, и мы вас проинформируем.

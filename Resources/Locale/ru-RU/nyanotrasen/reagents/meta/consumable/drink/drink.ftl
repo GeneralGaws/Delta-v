@@ -1,17 +1,17 @@
-reagent-name-atomicpunch = atomic punch
-reagent-desc-atomicpunch = Will NOT make you immune to bullets; Isotopes included!
+reagent-name-atomicpunch = атомный пунш
+reagent-desc-atomicpunch = НЕ сделает вас неуязвимым к пулям; изотопы включены!
 
-reagent-name-pinkdrink = pink drink
-reagent-desc-pinkdrink = Entire civilizations have crumbled trying to decide if this drink really tastes like pink...
+reagent-name-pinkdrink = розовый напиток
+reagent-desc-pinkdrink = Целые цивилизации рушились, пытаясь определить, действительно ли этот напиток имеет розовый вкус...
 
-reagent-name-bubbletea = bubble tea
-reagent-desc-bubbletea = Big straw not included.
+reagent-name-bubbletea = бабл-чай
+reagent-desc-bubbletea = Большая соломинка в комплект не входит.
 
-reagent-name-the-martinez = The Martinez
-reagent-desc-the-martinez = The edgerunner legend.  Remembered by a drink, Forgotten by a drunk.
+reagent-name-the-martinez = мартинес
+reagent-desc-the-martinez = Легенда о красном бегуне. Запомнился напитком, забылся пьяницей.
 
-reagent-name-holywater = holy water
-reagent-desc-holywater = Water blessed by some otherworldly powers.
+reagent-name-holywater = святая вода
+reagent-desc-holywater = Вода, освященная какими-то потусторонними силами.
 
-reagent-name-lean = lean
-reagent-desc-lean = A disgusting mixture of soda, booze, and cough syrup.
+реагент-название-леан = тощак
+reagent-desc-lean = Отвратительная смесь газировки, выпивки и сиропа от кашля.

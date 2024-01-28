@@ -1,6 +1,7 @@
-job-description-gladiator = Put on a combat spectacle for the crew. Fight for your freedom, glory, and honor. Currently available on Arena.
-job-description-guard = Keep track of prisoners and make sure they have their basic needs.
-job-description-mail-carrier = Deliver mail and other packages from and to logistics. Avoid dogs.
-job-description-martialartist = Be honorable and disciplined, spar in the dojo, challenge security to CQC. Currently available on Shōkō.
-job-description-prisoner = Sit in prison. Gamble with your cellmates. Talk to the warden. Write your memoirs.
-job-description-mantis = Solve mysteries from the nature of the universe to the meaning of life. Be the main person to deal with Psionic beings.
+job-description-gladiator = Устроить боевое представление для команды. Сражайтесь за свою свободу, славу и честь.
+job-description-guard = Следить за заключенными и обеспечивать их основными потребностями.
+job-description-mail-carrier = Доставлять почту и другие посылки из логистики и в логистику. Избегать собак.
+job-description-mail-courier = Доставлять предметы и ящики в нужные отделы.
+job-description-martialartist = Быть благородным и дисциплинированным, проводить спарринги в додзё, вызывать охрану на ПВП.
+job-description-prisoner = Сидеть в тюрьме. Играть с сокамерниками в азартные игры. Разговаривать с начальником тюрьмы. Написать мемуары.
+job-description-mantis = Разгадывать загадки - от природы Вселенной до смысла жизни. Быть главным специалистом по работе с псионическими существами.

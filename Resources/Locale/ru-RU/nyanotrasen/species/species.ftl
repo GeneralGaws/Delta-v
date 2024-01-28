@@ -1,2 +1,2 @@
-species-name-oni = Oni
-species-name-felinid = Felinid
+species-name-oni = Они
+species-name-felinid = Фелинид

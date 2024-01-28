@@ -1,35 +1,36 @@
-reverse-engineering-machine-menu-title = reverse engineering machine
-reverse-engineering-machine-server-list-button = Server List
-reverse-engineering-machine-scan-button = Analyze
-reverse-engineering-machine-scan-tooltip-info = Analyze the inserted item to attempt to reverse engineer it.
-reverse-engineering-machine-safety-button = Safety
-reverse-engineering-machine-safety-tooltip-info = Toggle safety protocols. Safety off will use stronger but possibly destructive methods of analysis.
-reverse-engineering-machine-autoscan-button = AutoProbe
-reverse-engineering-machine-autoscan-tooltip-info = Toggle whether to automatically start a new probe when the previous one finishes.
-reverse-engineering-machine-stop-button = Stop
-reverse-engineering-machine-stop-tooltip-info = Stop the current probe.
-reverse-engineering-machine-eject-button = Eject
-reverse-engineering-machine-eject-tooltip-info = Eject the current item.
 
-reverse-engineering-status-ready = Insert item to reverse engineer.
-reverse-engineering-current-item = Current item: {$item}
-reverse-engineering-analysis-score = Analysis power: {$score}
-reverse-engineering-item-difficulty = Difficulty: {$difficulty}
-reverse-engineering-progress = Progress: {$progress}%
-reverse-engineering-last-attempt-result = Last probe result: {$result}
+reverse-engineering-machine-menu-title = Реверсивная инженерная машина
+reverse-engineering-machine-server-list-button = Список серверов
+reverse-engineering-machine-scan-button = Анализ
+reverse-engineering-machine-scan-tooltip-info = Проанализировать вставленный элемент для попытки его реинжиниринга.
+reverse-engineering-machine-safety-button = Безопасность
+reverse-engineering-machine-safety-tooltip-info = Переключение протоколов безопасности. При отключении безопасности будут использоваться более сильные, но, возможно, разрушительные методы анализа.
+reverse-engineering-machine-autoscan-button = Автосисследование
+reverse-engineering-machine-autoscan-tooltip-info = Включить автоматический запуск нового исследования после завершения предыдущего.
+reverse-engineering-machine-stop-button = Остановить
+reverse-engineering-machine-stop-tooltip-info = Остановить текущее исследование.
+reverse-engineering-machine-eject-button = Извлечь
+reverse-engineering-machine-eject-tooltip-info = Извлечь текущий объект.
 
-reverse-engineering-total-progress-label = Total
+reverse-engineering-status-ready = Вставить элемент для реинжиниринга.
+reverse-engineering-current-item = Текущий объект: {$item}
+reverse-engineering-analysis-score = Мощность анализа: {$score}.
+reverse-engineering-item-difficulty = Сложность: {$difficulty}
+reverse-engineering-progress = Прогресс: {$progress}%
+reverse-engineering-last-attempt-result = Результат последнего исследования: {$result}
 
-reverse-engineering-failure = CRITICAL FAILURE
-reverse-engineering-stagnation = Minimal Progress
-reverse-engineering-minor = Minor progress
-reverse-engineering-average = Acceptable progress
-reverse-engineering-major = Major progress
-reverse-engineering-success = Breakthrough
+reverse-engineering-total-progress-label = Всего
 
-reverse-engineering-machine-bonus-upgrade = Analysis power
-reverse-engineering-machine-aversion-upgrade = Destruction aversion bonus
+reverse-engineering-failure = КРИТИЧЕСКАЯ НЕИСПРАВНОСТЬ
+reverse-engineering-stagnation = Минимальный прогресс
+reverse-engineering-minor = Незначительный прогресс
+reverse-engineering-average = Приемлемый прогресс
+reverse-engineering-major = Значительный прогресс
+reverse-engineering-success = Прорыв
 
-reverse-engineering-popup-failure = {CAPITALIZE(THE($machine))} blows smoke and debris everywhere!
+reverse-engineering-machine-bonus-upgrade = Аналитическая мощность
+reverse-engineering-machine-aversion-upgrade = Бонус разрушения
 
-reverse-engineering-examine = [color=yellow]This item can be reverse engineered. Difficulty: {$diff}[/color]
+reverse-engineering-popup-failure = {CAPITALIZE(THE($machine))} повсюду дым и обломки!
+
+reverse-engineering-examine = [color=yellow]Этот предмет может быть подвергнут обратной разработке. Сложность: {$diff}[/color]
