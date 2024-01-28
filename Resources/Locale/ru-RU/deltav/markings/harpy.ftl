@@ -1,32 +1,32 @@
-marking-HarpyWingDefault = Basic Wings
-marking-HarpyWingDefault-harpy = Wings
+marking-HarpyWingDefault = Базовые крылья
+marking-HarpyWingDefault-harpy = Крылья
 
-marking-HarpyWing2Tone = Two Tone Wings
-marking-HarpyWing2Tone-harpy2tone1 = Top Half
-marking-HarpyWing2Tone-harpy2tone2 = Bottom Half
+marking-HarpyWing2Tone = Двухцветные крылья
+marking-HarpyWing2Tone-harpy2tone1 = Верхняя половина
+marking-HarpyWing2Tone-harpy2tone2 = Нижняя половина
 
-marking-HarpyWing3Tone = Three Tone Wings
-marking-HarpyWing3Tone-harpy3tone1 = Top Third
-marking-HarpyWing3Tone-harpy3tone2 = Middle Third
-marking-HarpyWing3tone-harpy3tone3 = Bottom Third
+marking-HarpyWing3Tone = Трехцветные крылья
+marking-HarpyWing3Tone-harpy3tone1 = Верхняя треть
+marking-HarpyWing3Tone-harpy3tone2 = Средняя треть
+marking-HarpyWing3tone-harpy3tone3 = Нижняя треть
 
-marking-HarpyWingSpeckled = Speckled Wings
-marking-HarpyWingSpeckled-harpyspeckled1 = Main
-marking-HarpyWingSpeckled-harpyspeckled2 = Speckles
+marking-HarpyWingSpeckled = Крылья с крапинками
+marking-HarpyWingSpeckled-harpyspeckled1 = Основной
+marking-HarpyWingSpeckled-harpyspeckled2 = Дополнительный
 
-marking-HarpyWingUndertone = Wings with Undertone
-marking-HarpyWingUndertone-harpyundertone1 = Front
-marking-HarpyWingUndertone-harpyundertone2 = Back
+marking-HarpyWingUndertone = Крылья с нижним тоном
+marking-HarpyWingUndertone-harpyundertone1 = Передний
+marking-HarpyWingUndertone-harpyundertone2 = Задний
 
-marking-HarpyWingTips = Wings with Feather Tips
-marking-HarpyWingTips-harpywingtip1 = Main
-marking-HarpyWingTips-harpywingtip2 = Feathertips
+marking-HarpyWingTips = Крылья с кончиками перьев
+marking-HarpyWingTips-harpywingtip1 = Основной
+marking-HarpyWingTips-harpywingtip2 = Кончики перьев
 
-marking-HarpyEarsDefault = Feather Tufts
-marking-HarpyEarsDefault-harpy_ears_default = Tufts
+marking-HarpyEarsDefault = Оперение
+marking-HarpyEarsDefault-harpy_ears_default = Оперение
 
-marking-HarpyTailPhoenix = Basic Tail
-marking-HarpyTailPhoenix-phoenix_tail = Tail
+marking-HarpyTailPhoenix = Основной хвост
+marking-HarpyTailPhoenix-phoenix_tail = Хвост
 
-marking-HarpyTailRooster = Rooster Tail
-marking-HarpyTailRooster-rooster_tail = Tail
+marking-HarpyTailRooster = Хвост петуха
+marking-HarpyTailRooster-rooster_tail = Хвост

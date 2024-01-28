@@ -1,2 +1,2 @@
-trait-scottish-accent-name = Scottish Accent
-trait-scottish-accent-desc = Fer tha folk who come frae Hielan clan.
+trait-scottish-accent-name = Шотландский акцент
+trait-scottish-accent-desc = Для тех, кто происходит из клана Хилан.
