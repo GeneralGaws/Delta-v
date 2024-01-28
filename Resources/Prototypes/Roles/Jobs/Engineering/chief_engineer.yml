@@ -29,6 +29,9 @@
   - ChiefEngineer
   - Atmospherics
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава департамента прибыл на станцию."
+    radio_channel: Engineering
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial

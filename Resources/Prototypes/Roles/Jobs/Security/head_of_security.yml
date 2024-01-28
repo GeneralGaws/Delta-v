@@ -33,6 +33,9 @@
   - External
   - Detective
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава департамента прибыл на станцию."
+    radio_channel: Security
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial

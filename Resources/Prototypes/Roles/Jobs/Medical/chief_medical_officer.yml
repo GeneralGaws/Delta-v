@@ -34,6 +34,9 @@
   - External # DeltaV - Paramedics need this access
   - Psychologist # DeltaV - Add Psychologist access
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава департамента прибыл на станцию."
+    radio_channel: Medical
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial

@@ -60,6 +60,9 @@
   - Reporter # DeltaV - Add Reporter access
   - Zookeeper # DeltaV - Add Zookeeper access
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава персонала прибыл на станцию."
+    radio_channel: Command
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial

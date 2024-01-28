@@ -35,6 +35,9 @@
   accessGroups:
   - AllAccess
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Капитан прибыл на станцию."
+    radio_channel: Command
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial

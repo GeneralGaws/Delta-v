@@ -34,6 +34,9 @@
   - Orders # DeltaV - Orders, see Resources/Prototypes/DeltaV/Access/cargo.yml
   - External # DeltaV - for promoting salvage specialists
   special:
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава департамента прибыл на станцию."
+    radio_channel: Supply
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
