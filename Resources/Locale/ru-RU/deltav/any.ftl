@@ -12,3 +12,8 @@ admin-player-actions-window-mark-visible = Сделать призрака ви�
 admin-player-actions-window-mark-invisible = Сделать призрака невидимым
 admin-player-actions-window-mark-mark-follow = Разрешить следовать
 admin-player-actions-window-mark-mark-not-follow = Запретить следовать
+
+# CosmaticDrift-HeightSlider
+humanoid-profile-editor-reset-height-button = Сбросить рост
+# CosmaticDrift-HeightSlider
+humanoid-profile-editor-height-label = Рост: {$height}x

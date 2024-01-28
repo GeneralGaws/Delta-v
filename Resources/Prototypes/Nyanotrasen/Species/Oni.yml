@@ -11,6 +11,11 @@
   femaleFirstNames: names_oni_female
   lastNames: names_oni_location
   naming: LastNoFirst
+  # Parkstation-HeightSlider Start
+  minHeight: 1.0
+  defaultHeight: 1.15
+  maxHeight: 1.3
+  # Parkstation-HeightSlider End
 
 - type: markingPoints
   id: MobOniMarkingLimits
