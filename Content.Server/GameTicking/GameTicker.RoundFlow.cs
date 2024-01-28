@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Announcements;
+using Content.Server.Corvax.GameTicking;
 using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
 using Content.Server.Ghost;
@@ -251,6 +252,7 @@ namespace Content.Server.GameTicking
             AnnounceRound();
             UpdateInfoText();
             SendRoundStartedDiscordMessage();
+            RaiseLocalEvent(new RoundStartedEvent(RoundId)); // Corvax-RoundFlow
 
 #if EXCEPTION_TOLERANCE
             }
@@ -389,6 +391,7 @@ namespace Content.Server.GameTicking
 
             RaiseNetworkEvent(new RoundEndMessageEvent(gamemodeTitle, roundEndText, roundDuration, RoundId,
                 listOfPlayerInfoFinal.Length, listOfPlayerInfoFinal, LobbySong, sound));
+            RaiseLocalEvent(new RoundEndedEvent(RoundId, roundDuration)); // Corvax-RoundFlow
         }
 
         private async void SendRoundEndDiscordMessage()

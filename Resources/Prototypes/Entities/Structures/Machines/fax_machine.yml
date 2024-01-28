@@ -110,3 +110,4 @@
       receiveNukeCodes: true
     - type: StealTarget
       stealGroup: FaxMachineCaptain
+      receiveStationGoal: true # Corvax-StationGoal
