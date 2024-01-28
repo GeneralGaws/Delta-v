@@ -63,6 +63,7 @@
   - type: Tag
     tags:
     - VimPilot
+  - type: RandomBark
 
 - type: entity
   name: bee
@@ -133,6 +134,13 @@
         - ReagentId: GroundBee
           Quantity: 5
   - type: ZombieImmune
+  - type: RandomBark
+    barks:
+      - Бззззз
+      - Бзззз бззззз
+      - Бззззззззззззз
+      - Бззз
+    barkMultiplier: 1.5
 
 - type: entity
   name: bee
@@ -242,6 +250,7 @@
   - type: NpcFactionMember
     factions:
     - Passive
+ - type: RandomBark
     
 - type: entity
   parent: MobChicken
@@ -614,6 +623,8 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: RandomBark
+    barkMultiplier: 0.7
 
 - type: entity
   name: white duck #Quack
@@ -795,6 +806,15 @@
   - type: GuideHelp
     guides:
     - Chef
+  - type: RandomBark
+    barks:
+      - Муууууу
+      - Му
+      - Хффф
+      - Муууууууууу
+      - Муооооо
+      - Мууууу
+    barkMultiplier: 3
 
 - type: entity
   name: crab
@@ -860,6 +880,12 @@
       task: RuminantCompound
   - type: Body
     prototype: AnimalHemocyanin
+  - type: RandomBark
+    barks:
+      - щелк
+      - клац
+      - клак
+      - клак-клак
 
 - type: entity
   name: goat
@@ -1253,6 +1279,8 @@
     tags:
     - VimPilot
     - DoorBumpOpener
+  - type: RandomBark
+    barkMultiplier: 0.65
 
 - type: entity
   name: monkey
@@ -1603,6 +1631,8 @@
   - type: BadFood
   - type: NonSpreaderZombie
   - type: PreventSpiller
+  - type: RandomBark
+    barkMultiplier: 0.3
 
 - type: entity
   parent: MobMouse
@@ -3055,6 +3085,7 @@
   - type: MobPrice
     price: 60
   - type: NonSpreaderZombie
+  - type: RandomBark
 
 - type: entity
   name: pig
@@ -3127,4 +3158,5 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: RandomBark
 

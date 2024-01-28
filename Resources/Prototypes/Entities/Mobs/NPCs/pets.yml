@@ -36,6 +36,7 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalIan
+  - type: RandomBark
 
 - type: entity
   name: Old Ian
@@ -121,6 +122,7 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: RandomBark
 
 - type: entity
   name: Exception
@@ -406,6 +408,7 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalWalter
+  - type: RandomBark
 
 - type: entity
   name: Morty
