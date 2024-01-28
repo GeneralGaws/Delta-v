@@ -23,7 +23,6 @@ public sealed partial class TypingIndicatorPrototype : IPrototype
     [DataField("idleState", required: true)]
     public string IdleState = default!;
     // Corvax-TypingIndicator-End
-
     [DataField("offset")]
     public Vector2 Offset = new(0, 0);
 
