@@ -8,6 +8,8 @@ job-description-slugcat = Очень умное и милое существо, 
 
 cmd-visibility-no-visibility-component = У вас нет компонента видимости. Вы не можете использовать эту команду.
 
+marking-color-choose = Выбрать цвет
+
 admin-player-actions-window-mark-visible = Сделать призрака видимым
 admin-player-actions-window-mark-invisible = Сделать призрака невидимым
 admin-player-actions-window-mark-mark-follow = Разрешить следовать

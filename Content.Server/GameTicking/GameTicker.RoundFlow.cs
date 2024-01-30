@@ -3,12 +3,14 @@ using Content.Server.Announcements;
 using Content.Server.Corvax.GameTicking;
 using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
-using Content.Server.Ghost;
 using Content.Server.Maps;
+using Content.Server.Voting.Managers;
+using Content.Server.Ghost;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Players;
+using Content.Shared.Voting;
 using Content.Shared.Preferences;
 using JetBrains.Annotations;
 using Prometheus;
@@ -26,6 +28,7 @@ namespace Content.Server.GameTicking
     public sealed partial class GameTicker
     {
         [Dependency] private readonly DiscordWebhook _discord = default!;
+        [Dependency] private readonly IVoteManager _votes = default!;
         [Dependency] private readonly ITaskManager _taskManager = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
@@ -467,6 +470,8 @@ namespace Content.Server.GameTicking
                 UpdateInfoText();
 
                 ReqWindowAttentionAll();
+                _votes.CreateStandardVote(null, StandardVoteType.Map);
+                _votes.CreateStandardVote(null, StandardVoteType.Preset);
             }
         }
 
