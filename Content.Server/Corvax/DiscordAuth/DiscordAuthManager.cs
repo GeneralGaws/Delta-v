@@ -35,9 +35,9 @@ public sealed class DiscordAuthManager : Content.Corvax.Interfaces.Server.IServe
     {
         _sawmill = Logger.GetSawmill("discord_auth");
 
-        _cfg.OnValueChanged(CCVars.DiscordAuthEnabled, v => _isEnabled = v, true);
-        _cfg.OnValueChanged(CCVars.DiscordAuthApiUrl, v => _apiUrl = v, true);
-        _cfg.OnValueChanged(CCVars.DiscordAuthApiKey, v => _apiKey = v, true);
+        _cfg.OnValueChanged(CCCVars.DiscordAuthEnabled, v => _isEnabled = v, true);
+        _cfg.OnValueChanged(CCCVars.DiscordAuthApiUrl, v => _apiUrl = v, true);
+        _cfg.OnValueChanged(CCCVars.DiscordAuthApiKey, v => _apiKey = v, true);
 
         _netMgr.RegisterNetMessage<MsgDiscordAuthRequired>();
         _netMgr.RegisterNetMessage<MsgDiscordAuthCheck>(OnAuthCheck);
