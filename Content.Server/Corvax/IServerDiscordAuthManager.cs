@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Content.Server.Interfaces.Shared;
+using Content.Corvax.Interfaces.Shared;
 using Content.Server.Corvax.DiscordAuth;
 using Robust.Server.Player;
 using Robust.Shared.Network;

@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using Content.Shared.Corvax.CCVars;
+using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.DiscordAuth;
 using JetBrains.Annotations;
 using Robust.Server.Player;
