@@ -1,6 +1,7 @@
 - type: vendingMachineInventory
   id: NutriMaxInventory
   startingInventory:
+    PlantAnalyzer: 3
     HydroponicsToolSpade: 3
     HydroponicsToolMiniHoe: 3
     HydroponicsToolClippers: 3
@@ -15,7 +16,5 @@
     EZNutrientChemistryBottle: 3
     Bucket: 3
     DiseaseSwab: 20
-    #TO DO:
-    #plant analyzer
   emaggedInventory:
     Left4ZedChemistryBottle: 1
