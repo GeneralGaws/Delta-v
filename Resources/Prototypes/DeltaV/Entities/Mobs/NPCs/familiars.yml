@@ -32,9 +32,12 @@
   - type: Bloodstream
     bloodReagent: Phlogiston
   - type: MeleeWeapon
+    altDisarm: false # No shoving
+    angle: 0
     damage:
-      groups:
-        Burn: 10
+      types:
+        Heat: 10
+    animation: WeaponArcPunch
   - type: MobState
   - type: MobThresholds
     thresholds:
@@ -57,8 +60,8 @@
   - type: Familiar
   - type: Dispellable
   - type: Damageable
-#    damageContainer: CorporealSpirit
-#    damageModifierSet: CorporealSpirit
+    damageContainer: CorporealSpirit
+    damageModifierSet: CorporealSpirit
   - type: Speech
     speechSounds: Bass
   - type: Puller
@@ -68,11 +71,11 @@
       - CannotSuicide
       - DoorBumpOpener
   - type: Body
-    prototype: Primate
-  - type: InnateTool
-    tools:
-      - id: WelderIfrit
-      - id: WelderIfrit
+    prototype: Ifriit # Spawns the first hand of ifriit and only hand for ifriit - the sprite is currently only using right hand sprite.
+  #- type: InnateTool # Cant really use this anymore.
+  #  tools:
+  #    - id: WelderIfrit
+  #    - id: WelderIfrit
   - type: Hands
   - type: RandomMetadata
     nameSegments: [names_golem]
@@ -84,11 +87,17 @@
     attributes:
       proper: true
   - type: MovementIgnoreGravity
+  - type: NoSlip
   - type: EyeProtection
   - type: NpcFactionMember
     factions:
     - PsionicInterloper
     - NanoTrasen
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowMovement: true
+    allowSpeech: true
 
 - type: entity
   parent: WelderExperimental
@@ -113,7 +122,7 @@
     litMeleeDamageBonus:
       types: # When lit, negate standard melee damage and replace with heat
         Heat: 10
-        Blunt: -10
+        Blunt: -5
 #    welderOnSounds:
 #      collection: WelderIfritHandOn
 #    welderOffSounds:
@@ -128,6 +137,9 @@
 # similar to EnergySword. will have to go in ToolSystem.Welder.cs
 # for now, just make it sound like it's on fire no matter what because it
 # sounds cooler than the default fizzling noise.
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/welder.ogg
   - type: SolutionRegeneration
     solution: Welder
     generated:
@@ -139,3 +151,4 @@
     radius: 2
     energy: 1.5
     color: orange
+  - type: Unremoveable
