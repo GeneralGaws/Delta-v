@@ -26,7 +26,8 @@
   recipeUnlocks:
   - WeaponEnergyGun
   - WeaponEnergyGunMini
-  
+  - BorgModuleSecurityChase # DeltaV SecBorg research
+
 - type: technology
   id: EnergyGunsAdvanced
   name: research-technology-energy-gun-advance

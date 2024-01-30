@@ -1,0 +1,102 @@
+# Security
+
+- type: entity
+  id: LeftArmBorgSecurity
+  parent: BaseBorgArmLeft
+  name: peace enforcement cyborg left arm
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_l_arm
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_l_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgSecurityLArm
+
+- type: entity
+  id: RightArmBorgSecurity
+  parent: BaseBorgArmRight
+  name: peace enforcement cyborg right arm
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_r_arm
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_r_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgSecurityRArm
+
+- type: entity
+  id: LeftLegBorgSecurity
+  parent: BaseBorgLegLeft
+  name: peace enforcement cyborg left leg
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_l_leg
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_l_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgSecurityLLeg
+
+- type: entity
+  id: RightLegBorgSecurity
+  parent: BaseBorgLegRight
+  name: peace enforcement cyborg right leg
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_r_leg
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_r_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgSecurityRLeg
+
+- type: entity
+  id: HeadBorgSecurity
+  parent: BaseBorgHead
+  name: peace enforcement cyborg head
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_head
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_head
+  - type: Tag
+    tags:
+    - Trash
+    - BorgHead
+    - BorgSecurityHead
+
+- type: entity
+  id: TorsoBorgSecurity
+  parent: BaseBorgTorso
+  name: peace enforcement cyborg torso
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_chest
+  - type: Icon
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: security_chest
+  - type: Tag
+    tags:
+    - Trash
+    - BorgSecurityTorso

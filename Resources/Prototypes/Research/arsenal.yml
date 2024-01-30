@@ -147,6 +147,8 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
+  - BorgModuleSecurityControl # DeltaV SecBorg Research
+  - BorgModuleSecurityDetain # DeltaV SecBorg Research
 
 - type: technology
   id: BasicShuttleArmament

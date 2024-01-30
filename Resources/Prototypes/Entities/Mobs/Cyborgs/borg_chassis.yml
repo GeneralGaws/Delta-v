@@ -24,6 +24,7 @@
     node: cyborg
   - type: Speech
     speechVerb: Robotic
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisMining
@@ -75,6 +76,7 @@
     access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
   - type: Inventory
     templateId: borgTall
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisEngineer
@@ -120,6 +122,7 @@
     templateId: borgShort
   - type: SiliconLawProvider
     laws: Engineer
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisJanitor
@@ -173,6 +176,7 @@
     templateId: borgShort
   - type: SiliconLawProvider
     laws: Janitor
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisMedical
@@ -227,6 +231,7 @@
   - type: FabricateCandy # Nyanotrasen - The medical cyborg can generate candies filled with medicine.
   - type: SiliconLawProvider
     laws: Medical
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisService
@@ -270,6 +275,7 @@
     access: [["Service"], ["Command"], ["Research"]]
   - type: Inventory
     templateId: borgTall
+  - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisSyndicateAssault
@@ -299,6 +305,7 @@
       noMindState: synd_sec
     - type: Construction
       node: syndicateassault
+    - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisSyndicateMedical
@@ -328,6 +335,7 @@
       noMindState: synd_medical
     - type: Construction
       node: syndicatemedical
+    - type: NoSlip # Delta-V , Unparents NoSlip component
 
 - type: entity
   id: BorgChassisSyndicateSaboteur
@@ -357,3 +365,4 @@
       noMindState: synd_engi
     - type: Construction
       node: syndicatesaboteur
+    - type: NoSlip # Delta-V , Unparents NoSlip component
