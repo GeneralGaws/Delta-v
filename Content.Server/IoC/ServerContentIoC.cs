@@ -58,7 +58,7 @@ namespace Content.Server.IoC
             IoCManager.Register<PoissonDiskSampler>();
             IoCManager.Register<DiscordWebhook>();
             IoCManager.Register<ServerDbEntryManager>();
-            IoCManager.Register<Content.Corvax.Interfaces.Server.IServerDiscordAuthManager, Backmen.DiscordAuth.DiscordAuthManager>();
+            IoCManager.Register<Content.Corvax.Interfaces.Server.IServerDiscordAuthManager, Corvax.DiscordAuth.DiscordAuthManager>();
         }
     }
 }
