@@ -545,6 +545,7 @@
     prototype: Mothroach
   - type: TypingIndicator
     proto: moth
+  - type: FelinidFood # Delta V- Nom, felinid food
   - type: Destructible
     thresholds:
     - trigger:
