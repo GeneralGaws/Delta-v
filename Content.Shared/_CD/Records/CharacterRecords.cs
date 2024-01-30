@@ -117,9 +117,9 @@ public sealed class CharacterRecords
             height: 170, weight: 70,
             emergencyContactName: "",
             identifyingFeatures: "",
-            allergies: "None",
-            drugAllergies: "None",
-            postmortemInstructions: "Return home",
+            allergies: "Нет",
+            drugAllergies: "Нет",
+            postmortemInstructions: "Отправить домой",
             medicalEntries: new List<RecordEntry>(),
             securityEntries: new List<RecordEntry>(),
             employmentEntries: new List<RecordEntry>()

@@ -49,7 +49,7 @@ humanoid-profile-editor-cd-records-down = Вниз
 cd-records-entry-edit-popup-title = Просмотр/редактирование записи
 cd-records-entry-edit-popup-save = Сохранить
 cd-records-entry-edit-popup-title-placeholder = Заголовок записи
-cd-records-entry-edit-popup-involved-placeholder = Задействован
+cd-records-entry-edit-popup-involved-placeholder = Задействованные лица
 cd-records-entry-edit-popup-description-placeholder = Описание
 
 d-character-records-viewer-title-employ = Записи о трудоустройстве
@@ -68,4 +68,5 @@ cd-character-records-viewer-record-med-sex = Пол:
 cd-character-records-viewer-view-entry = Просмотр
 cd-records-entry-view-popup-title = Просмотр записи
 cd-character-records-entry-view-title = Заголовок:
-cd-character-records-entry-view-involved = Задействован:
+cd-character-records-entry-view-involved = Задействованные лица:
+cd-character-records-viewer-title-employ = Общие записи
