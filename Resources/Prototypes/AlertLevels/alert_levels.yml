@@ -26,9 +26,9 @@
       shuttleTime: 600
     white:
       announcement: alert-level-white-announcement
-      sound: /Audio/Misc/white.ogg
+      sound: /Audio/Announcements/Alerts/code_white.ogg
+      emergencyLightColor: "#F6CCF6"
       color: White
-      emergencyLightColor: PaleVioletRed
       shuttleTime: 600
     yellow:
       announcement: alert-level-yellow-announcement
@@ -43,25 +43,26 @@
         params:
           volume: -4
       color: Red
-      shuttleTime: 600 #No reduction in time as we don't have swiping for red alert like in /tg/. Shuttle times are intended to create friction, so having a way to brainlessly bypass that would be dumb.
+      shuttleTime: 600
     gamma:
       announcement: alert-level-gamma-announcement
       selectable: false
       sound:
         path: /Audio/Misc/siren.ogg
         params:
-          volume: -4
+          volume: -2
       disableSelection: true
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
+      shuttleTime: 600
     delta:
       announcement: alert-level-delta-announcement
       selectable: false
       sound:
         path: /Audio/Misc/delta.ogg
         params:
-          volume: -6 # Corvax: Reduce sound volume
+          volume: -4
       disableSelection: true
       color: DarkRed
       emergencyLightColor: Orange
