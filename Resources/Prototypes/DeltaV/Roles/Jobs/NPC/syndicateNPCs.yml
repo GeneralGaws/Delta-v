@@ -3,10 +3,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
     shoes: ClothingShoesBootsLaceup
-    id: SyndicateIDCard
+    id: SyndiListeningPostPDA
     ears: ClothingHeadsetAltSyndicate
     mask: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorPlateCarrier
-    pocket1: WeaponPistolViper
