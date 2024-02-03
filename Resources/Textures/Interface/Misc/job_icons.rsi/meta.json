@@ -21,6 +21,33 @@
             "name": "Borg"
         },
         {
+            "name": "Borg_Clown"
+        },
+        {
+            "name": "Borg_ShaftMiner"
+        },
+        {
+            "name": "Borg_Service"
+        },
+        {
+            "name": "Borg_Engineer"
+        },
+        {
+            "name": "Borg_Security"
+        },
+        {
+            "name": "Borg_Janitor"
+        },
+        {
+            "name": "Borg_Medical"
+        },
+        {
+            "name": "Slugcat"
+        },
+        {
+            "name": "Blueshield"
+        },
+        {
             "name": "Boxer"
         },
         {
@@ -178,6 +205,9 @@
         },
         {
             "name": "Syndicate"
+        },
+        {
+            "name": "Shawarman"
         }
     ]
 }
