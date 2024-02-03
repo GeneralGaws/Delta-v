@@ -139,7 +139,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackScience
-  name: epistemics backpack # DeltaV - Epistemics Department replacing Science
+  name: science backpack
   description: A backpack specially designed to repel stains and hazardous liquids.
   components:
   - type: Sprite
@@ -166,8 +166,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackCargo
-  name: logistics backpack # DeltaV - Logistics Department replacing Cargo
-  description: A robust backpack for stealing logistics's loot. # DeltaV - Logistics Department replacing Cargo
+  name: cargo backpack
+  description: A robust backpack for stealing cargo's loot.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/cargo.rsi
