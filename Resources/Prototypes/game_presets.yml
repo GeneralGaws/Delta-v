@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true
   description: survival-description
   rules:
     - RampingStationEventScheduler
@@ -25,7 +25,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true
   description: greenshift-description
 
 - type: gamePreset
@@ -45,8 +45,7 @@
     - sandbox
   name: sandbox-title
   description: sandbox-description
-  showInVote: true
-  maxPlayers: 5
+  showInVote: false
   rules:
     - Sandbox
 
@@ -56,7 +55,7 @@
     - traitor
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true
   rules:
     - Traitor
     - BasicStationEventScheduler
@@ -68,8 +67,7 @@
     - dm
   name: death-match-title
   description: death-match-description
-  maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
@@ -80,7 +78,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
     - Nukeops
     - BasicStationEventScheduler
@@ -93,7 +91,7 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: false
+  showInVote: true
   rules:
     - Revolutionary
     - BasicStationEventScheduler
@@ -108,7 +106,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true
   rules:
   - Zombie
   - BasicStationEventScheduler
@@ -119,7 +117,7 @@
     - pirates
   name: pirates-title
   description: pirates-description
-  showInVote: false
+  showInVote: true
   rules:
     - Pirates
     - BasicStationEventScheduler

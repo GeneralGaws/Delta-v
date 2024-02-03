@@ -18,7 +18,7 @@
     stampState: "paper_stamp-css"
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
-    state: stamp-css
+    state: paper_stamp-css
 
 - type: entity
   name: note
