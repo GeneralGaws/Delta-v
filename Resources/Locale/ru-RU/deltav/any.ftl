@@ -28,7 +28,7 @@ cd-actions-admin-modify-del-entry = Удалить запись
 guide-entry-cd-records = Биография персонажа
 
 # Редактор записей
-humanoid-profile-editor-cd-records-tab = Биография
+humanoid-profile-editor-cd-records-tab = Био
 # Общий
 humanoid-profile-editor-cd-records-height = Рост (см):
 humanoid-profile-editor-cd-records-weight = Вес (кг):
@@ -71,7 +71,7 @@ cd-character-records-viewer-view-entry = Просмотр
 cd-records-entry-view-popup-title = Просмотр записи
 cd-character-records-entry-view-title = Заголовок:
 cd-character-records-entry-view-involved = Задействованные лица:
-cd-character-records-viewer-title-employ = Общие записи
+cd-character-records-viewer-title-employ = Записи о трудоустройстве
 
 plant-analyzer-interface-title = Анализатор растений AgriMax 3000
 plant-analyzer-window-no-seed-information-text = Семена/растения не сканируются.

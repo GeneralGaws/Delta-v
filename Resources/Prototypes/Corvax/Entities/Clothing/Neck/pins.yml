@@ -112,6 +112,22 @@
 
 - type: entity
   parent: ClothingNeckPinBase
+  id: ClothingNeckDetectivePin
+  name: Detective pin
+  description: The pin of detective.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    layers:
+    - state: detective
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    clothingVisuals:
+      neck:
+      - state: detective-equipped
+
+- type: entity
+  parent: ClothingNeckPinBase
   id: ClothingNeckSyndicakePin
   name: Syndicake pin
   description: The pin of Syndicakes, on backside have a little numbers "2559".
