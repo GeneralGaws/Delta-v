@@ -3,7 +3,6 @@
   mapName: 'Saltern'
   mapPath: /Maps/saltern.yml
   minPlayers: 0
-  maxPlayers: 35
   fallback: true
   stations:
     Saltern:
@@ -38,7 +37,8 @@
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 3 ]
+            Slugcat: [ 1, 1 ]
+            MedicalDoctor: [ 2, 2 ]
             MedicalIntern: [ 4, 4 ]
             #science
             ResearchDirector: [ 1, 1 ]
@@ -56,7 +56,16 @@
             CargoTechnician: [ 2, 2 ]
             #civillian
             Passenger: [ -1, -1 ]
+            #silicon
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

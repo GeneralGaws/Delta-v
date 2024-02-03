@@ -2,7 +2,7 @@
   id: Origin
   mapName: 'Origin'
   mapPath: /Maps/origin.yml
-  minPlayers: 50
+  minPlayers: 0
   stations:
     Origin:
       stationProto: StandardNanotrasenStation
@@ -39,7 +39,8 @@
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 3 ]
             Paramedic: [ 1, 1 ]
-            MedicalDoctor: [ 6, 6 ]
+            Slugcat: [ 1, 1 ]
+            MedicalDoctor: [ 5, 5 ]
             Psychologist: [ 1, 1 ]
             MedicalIntern: [ 1, 2 ]
             #science
@@ -64,4 +65,12 @@
             Musician: [ 2, 2 ]
             Boxer: [ 1, 1 ]
             Reporter: [ 1, 1 ]
-
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

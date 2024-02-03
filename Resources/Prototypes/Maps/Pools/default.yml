@@ -1,16 +1,33 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  - Arena
+  - Aspid
+  - Asterisk
   - Atlas
   - Bagel
+  - Barratry
   - Box
   - Cluster
   - Core
+  - CorvaxAvrite
+  - CorvaxDelta
+  - CorvaxGate
+  - CorvaxSilly
+  - CorvaxSpectrum
+  - Edge
+  - Europa
   - Fland
+  - Gemini
+  - Kettle
   - Marathon
   - Meta
   - Omega
   - Origin
-  - Saltern
   - Packed
+  - Pebble
   - Reach
+  - Saltern
+  - Shoukou
+  - TheHive
+  - Tortuga

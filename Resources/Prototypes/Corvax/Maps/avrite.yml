@@ -2,7 +2,7 @@
   id: CorvaxAvrite
   mapName: 'Avrite Station'
   mapPath: /Maps/corvax_avrit.yml
-  minPlayers: 40
+  minPlayers: 0
   stations:
     Avrit:
       stationProto: StandardNanotrasenStation
@@ -22,7 +22,7 @@
             Passenger: [ -1, -1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 3, 3 ]
-            Chef: [ 2, 2 ]
+            Shawarman: [ 2, 2 ]
             Clown: [ 1, 1 ]
             Janitor: [ 3, 3 ]
             Mime: [ 1, 1 ]
@@ -56,4 +56,14 @@
             Detective: [ 1, 1 ]
             Boxer: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
-            Borg: [ 2, 3 ]
+            Slugcat: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
+            Borg: [ 2, 2 ]

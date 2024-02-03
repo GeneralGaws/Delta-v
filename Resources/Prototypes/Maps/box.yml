@@ -2,7 +2,7 @@
   id: Box
   mapName: 'Box Station'
   mapPath: /Maps/box.yml
-  minPlayers: 50
+  minPlayers: 0
   stations:
     Boxstation:
       stationProto: StandardNanotrasenStation
@@ -35,6 +35,7 @@
             StationEngineer: [ 5, 5 ]
             TechnicalAssistant: [ 4, 4 ]
             #medical
+            Slugcat: [ 1, 1 ]
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 3 ]
             MedicalDoctor: [ 4, 4 ]
@@ -62,4 +63,12 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
