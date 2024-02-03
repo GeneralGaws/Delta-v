@@ -9,6 +9,13 @@
     eyes: ClothingEyesGlassesSecurity
     id: SecDogIDCard
 
+- type: startingGear
+  id: MobSlugcatGear
+  equipment:
+    back: ClothingBackpackSatchelMedicalFilled
+    ears: ClothingHeadsetMedical
+    id: SlugcatPDA
+
 #Oldstation Roles
 
 - type: startingGear
