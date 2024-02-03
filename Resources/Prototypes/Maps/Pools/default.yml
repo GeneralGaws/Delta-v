@@ -1,27 +1,16 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  #- Aspid
-  #- Bagel
-  #- Barratry
-  #- Box
-  #- Cluster
-  #- Core
-  #- Fland
-  #- Kettle
-  #- Marathon
-  #- Meta
-  #- Omega
-  #- Origin
-  #- Saltern
-  #- Packed
-# DeltaV
-  - Arena
-  - Asterisk
-  - Edge
-  - Hammurabi
-  - Pebble
-  - Shoukou
-  - Tortuga
-  - TheHive
-  - Submarine
+  - Atlas
+  - Bagel
+  - Box
+  - Cluster
+  - Core
+  - Fland
+  - Marathon
+  - Meta
+  - Omega
+  - Origin
+  - Saltern
+  - Packed
+  - Reach
