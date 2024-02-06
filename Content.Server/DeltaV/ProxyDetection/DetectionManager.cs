@@ -91,6 +91,7 @@ public sealed class ProxyDetectionManager : IPostInjectInit
             probeData.TryGetProperty("is-hosting", out var isHosting);
             probeData.TryGetProperty("is-vpn", out var isVpn);
             if (!isProxy.GetBoolean() && !isHosting.GetBoolean() && !isVpn.GetBoolean())
+                await _dbManager.UpdateBanExemption(e.UserId, ServerBanExemptFlags.Datacenter);
                 return (false, "");
 
             result = "Suspicious connection.";
