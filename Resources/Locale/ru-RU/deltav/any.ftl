@@ -15,6 +15,21 @@ admin-player-actions-window-mark-invisible = Сделать призрака н�
 admin-player-actions-window-mark-mark-follow = Разрешить следовать
 admin-player-actions-window-mark-mark-not-follow = Запретить следовать
 
+species-name-goblin = Гоблин
+
+marking-GoblinEarsBasic = Основные уши
+marking-GoblinEarsBasicAlt = Основные уши (Alt)
+marking-GoblinEarsLong01 = Длинные уши (кончики вниз)
+marking-GoblinEarsLong02 = Длинные уши (кончики вверх)
+
+marking-GoblinNoseBasic = Основной нос
+marking-GoblinNoseLong = Длинный нос
+marking-GoblinNoseCrooked = Кривой нос
+
+marking-GoblinTusksBasic = Без бивней
+marking-GoblinTusksSmall = Маленькие бивни
+marking-GoblinTusksBig = Длинные бивни
+
 # CosmaticDrift-HeightSlider
 humanoid-profile-editor-reset-height-button = Сбросить рост
 # CosmaticDrift-HeightSlider
