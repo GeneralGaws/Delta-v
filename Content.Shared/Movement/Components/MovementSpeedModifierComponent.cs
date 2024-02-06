@@ -18,11 +18,9 @@ namespace Content.Shared.Movement.Components
         public const float DefaultWeightlessModifier = 0.7f;
         public const float DefaultWeightlessAcceleration = 1f;
 
-        // Parkstation-AcceleratingMovement Start
-        public const float DefaultAcceleration = 15f;
-        public const float DefaultFriction = 15f;
-        public const float DefaultFrictionNoInput = 15f;
-        // Parkstation-AcceleratingMovement End
+        public const float DefaultAcceleration = 20f;
+        public const float DefaultFriction = 20f;
+        public const float DefaultFrictionNoInput = 20f;
 
         public const float DefaultBaseWalkSpeed = 2.5f;
         public const float DefaultBaseSprintSpeed = 4.5f;

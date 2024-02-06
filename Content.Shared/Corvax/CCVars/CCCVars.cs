@@ -14,7 +14,7 @@ public sealed class CCCVars
     ///     Enables station goals
     /// </summary>
     public static readonly CVarDef<bool> StationGoalsEnabled =
-        CVarDef.Create("game.station_goals", false, CVar.SERVERONLY);
+        CVarDef.Create("game.station_goals", true, CVar.SERVERONLY);
 
     /*
      * Discord Auth
