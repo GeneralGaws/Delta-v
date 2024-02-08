@@ -104,7 +104,3 @@
   - type: MobPrice
     price: 150
   - type: FloatingVisuals
-  - type: Puller
-    needsHands: True
-  - type: Speech
-
