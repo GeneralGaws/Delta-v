@@ -25,7 +25,7 @@ namespace Content.Shared.Preferences
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
         public const int MaxNameLength = 32;
-        public const int MaxDescLength = 512;
+        public const int MaxDescLength = 1024;
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
         private readonly List<string> _antagPreferences;
@@ -71,7 +71,7 @@ namespace Content.Shared.Preferences
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
             List<string> traitPreferences)
-            : this(other.Name, other.FlavorText, other.Species, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack, other.SpawnPriority,
+            : this(other.Name, other.FlavorText, other.Species, other.Height, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack, // Parkstation-HeightSlider
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences)
         {
         }
@@ -98,7 +98,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences)
-            : this(name, flavortext, species, height, age, sex, gender, appearance, clothing, backpack, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
+            : this(name, flavortext, species, height, age, sex, gender, appearance, clothing, backpack, new Dictionary<string, JobPriority>(jobPriorities), // Parkstation-HeightSlider
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences))
         {
         }
