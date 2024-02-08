@@ -1,7 +1,6 @@
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
-using Content.Client._CD.Records.UI;
 using System.Text.RegularExpressions;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI;
@@ -9,7 +8,6 @@ using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
-using Content.Shared._CD.Records;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -109,8 +107,6 @@ namespace Content.Client.Preferences.UI
         private MarkingSet _markingSet = new(); // storing this here feels iffy but a few things need it this high up
 
         public event Action<HumanoidCharacterProfile, int>? OnProfileChanged;
-
-        private readonly RecordEditorGui _recordsTab;
 
         public HumanoidProfileEditor(IClientPreferencesManager preferencesManager, IPrototypeManager prototypeManager,
             IEntityManager entityManager, IConfigurationManager configurationManager)
@@ -500,14 +496,6 @@ namespace Content.Client.Preferences.UI
 
             #endregion Markings
 
-            #region Records
-
-            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
-            _tabContainer.AddChild(_recordsTab);
-            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
-
-            #endregion Records
-
             #region FlavorText
 
             if (_configurationManager.GetCVar(CCVars.FlavorText))
@@ -688,14 +676,6 @@ namespace Content.Client.Preferences.UI
 
             _needUpdatePreview = true;
             Save();
-        }
-
-        private void UpdateProfileRecords(CharacterRecords records)
-        {
-            if (Profile is null)
-                return;
-            Profile = Profile.WithCDCharacterRecords(records);
-            IsDirty = true;
         }
 
         private void OnFlavorTextChange(string content)
@@ -1237,7 +1217,6 @@ namespace Content.Client.Preferences.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateHeightControls();
-            _recordsTab.Update(Profile);
 
             _preferenceUnavailableButton.SelectId((int) Profile.PreferenceUnavailable);
         }
