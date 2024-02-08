@@ -27,5 +27,7 @@
           amount: 1
         - id: FoodBoxDonkpocketBerry
           amount: 1
+        - id: FoodBoxDonkpocketGondola
+          amount: 1
         - id: FoodBoxDonkpocketDink
           prob: 0.1

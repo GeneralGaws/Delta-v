@@ -45,7 +45,7 @@
         - !type:ReagentThreshold
           min: 20
         damage:
-          groups:
+          types:
             Brute: 2
       - !type:Jitter
         conditions:
@@ -690,7 +690,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 3
       - !type:GenericStatusEffect
         key: Stun
         time: 3.0

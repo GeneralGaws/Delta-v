@@ -89,8 +89,6 @@
   - type: Stripping
   - type: SolutionScanner
   - type: IgnoreUIRange
-  - type: ShowRevIcons
-  - type: ShowZombieIcons
   - type: Inventory
     templateId: aghost
   - type: InventorySlots

@@ -246,7 +246,6 @@
       - id: BoxPDAScience # Delta-V
       - id: RDIDCard # Delta-V
       - id: ClothingShoesBootsWinterMystagogue #Delta V: Add departmental winter boots
-      - id: EncryptionKeyBinary
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -267,7 +266,6 @@
       - id: BoxPDAScience # Delta-V
       - id: RDIDCard # Delta-V
       - id: ClothingShoesBootsWinterMystagogue #Delta V: Add departmental winter boots
-      - id: EncryptionKeyBinary
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit

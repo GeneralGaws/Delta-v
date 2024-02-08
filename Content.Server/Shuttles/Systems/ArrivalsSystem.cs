@@ -12,6 +12,7 @@ using Content.Server.Screens.Components;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Server.Spawners.Components;
+using Content.Server.Spawners.EntitySystems;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Administration;
@@ -81,6 +82,7 @@ public sealed class ArrivalsSystem : EntitySystem
     {
         base.Initialize();
 
+        SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawn, before: new[] { typeof(SpawnPointSystem), typeof(ContainerSpawnPointSystem) });
         SubscribeLocalEvent<StationArrivalsComponent, ComponentStartup>(OnArrivalsStartup);
 
         SubscribeLocalEvent<ArrivalsShuttleComponent, ComponentStartup>(OnShuttleStartup);
@@ -312,7 +314,7 @@ public sealed class ArrivalsSystem : EntitySystem
         }
     }
 
-    public void HandlePlayerSpawning(PlayerSpawningEvent ev)
+    private void OnPlayerSpawn(PlayerSpawningEvent ev)
     {
         if (ev.SpawnResult != null)
             return;
