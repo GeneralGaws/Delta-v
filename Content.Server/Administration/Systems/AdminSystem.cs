@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Server._CD.Records;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.Forensics;
@@ -53,8 +52,6 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
         [Dependency] private readonly TransformSystem _transform = default!;
-
-        [Dependency] private readonly CharacterRecordsSystem _cdRecords = default!;
 
         private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
 
@@ -387,8 +384,6 @@ namespace Content.Server.Administration.Systems
                         _hands.TryDrop(entity.Value, hand, checkActionBlocker: false, doDropInteraction: false, handsComp: hands);
                     }
                 }
-
-                _cdRecords.DeleteAllRecords(entity.Value);
             }
 
             _minds.WipeMind(player);
