@@ -1,18 +1,15 @@
 using Content.Server.Tools;
-using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.Tools.Components;
 using Content.Shared.Damage.Events;
-using Content.Shared.Nyanotrasen.Abilities.Oni;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Components;
 using Robust.Shared.Containers;
 
 namespace Content.Server.Abilities.Oni
 {
-    public sealed class OniSystem : SharedOniSystem
+    public sealed class OniSystem : EntitySystem
     {
         [Dependency] private readonly ToolSystem _toolSystem = default!;
-        [Dependency] private readonly GunSystem _gunSystem = default!;
 
         public override void Initialize()
         {
@@ -32,7 +29,7 @@ namespace Content.Server.Abilities.Oni
             if (TryComp<ToolComponent>(args.Entity, out var tool) && _toolSystem.HasQuality(args.Entity, "Prying", tool))
                 tool.SpeedModifier *= 1.66f;
 
-            if (_gunSystem.TryGetGun(args.Entity, out _, out var gun))
+            if (TryComp<GunComponent>(args.Entity, out var gun))
             {
                 gun.MinAngle *= 15f;
                 gun.AngleIncrease *= 15f;
@@ -45,7 +42,7 @@ namespace Content.Server.Abilities.Oni
             if (TryComp<ToolComponent>(args.Entity, out var tool) && _toolSystem.HasQuality(args.Entity, "Prying", tool))
                 tool.SpeedModifier /= 1.66f;
 
-            if (_gunSystem.TryGetGun(args.Entity, out _, out var gun))
+            if (TryComp<GunComponent>(args.Entity, out var gun))
             {
                 gun.MinAngle /= 15f;
                 gun.AngleIncrease /= 15f;
