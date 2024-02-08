@@ -329,6 +329,7 @@ namespace Content.Server.Database
         public string Sex { get; set; } = null!;
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
+        public float Height { get; set; } = 1f; // Parkstation-HeightSlider
         [Column(TypeName = "jsonb")] public JsonDocument? Markings { get; set; } = null!;
         public string HairName { get; set; } = null!;
         public string HairColor { get; set; } = null!;
@@ -343,6 +344,9 @@ namespace Content.Server.Database
         public List<Trait> Traits { get; } = new();
 
         [Column("pref_unavailable")] public DbPreferenceUnavailableMode PreferenceUnavailable { get; set; }
+
+        [Column("cd_character_records", TypeName = "jsonb")]
+        public JsonDocument? CDCharacterRecords { get; set; }
 
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;

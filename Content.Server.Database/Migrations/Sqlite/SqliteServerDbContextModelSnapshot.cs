@@ -686,6 +686,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("backpack");
 
+                    b.Property<byte[]>("CDCharacterRecords")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("cd_character_records");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")

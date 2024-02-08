@@ -280,6 +280,14 @@
     color: "#1f8c28"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
+  - type: CharacterRecordConsole
+    consoleType: Medical
+  - type: UserInterface
+    interfaces:
+      - key: enum.CharacterRecordConsoleKey.Key
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputer
@@ -303,6 +311,14 @@
     color: "#1f8c28"
   - type: Computer
     board: CriminalRecordsComputerCircuitboard
+  - type: CharacterRecordConsole
+    consoleType: Security
+  - type: UserInterface
+    interfaces:
+      - key: enum.CharacterRecordConsoleKey.Key
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputer
@@ -310,13 +326,6 @@
   name: station records computer
   description: This can be used to check station records.
   components:
-  - type: GeneralStationRecordConsole
-  - type: UserInterface
-    interfaces:
-      - key: enum.GeneralStationRecordConsoleKey.Key
-        type: GeneralStationRecordConsoleBoundUserInterface
-  - type: ActivatableUI
-    key: enum.GeneralStationRecordConsoleKey.Key
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -326,6 +335,14 @@
   - type: GuideHelp
     guides:
     - Forensics
+  - type: CharacterRecordConsole
+    consoleType: Employment
+  - type: UserInterface
+    interfaces:
+      - key: enum.CharacterRecordConsoleKey.Key
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputer
