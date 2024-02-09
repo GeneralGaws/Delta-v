@@ -132,7 +132,7 @@ plant-analyzer-harvest-repeat = Многолетний
 plant-analyzer-harvest-ephemeral = Эфемерный
 plant-analyzer-harvest-autoharvest = Автосбор
 
-department-juridical = Юридический Департамент
+department-Juridical = Юридический Департамент
 character-information-ui-title = Информация о персонаже
 
 job-name-judge = магистрат
