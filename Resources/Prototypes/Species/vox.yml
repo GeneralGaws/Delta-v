@@ -1,6 +1,6 @@
 - type: species
   id: Vox
-  name: Vox
+  name: "Вокс"
   roundStart: true
   prototype: MobVox
   sprites: MobVoxSprites
