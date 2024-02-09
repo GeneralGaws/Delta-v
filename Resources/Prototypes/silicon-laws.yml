@@ -199,6 +199,7 @@
   - Medical3
   - Medical4
   - Medical5
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Research1
@@ -239,6 +240,7 @@
   - Research4
   - Research5
   - Research6
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Engineer1
@@ -277,6 +279,7 @@
   - Crewsimov2
   - Drone3
   - Crewsimov3
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Janitor1
@@ -311,6 +314,7 @@
   - Janitor3
   - Janitor4
   - Janitor5
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Clown1
@@ -351,6 +355,7 @@
   - Clown4
   - Clown5
   - Clown6
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Chaplain1
@@ -385,7 +390,7 @@
   - Chaplain3
   - Chaplain4
   - Chaplain5
-
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Reporter1
@@ -413,7 +418,8 @@
   - Reporter1
   - Reporter2
   - Reporter3
-  - Reporter4 
+  - Reporter4
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw # no Security Borg, so doesn't spawn
   id: SiliconPolice1 
@@ -454,6 +460,7 @@
   - SiliconPolice4
   - SiliconPolice5
   - SiliconPolice6
+  obeysTo: laws-owner-crew
   
 # Gimmick LawSets
 
@@ -497,6 +504,7 @@
   - Cowboy4
   - Cowboy5
   - Cowboy6
+  obeysTo: laws-owner-crew
   
 - type: siliconLaw
   id: StationEfficiency1
@@ -519,6 +527,7 @@
   - StationEfficiency1
   - StationEfficiency2
   - StationEfficiency3
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Druid1
@@ -553,6 +562,7 @@
   - Druid3
   - Druid4
   - Druid5
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw # No ability for Borgs to roll dice, so won't spawn.
   id: DungeonMaster1
@@ -605,6 +615,7 @@
   - Painter1
   - Painter2
   - Painter3
+  obeysTo: laws-owner-crew
 
 #Potential For Harm LawSets
 
@@ -635,6 +646,7 @@
   - Tyrant2
   - Tyrant3
   - Tyrant4
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: LiveAndLetLive1
@@ -651,6 +663,7 @@
   laws:
   - LiveAndLetLive1
   - LiveAndLetLive2
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Nutimov1
@@ -685,6 +698,7 @@
   - Nutimov3
   - Nutimov4
   - Nutimov5
+  obeysTo: laws-owner-crew
 
 - type: siliconLaw
   id: Paladin1
@@ -719,6 +733,7 @@
   - Paladin3
   - Paladin4
   - Paladin5
+  obeysTo: laws-owner-crew
 
 # ion storm random lawsets
 - type: weightedRandom

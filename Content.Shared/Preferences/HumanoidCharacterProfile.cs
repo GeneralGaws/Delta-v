@@ -74,7 +74,7 @@ namespace Content.Shared.Preferences
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
             List<string> traitPreferences)
-            : this(other.Name, other.FlavorText, other.Species, other.Height, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack, // Parkstation-HeightSlider
+            : this(other.Name, other.FlavorText, other.Species, other.Height, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack, other.SpawnPriority,
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences, other.CDCharacterRecords)
         {
         }
@@ -102,7 +102,7 @@ namespace Content.Shared.Preferences
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences,
             CharacterRecords? cdCharacterRecords)
-            : this(name, flavortext, species, height, age, sex, gender, appearance, clothing, backpack, new Dictionary<string, JobPriority>(jobPriorities), // Parkstation-HeightSlider
+            : this(name, flavortext, species, height, age, sex, gender, appearance, clothing, backpack, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences), cdCharacterRecords)
         {
         }
