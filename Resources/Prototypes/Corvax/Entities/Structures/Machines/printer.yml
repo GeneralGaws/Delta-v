@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseLathe
   id: PrinterDoc
-  name: принтер документов
-  description: Бюрократическое совершенство. Хранит базу данных всех документов Nanotrasen, и дает возможность печатать их, пока у вас есть бумага.
+  name: document printer
+  description: Bureaucratic perfection. Stores a database of all Nanotrasen documents, and lets you print them as long as you have paper.
   components:
   - type: Sprite
     sprite: Corvax/Structures/Machines/printer.rsi
@@ -27,34 +27,42 @@
     runningState: building
     staticRecipes:
       - PrintedDocumentReportStationRecipe
+      - PrintedDocumentReportOnEliminationOfViolationsRecipe
       - PrintedDocumentReporDepartmentRecipe
       - PrintedDocumentReportEmployeePerformanceRecipe
       - PrintedDocumentReportOnTheChaptersMeetingRecipe
       - PrintedDocumentInternalAffairsAgentsReportRecipe
       - PrintedDocumentConditionReportRecipe
       - PrintedDocumentReportStudyObjectRecipe
+      - PrintedDocumentExperimentReportRecipe
       - PrintedDocumentDisposalReportRecipe
       - PrintedDocumentApplicationAppointmentInterimRecipe
       - PrintedDocumentApplicationEmploymentRecipe
       - PrintedDocumentLetterResignationRecipe
       - PrintedDocumentApplicationAccessRecipe
       - PrintedDocumentApplicationEquipmentRecipe
+      - PrintedDocumentAppealRecipe
       - PrintedDocumentEvacuationShuttleRequestRecipe
       - PrintedDocumentShuttleRegistrationRequestRecipe
       - PrintedDocumentRequestCallMembersCentralCommitteeDSORecipe
+      - PrintedDocumentRequestRequestToEstablishThreatLevelRecipe
       - PrintedDocumentRequestChangeSalaryRecipe
-      - PrintedDocumentRequestNonListedEmploymentRecipe
+      - PrintedDocumentRequestForNonlistedEmploymentRecipe
+      - PrintedDocumentRequestForPromotionRecipe
       - PrintedDocumentRequestDocumentsRecipe
       - PrintedDocumentRequestEuthanasiaRecipe
       - PrintedDocumentRequestConstructionWorkRecipe
       - PrintedDocumentRequestModernizationRecipe
       - PrintedDocumentComplaintViolationLaborRulesRecipe
+      - PrintedDocumentComplaintOffenseRecipe
       - PrintedDocumentPermissionEquipmentRecipe
+      - PrintedDocumentPermissionToTravelInCaseOfThreatRecipe
       - PrintedDocumentSearchPermissionRecipe
-      - PrintedDocumentPermissionWeaponsRecipe
+      - PrintedDocumentPermissionToCarryWeaponsRecipe
       - PrintedDocumentPrescriptionDrugAuthorizationRecipe
       - PrintedDocumentPermissionDisposeBodyRecipe
       - PrintedDocumentConstructionPermitRecipe
+      - PrintedDocumentPermissionToExtendMarriageRecipe
       - PrintedDocumentOrderDismissalRecipe
       - PrintedDocumentOrderDeprivationAccessRecipe
       - PrintedDocumentOrderEncouragementRecipe
@@ -73,9 +81,12 @@
       - PrintedDocumentDivorceCertificateRecipe
       - PrintedDocumentClosingIndictmentRecipe
       - PrintedDocumentSentenceRecipe
+      - PrintedDocumentJudgmentRecipe
       - PrintedDocumentStatementHealtheRecipe
+      - PrintedDocumentDecisionToStartTrialRecipe
   - type: EmagLatheRecipes
     emagStaticRecipes:
+        - PrintedDocumentErrorLoadingFormHeaderRecipe
         - PrintedDocumentNoticeOfLiquidationRecipe
         - PrintedDocumentBusinessDealRecipe
         - PrintedDocumentNoteBeginningMilitaryActionsRecipe
