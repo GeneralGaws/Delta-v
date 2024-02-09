@@ -1,6 +1,6 @@
 - type: job
   id: Borgmed
-  name: "борг медецинский"
+  name: "борг медицинский"
   description: job-description-borg
   playTimeTracker: JobBorgmed
   requirements:
