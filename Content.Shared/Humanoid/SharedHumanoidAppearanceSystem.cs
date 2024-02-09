@@ -1,8 +1,11 @@
 using System.Linq;
+using Content.Shared.CCVar;
 using Content.Shared.Decals;
+using Content.Shared.DetailExaminable;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
+using Robust.Shared.Configuration;
 using Content.Shared.SimpleStation14.HeightAdjust;
 using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
@@ -25,6 +28,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly HeightAdjustSystem _heightAdjust = default!;
+    [Dependency] private readonly IConfigurationManager _configurationManager = default!;
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
@@ -350,6 +354,16 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         humanoid.Age = profile.Age;
+
+        // Parkstation-CharacterInformation-Start
+        if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
+        {
+            var detail = EnsureComp<DetailExaminableComponent>(uid);
+            detail.Content = profile.FlavorText;
+            Dirty(detail);
+        }
+        // Parkstation-CharacterInformation-End
+
         _heightAdjust.SetScale(uid, profile.Height); // Parkstation-HeightSlider
 
         Dirty(humanoid);
