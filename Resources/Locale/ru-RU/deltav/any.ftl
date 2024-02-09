@@ -131,3 +131,36 @@ plant-analyzer-mutation-canscream = Мандрагора
 plant-analyzer-harvest-repeat = Многолетний
 plant-analyzer-harvest-ephemeral = Эфемерный
 plant-analyzer-harvest-autoharvest = Автосбор
+
+department-juridical = Юридический Департамент
+
+job-name-judge = магистрат
+JobJudge = магистрат
+
+job-name-barber = парикмахер
+JobBarber = парикмахер
+
+job-name-pilot = пилот
+JobPilot = пилот
+
+job-name-pathologist = патологоанатом
+JobPathologist = патологоанатом
+
+stamp-component-stamped-name-judge = Магистрат
+job-description-judge = Бдите за соблюдением закона, судите клоуна в начале смены и кричите на вашего АВД.
+
+ent-ClothingHeadsetJudge = гарнитура магистрата
+    .desc = Гарнитура магистрата, чтобы услышать как капитан просит засудить ГСБ.
+
+ent-ClothingHeadJudge = шляпа магистрата
+    .desc = Стоп, а это точно шляпа?
+
+ent-ClothingUniformMagistrat = накидка магистрата
+    .desc = Тонкая накидка с значком законного представителя юр департамента, дополнительно защищенным золотой цепью.
+
+ent-MagistratHammer = молот магистрата
+    .desc = Молот из дорогой древесины, со встроенным предохранителем во избежание смертей клоунов.
+
+ent-RubberStampJudge = печать магистрата
+    .desc = { ent-RubberStampMime.desc }
+    .suffix = НЕ МАППИТЬ

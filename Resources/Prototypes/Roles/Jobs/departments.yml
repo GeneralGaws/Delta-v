@@ -30,13 +30,13 @@
   - Lawyer
   - Librarian
   - Mime
+  - Barber
   - Musician
   - Passenger
   - Reporter
   - Zookeeper
   - ServiceWorker
   - MartialArtist
-  - Prisoner
   - Gladiator
 
 - type: department
@@ -56,6 +56,15 @@
   - Quartermaster
   primary: false
   weight: 100
+
+- type: department
+  id: Juridical
+  description: department-juridical-description
+  color: "#447533"
+  roles:
+  - Judge
+  - IAA
+  - Prisoner
 
 - type: department
   id: Engineering
@@ -80,6 +89,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - Pathologist
   - SeniorPhysician
   - Slugcat
   - Borgmed

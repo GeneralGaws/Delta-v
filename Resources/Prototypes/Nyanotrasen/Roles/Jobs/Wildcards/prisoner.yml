@@ -10,8 +10,7 @@
   supervisors: job-supervisors-security
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 999999
-    - !type:WhitelistRequirement
+      time: 1800
 
 - type: startingGear
   id: PrisonerGear
