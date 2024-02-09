@@ -5,7 +5,7 @@
   name: medical cyborg
   components:
   - type: SpawnPoint
-    job_id: MedicalBorg
+    job_id: Borgmed
   - type: Sprite
     layers:
     - state: green
