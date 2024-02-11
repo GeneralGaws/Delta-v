@@ -694,6 +694,7 @@
       - ShellShotgunSlug
       - ShellShotgunFlare
       - ShellTranquilizer
+      - MagazinePistolSpecial # DeltaV - .38 Special psi-breaker
       - MagazinePistol
       - MagazinePistolSubMachineGun
       - MagazinePistolSubMachineGunTopMounted
@@ -701,6 +702,7 @@
       - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxSpecial # DeltaV - .38 Special revolver
+      - MagazineBoxSpecialPractice # DeltaV - .38 Special revolver
       - MagazineBoxMagnum
       - MagazineBoxRifle
       - MagazineBoxLightRifle
@@ -819,6 +821,7 @@
       staticRecipes:
         - CartridgePistol
         - CartridgeMagnum
+        - CartridgeSpecial # DeltaV - .38 Special revolver
         - ShellShotgun
         - ShellShotgunSlug
         - ShellShotgunFlare
@@ -827,6 +830,7 @@
         - CartridgeRifle
         - MagazineBoxPistol
         - MagazineBoxMagnum
+        - MagazineBoxSpecial # DeltaV - .38 Special revolver
         - MagazineBoxRifle
         - MagazineBoxLightRifle
     - type: MaterialStorage
