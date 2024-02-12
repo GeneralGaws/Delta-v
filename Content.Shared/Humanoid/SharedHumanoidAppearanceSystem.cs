@@ -264,10 +264,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     /// <param name="humanoid">Humanoid component of the entity</param>
     public void SetHeight(EntityUid uid, float height, bool sync = true, HumanoidAppearanceComponent? humanoid = null)
     {
-        if (!Resolve(uid, ref humanoid) || Math.Abs(humanoid.Height - height) < 0.01f)
+        if (!Resolve(uid, ref humanoid) || MathHelper.CloseTo(humanoid.Height, height, 0.001f))
             return;
 
-        humanoid.Height = height;
+        var species = _prototypeManager.Index(humanoid.Species);
+        humanoid.Height = Math.Clamp(height, species.MinHeight, species.MaxHeight);
 
         if (sync)
             Dirty(humanoid);
