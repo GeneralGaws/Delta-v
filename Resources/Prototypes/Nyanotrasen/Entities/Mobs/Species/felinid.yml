@@ -39,9 +39,6 @@
 #  - type: DiseaseCarrier
 #    naturalImmunities:
 #    - OwOnavirus
-  #- type: Thieving  # FUCKIN KILL.
-  #  stealthy: true
- #   stripTimeReduction: 1
   - type: Speech
     speechSounds: Alto
   - type: DamageOnHighSpeedImpact # Landing on all fours!
@@ -50,6 +47,8 @@
         Blunt: 1
   - type: Stamina
     critThreshold: 85
+  - type: TypingIndicator
+    proto: felinid
   - type: PseudoItem
     storedOffset: 0,17
     shape:
@@ -63,7 +62,7 @@
       Female: FemaleFelinid
       Unsexed: MaleFelinid
   - type: Felinid
-  - type: SoftPaws
+  - type: NoShoesSilentFootsteps
 
 - type: entity
   save: false
