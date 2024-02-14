@@ -367,6 +367,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         _heightAdjust.SetScale(uid, profile.Height); // Parkstation-HeightSlider
 
+        humanoid.LastProfileLoaded = profile; // DeltaV - let paradox anomaly be cloned
+
         Dirty(humanoid);
     }
 
