@@ -1,5 +1,4 @@
 using Content.Server.DeltaV.ParadoxAnomaly.Components;
-using Content.Server.DetailExaminable;
 using Content.Server.GenericAntag;
 using Content.Server.Ghost.Roles;
 using Content.Server.Ghost.Roles.Components;
@@ -9,6 +8,7 @@ using Content.Server.Station.Systems;
 using Content.Server.Terminator.Systems;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
+using Content.Shared.DetailExaminable;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Preferences;
