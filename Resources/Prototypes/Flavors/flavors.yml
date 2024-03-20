@@ -990,6 +990,11 @@
   description: flavor-complex-punishment
 
 - type: flavor
+  id: holy
+  flavorType: Base
+  description: flavor-base-holy
+
+- type: flavor
   id: horrible
   flavorType: Base
   description: flavor-base-horrible
