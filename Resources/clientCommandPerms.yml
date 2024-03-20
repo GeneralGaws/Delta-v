@@ -8,7 +8,6 @@
     - hardquit
     - svbind
     - bind
-    - exec # macro moment
     - cls
     - vram
     - monitor
@@ -73,6 +72,7 @@
     - localdelete
     - fullstatereset
     - fuckrules
+    - exec
 
 - Flags: MAPPING
   Commands:
