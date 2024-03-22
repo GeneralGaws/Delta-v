@@ -7,8 +7,6 @@
   markingLimits: MobVoxMarkingLimits
   dollPrototype: MobVoxDummy
   skinColoration: Hues
-  maleFirstNames: names_vox
-  femaleFirstNames: names_vox
   naming: First
   sexes:
     - Unsexed
