@@ -1880,3 +1880,24 @@
   id: 287
   time: '2024-03-19T23:50:03.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/809
+- author: Rose
+  changes:
+  - message: Added Submarine Station back to the map pool (for real this time)
+    type: Add
+  id: 288
+  time: '2024-03-20T22:49:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/984
+- author: rosieposieeee
+  changes:
+  - message: More fixes for Submarine! Thank you everyone for your feedback.
+    type: Fix
+  id: 289
+  time: '2024-03-21T06:10:41.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/987
+- author: DangerRevolution
+  changes:
+  - message: Added lunchboxes to various staff lockers
+    type: Add
+  id: 290
+  time: '2024-03-21T18:46:44.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/989
