@@ -34,6 +34,7 @@ marking-GoblinTusksBig = Длинные бивни
 humanoid-profile-editor-reset-height-button = Сбросить рост
 # CosmaticDrift-HeightSlider
 humanoid-profile-editor-height-label = Рост: {$height}x
+humanoid-profile-editor-width-label = Толщина: {$width}x
 
 admin-player-actions-window-cd-record-purge = Изменить записи персонажа
 cd-actions-admin-modify-records = Изменить записи персонажей

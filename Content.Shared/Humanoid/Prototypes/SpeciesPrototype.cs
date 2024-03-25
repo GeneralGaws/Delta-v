@@ -126,6 +126,44 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public int MaxAge = 120;
 
+    // Parkstation-HeightSlider Start
+    /// <summary>
+    ///     The minimum height for this species
+    /// </summary>
+    [DataField]
+    public float MinHeight = 0.95f;
+
+    /// <summary>
+    ///     The default height for this species
+    /// </summary>
+    [DataField]
+    public float DefaultHeight = 1f;
+
+    /// <summary>
+    ///     The maximum height for this species
+    /// </summary>
+    [DataField]
+    public float MaxHeight = 1.05f;
+
+    /// <summary>
+    ///     The minimum width for this species
+    /// </summary>
+    [DataField]
+    public float MinWidth = 0.95f;
+
+    /// <summary>
+    ///     The default width for this species
+    /// </summary>
+    [DataField]
+    public float DefaultWidth = 1f;
+
+    /// <summary>
+    ///     The maximum width for this species
+    /// </summary>
+    [DataField]
+    public float MaxWidth = 1.05f;
+    // Parkstation-HeightSlider End
+
     /// <summary>
     ///     The Style used for the guidebook info link in the character profile editor
     /// </summary>
