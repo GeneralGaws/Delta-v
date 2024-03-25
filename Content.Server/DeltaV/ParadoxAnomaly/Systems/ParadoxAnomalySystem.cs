@@ -1,5 +1,4 @@
 using Content.Server.DeltaV.ParadoxAnomaly.Components;
-using Content.Server.DetailExaminable;
 using Content.Server.GenericAntag;
 using Content.Server.Ghost.Roles;
 using Content.Server.Ghost.Roles.Components;
@@ -14,6 +13,7 @@ using Content.Shared.Mind.Components;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
+using Content.Shared.SimpleStation14.DetailExaminable;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
