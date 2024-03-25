@@ -10,3 +10,5 @@
   - type: Item
     size: Small
     storedRotation: -90
+  - type: DropOnSlip
+    chance: 30
