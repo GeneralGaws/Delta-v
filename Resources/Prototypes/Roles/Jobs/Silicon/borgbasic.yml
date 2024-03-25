@@ -3,10 +3,14 @@
   name: job-name-borg
   description: job-description-borg
   playTimeTracker: JobBorg
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 216000 #60 hrs
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgGeneric
+  startingGear: RobotGear # for char preview only
+
+- type: startingGear
+  id: RobotGear
+  equipment:
+    head: ClothingHeadHatCardborg
+    outerClothing: ClothingOuterCardborg

@@ -10,7 +10,8 @@
   supervisors: job-supervisors-security
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 1800
+      time: 1
+    - !type:WhitelistRequirement # DeltaV - Whitelist requirement
 
 - type: startingGear
   id: PrisonerGear

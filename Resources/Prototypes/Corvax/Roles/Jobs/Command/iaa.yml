@@ -3,12 +3,8 @@
   name: job-name-iaa
   playTimeTracker: JobIAA
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Command
-    time: 72000
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 36000
+    - !type:OverallPlaytimeRequirement #DeltaV
+      time: 3600
   startingGear: IAAGear
   icon: "JobIconIAA"
   supervisors: job-supervisors-centcom

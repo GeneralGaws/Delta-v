@@ -2,6 +2,15 @@
   id: JobIAA
 
 - type: playTimeTracker
+  id: JobJudge
+
+- type: playTimeTracker
+  id: JobBarber
+
+- type: playTimeTracker
+  id: JobPathologist
+
+- type: playTimeTracker
   id: JobEvent1
   
 - type: playTimeTracker

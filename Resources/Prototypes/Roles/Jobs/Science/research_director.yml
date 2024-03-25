@@ -5,11 +5,8 @@
   playTimeTracker: JobResearchDirector
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Epistemics # DeltaV - Epistemics Department replacing Science
-      time: 54000 # DeltaV - 15 hours
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # DeltaV - 20 hours
+    - !type:OverallPlaytimeRequirement #DeltaV
+      time: 3600
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -25,6 +22,9 @@
   - Chapel # DeltaV - Chaplain is in Epistemics
   - Cryogenics
   special: # Nyanotrasen - Mystagogue can use the Bible
+  - !type:NotifyDepartmentSpecial
+    notify_text: "Глава департамента прибыл на станцию."
+    radio_channel: Science
   - !type:AddComponentSpecial
     components:
     - type: BibleUser # Nyano - Lets them heal with bibles
