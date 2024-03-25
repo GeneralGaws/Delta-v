@@ -3,7 +3,6 @@
   mapName: 'Pebble'
   mapPath: /Maps/pebble.yml
   minPlayers: 0
-  maxPlayers: 30
   stations:
     PebbleStation:
       stationProto: StandardNanotrasenStation
@@ -12,7 +11,7 @@
           mapNameTemplate: '{0} Pebble Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'DV'
+            prefixCreator: '14'
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -37,10 +36,9 @@
           #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 1, 1 ]
+            Slugcat: [ 1, 1 ]
             MedicalDoctor: [ 2, 3 ]
             MedicalIntern: [ 2, 2 ]
-            Paramedic: [ 1, 1 ]
-            Psychologist: [ 1, 1 ]
           #science
             ResearchDirector: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
@@ -61,3 +59,13 @@
             CargoTechnician: [ 2, 3 ]
           #civilian
             Passenger: [ -1, -1 ]
+          #silicon
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

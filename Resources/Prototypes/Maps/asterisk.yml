@@ -3,18 +3,17 @@
   mapName: 'Asterisk'
   mapPath: /Maps/asterisk.yml
   minPlayers: 0
-  maxPlayers: 60
   stations:
     Asterisk:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Kaeri.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Asterisk Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'DV'
+            prefixCreator: '14'
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -42,6 +41,7 @@
             Paramedic: [ 1, 2 ]
             MedicalDoctor: [ 2, 3 ]
             MedicalIntern: [ 2, 3 ]
+            Slugcat: [ 1, 1 ]
           #science
             ResearchDirector: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
@@ -64,3 +64,13 @@
             CargoTechnician: [ 2, 4 ]
           #civilian
             Passenger: [ -1, -1 ]
+          #silicon
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

@@ -2,7 +2,7 @@
   id: CorvaxOutpost
   mapName: 'Outpost'
   mapPath: /Maps/corvax_outpost.yml
-  minPlayers: 10
+  minPlayers: 0
   stations:
     Outpost:
       stationProto: StandardNanotrasenStation
@@ -38,7 +38,6 @@
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
-            Paramedic: [ 1, 1 ]
             MedicalIntern: [ 2, 2 ]
             Psychologist: [ 1, 1 ]
             #science
@@ -62,3 +61,16 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Judge: [ 0, 1]
+            Paramedic: [ 1, 1 ]
+            MailCarrier: [ 2, 2 ]
+            Slugcat: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

@@ -2,7 +2,7 @@
   id: Meta
   mapName: 'Meta Station'
   mapPath: /Maps/meta.yml
-  minPlayers: 50
+  minPlayers: 0
   stations:
     Meta:
       stationProto: StandardNanotrasenStation
@@ -37,7 +37,8 @@
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 3, 3 ]
-            MedicalDoctor: [ 5, 5 ]
+            Slugcat: [ 1, 1 ]
+            MedicalDoctor: [ 4, 4 ]
             MedicalIntern: [ 3, 6 ]
             Paramedic: [ 1, 1 ]
             #science
@@ -61,3 +62,12 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

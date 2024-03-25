@@ -1,17 +1,32 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  - Arena
+  - Aspid
+  - Asterisk
   - Atlas
   - Bagel
   - Box
   - Cluster
   - Core
+  - CorvaxAvrite
+  - CorvaxDelta
+  - CorvaxGate
+  - CorvaxSilly
+  - CorvaxSpectrum
+  - Edge
+  - Europa
   - Fland
+  - Gemini
   - Marathon
   - Meta
   - Omega
   - Origin
-  - Saltern
   - Packed
+  - Pebble
   - Reach
   #- Train <- return after station anchoring PR is finished and merged
+  - Saltern
+  - Shoukou
+  - TheHive
+  - Tortuga
