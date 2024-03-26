@@ -20,4 +20,7 @@
     ClothingOuterApronChemist: 2 # Realistic PPE apron for chemistry
     ClothingEyesGlassesChemist: 2 # Safety glasses
     ClothingHandsGlovesChemist: 2 # Heavy duty chemistry gloves
+    ClothingShoesBootsWinterChem: 2 #Delta V: Add departmental winter boots
+    ClothingUnderSocksStripedWhiteandOrange: 2 # DeltaV - Neptune's striped socks
     # End of modified code
+
