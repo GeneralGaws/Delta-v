@@ -42,7 +42,7 @@
     access: [["Security"], ["Command"], ["Research"]]
   - type: ShowSecurityIcons
   - type: SiliconLawProvider
-    laws: SiliconPolice1
+    laws: SiliconPolice
   - type: MobThresholds
     thresholds:
       0: Alive

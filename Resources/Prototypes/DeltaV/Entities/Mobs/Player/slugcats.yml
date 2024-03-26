@@ -75,8 +75,6 @@
     - CannotSuicide
     - DoorBumpOpener
     - VimPilot
-  - type: Loadout
-    prototypes: [ MobSlugcatGear ]
   - type: RandomSprite
     available:
       - 0:

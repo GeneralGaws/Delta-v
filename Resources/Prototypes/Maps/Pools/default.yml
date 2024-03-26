@@ -2,7 +2,6 @@
   id: DefaultMapPool
   maps:
   - Arena
-  - Aspid
   - Asterisk
   - Atlas
   - Bagel
@@ -16,7 +15,6 @@
   - Edge
   - Europa
   - Fland
-  - Gemini
   - Marathon
   - Meta
   - Omega

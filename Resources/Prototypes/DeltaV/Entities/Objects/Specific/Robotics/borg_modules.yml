@@ -62,7 +62,7 @@
     - state: icon-detain
   - type: ItemBorgModule
     items:
-    - StunBatonSelfCharging
+    - StunbatonSelfCharging
     
 - type: entity
   id: BorgModuleSecurityControl # Research Locked - AdvancedRiotControl

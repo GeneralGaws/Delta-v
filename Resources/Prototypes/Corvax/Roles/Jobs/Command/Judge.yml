@@ -24,18 +24,15 @@
 - type: startingGear
   id: JudgeGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCentcomAgent
-    back: ClothingBackpackFilled
-    shoes: ClothingShoesBootsLaceup
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack  # TODO change jumpsuit to randomiser of the 4 variants
+    back: ClothingBackpackIAAFilled
+    shoes: ClothingShoesColorBlack
+    id: IAAPDA
     eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadJudge
-    id: JudgePDA
-    ears: ClothingHeadsetJudge
-    outerClothing: ClothingUniformMagistrat
-    pocket1: RubberStampJudge
-    pocket2: MagistratHammer
+    ears: ClothingHeadsetIAA
+    neck: ClothingNeckLawyerbadge
   inhand:
-    - BriefcaseBrownFilled
+    - BriefcaseIAAFilled
   innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled
+  satchel: ClothingBackpackSatchelIAAFilled
+  duffelbag: ClothingBackpackDuffelIAAFilled
