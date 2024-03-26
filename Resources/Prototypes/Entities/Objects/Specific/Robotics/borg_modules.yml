@@ -104,6 +104,22 @@
 
 # generic modules
 - type: entity
+  id: BorgModuleBasic
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: basic cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-basic
+  - type: ItemBorgModule
+    items:
+    - Crowbar
+    - Flash
+    - HandheldStationMapUnpowered
+    - FireExtinguisher
+
+- type: entity
   id: BorgModuleCable
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: cable cyborg module
