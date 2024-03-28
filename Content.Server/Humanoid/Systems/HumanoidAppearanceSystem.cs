@@ -68,7 +68,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
 
         targetHumanoid.LastProfileLoaded = sourceHumanoid.LastProfileLoaded; // DeltaV - let paradox anomaly be cloned
 
-        Dirty(targetHumanoid);
+        Dirty(target, targetHumanoid);
     }
 
     /// <summary>
@@ -89,7 +89,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         humanoid.MarkingSet.Remove(prototype.MarkingCategory, marking);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -110,7 +110,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         }
 
         humanoid.MarkingSet.Remove(category, index);
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -139,7 +139,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         }
 
         humanoid.MarkingSet.Replace(category, index, marking);
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -166,7 +166,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
             markings[index].SetColor(i, colors[i]);
         }
 
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>

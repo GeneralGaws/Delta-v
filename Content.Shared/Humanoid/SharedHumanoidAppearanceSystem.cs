@@ -106,7 +106,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         if (dirty)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     protected virtual void SetLayerVisibility(
@@ -154,7 +154,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         humanoid.MarkingSet = new(oldMarkings, prototype.MarkingPoints, _markingManager, _prototypeManager);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -184,7 +184,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         humanoid.SkinColor = skinColor;
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -208,7 +208,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             humanoid.CustomBaseLayers[layer] = new(id);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -229,7 +229,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             humanoid.CustomBaseLayers[layer] = new(null, color);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -251,7 +251,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         if (sync)
         {
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
         }
     }
 
@@ -409,7 +409,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
         // Parkstation-CharacterInformation-End
 
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -442,7 +442,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         humanoid.MarkingSet.AddBack(prototype.MarkingCategory, markingObject);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     private void EnsureDefaultMarkings(EntityUid uid, HumanoidAppearanceComponent? humanoid)
@@ -476,6 +476,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         humanoid.MarkingSet.AddBack(prototype.MarkingCategory, markingObject);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 }
