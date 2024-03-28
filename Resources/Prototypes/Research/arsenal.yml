@@ -159,6 +159,7 @@
   - WeaponDisablerSMG
   - BorgModuleSecurityControl # DeltaV SecBorg Research
   - BorgModuleSecurityDetain # DeltaV SecBorg Research
+  - ShockCollar
 
 - type: technology
   id: BasicShuttleArmament
