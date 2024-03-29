@@ -19,7 +19,6 @@ using Robust.Shared.Random;
 using Robust.Shared.Audio;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Utility;
-using Content.Shared.Database;
 
 namespace Content.Server.Cargo.Systems;
 
@@ -257,7 +256,6 @@ public sealed partial class CargoSystem
 
     private bool SellPallets(EntityUid gridUid, out double amount)
     {
-        //station ??= _station.GetOwningStation(gridUid);
         GetPalletGoods(gridUid, out var toSell, out amount);
 
         Log.Debug($"Cargo sold {toSell.Count} entities for {amount}");
@@ -322,7 +320,7 @@ public sealed partial class CargoSystem
             return false;
         }
 
-        var complete = IsBountyComplete(uid, (EntityUid?) null, out var bountyEntities);
+        var complete = IsBountyComplete(uid, out var bountyEntities);
 
         // Recursively check for mobs at any point.
         var children = xform.ChildEnumerator;
