@@ -13,7 +13,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/annasgift.rsi
+    sprite: Stray/Objects/Consumable/Drinks/annasgift.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -30,7 +30,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/myusuo.rsi
+    sprite: Stray/Objects/Consumable/Drinks/myusuo.rsi
   
 - type: entity
   parent: DrinkGlassBase
@@ -47,7 +47,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/gayach.rsi
+    sprite: Stray/Objects/Consumable/Drinks/gayach.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -64,7 +64,7 @@
           Quantity: 60
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/injir.rsi
+    sprite: Stray/Objects/Consumable/Drinks/injir.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -81,7 +81,7 @@
           Quantity: 50
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/singulozam.rsi
+    sprite: Stray/Objects/Consumable/Drinks/singulozam.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -98,7 +98,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/dilovenEater.rsi
+    sprite: Stray/Objects/Consumable/Drinks/dilovenEater.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -115,7 +115,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/sbivatelsnog.rsi
+    sprite: Stray/Objects/Consumable/Drinks/sbivatelsnog.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -132,7 +132,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/deadgoblin.rsi
+    sprite: Stray/Objects/Consumable/Drinks/deadgoblin.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -149,7 +149,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/opresn.rsi
+    sprite: Stray/Objects/Consumable/Drinks/opresn.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -166,7 +166,7 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/bomba.rsi
+    sprite: Stray/Objects/Consumable/Drinks/bomba.rsi
 
 - type: entity
   parent: DrinkGlassBase
@@ -183,4 +183,4 @@
           Quantity: 30
   - type: Drink
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/BosTea.rsi
+    sprite: Stray/Objects/Consumable/Drinks/BosTea.rsi
