@@ -7,7 +7,7 @@
   flavor: alcohol
   color: "#d1d1d155"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/annasgift.rsi
+    sprite: Stray/Objects/Consumable/Drinks/annasgift.rsi
     state: icon
   metabolisms:
     Drink:
@@ -27,7 +27,7 @@
   flavor: alcohol
   color: "#7E4043"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/singulozam.rsi
+    sprite: Stray/Objects/Consumable/Drinks/singulozam.rsi
     state: icon
   metabolisms:
     Drink:
@@ -47,7 +47,7 @@
   flavor: alcohol
   color: "#1FA431"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/deadgoblin.rsi
+    sprite: Stray/Objects/Consumable/Drinks/deadgoblin.rsi
     state: icon
   metabolisms:
     Drink:
@@ -72,7 +72,7 @@
   flavor: alcohol
   color: "#C67F31"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/opresn.rsi
+    sprite: Stray/Objects/Consumable/Drinks/opresn.rsi
     state: icon
   metabolisms:
     Drink:
@@ -96,7 +96,7 @@
   flavor: alcohol
   color: "#98B383"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/myusuo.rsi
+    sprite: Stray/Objects/Consumable/Drinks/myusuo.rsi
     state: icon
   metabolisms:
     Drink:
@@ -121,7 +121,7 @@
   flavor: alcohol
   color: "#32B383"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/gayach.rsi
+    sprite: Stray/Objects/Consumable/Drinks/gayach.rsi
     state: icon
   metabolisms:
     Drink:
@@ -141,7 +141,7 @@
   flavor: alcohol
   color: "#9EB383"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/injir.rsi
+    sprite: Stray/Objects/Consumable/Drinks/injir.rsi
     state: icon
   metabolisms:
     Drink:
@@ -161,7 +161,7 @@
   flavor: alcohol
   color: "#000000"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/dilovenEater.rsi
+    sprite: Stray/Objects/Consumable/Drinks/dilovenEater.rsi
     state: icon
   metabolisms:
     Drink:
@@ -186,7 +186,7 @@
   flavor: alcohol
   color: "#9B4E80"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/sbivatelsnog.rsi
+    sprite: Stray/Objects/Consumable/Drinks/sbivatelsnog.rsi
     state: icon
   metabolisms:
     Drink:
@@ -217,7 +217,7 @@
   flavor: alcohol
   color: "#000000"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/bomba.rsi
+    sprite: Stray/Objects/Consumable/Drinks/bomba.rsi
     state: icon
   metabolisms:
     Drink:
@@ -249,7 +249,7 @@
   flavor: alcohol
   color: "#A45500"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/BosTea.rsi
+    sprite: Stray/Objects/Consumable/Drinks/BosTea.rsi
     state: icon
   metabolisms:
     Drink:
@@ -269,7 +269,7 @@
   flavor: alcohol
   color: "#d1d1d155"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/Empt.rsi
+    sprite: Stray/Objects/Consumable/Drinks/Empt.rsi
     state: icon
   metabolisms:
     Drink:
@@ -286,7 +286,7 @@
   flavor: alcohol
   color: "#FF5300"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/FireMix.rsi
+    sprite: Stray/Objects/Consumable/Drinks/FireMix.rsi
     state: icon
   metabolisms:
     Drink:
@@ -310,7 +310,7 @@
   flavor: alcohol
   color: "#d1d1d155"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/Creator.rsi
+    sprite: Stray/Objects/Consumable/Drinks/Creator.rsi
     state: icon
   metabolisms:
     Drink:
@@ -333,7 +333,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/GodsBlood.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/GodsBlood.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -360,7 +360,7 @@
   flavor: alcohol
   color: "#FFFF00"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/IchorNast.rsi
+    sprite: Stray/Objects/Consumable/Drinks/IchorNast.rsi
     state: icon
   metabolisms:
     Drink:
@@ -384,7 +384,7 @@
   flavor: alcohol
   color: "#929A91"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/BestHealing.rsi
+    sprite: Stray/Objects/Consumable/Drinks/BestHealing.rsi
     state: icon
   metabolisms:
     Drink:
@@ -404,7 +404,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/SugarRain.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/SugarRain.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -426,7 +426,7 @@
   flavor: alcohol
   color: "#929A91"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/SlimeTea.rsi
+    sprite: Stray/Objects/Consumable/Drinks/SlimeTea.rsi
     state: icon
   metabolisms:
     Drink:
@@ -443,7 +443,7 @@
   flavor: alcohol
   color: "#00FF00"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/SmileTea.rsi
+    sprite: Stray/Objects/Consumable/Drinks/SmileTea.rsi
     state: icon
   metabolisms:
     Drink:
@@ -468,7 +468,7 @@
   flavor: alcohol
   color: "#009900"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/OldNavar.rsi
+    sprite: Stray/Objects/Consumable/Drinks/OldNavar.rsi
     state: icon
   metabolisms:
     Drink:
@@ -496,7 +496,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/HmelKash.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/HmelKash.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -516,7 +516,7 @@
   flavor: alcohol
   color: "#d1d1d155"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/HeadAcce.rsi
+    sprite: Stray/Objects/Consumable/Drinks/HeadAcce.rsi
     state: icon
   metabolisms:
     Drink:
@@ -539,7 +539,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/GoodForest.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/GoodForest.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -559,7 +559,7 @@
   flavor: alcohol
   color: "#0098FF"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/PoisonedVoodka.rsi
+    sprite: Stray/Objects/Consumable/Drinks/PoisonedVoodka.rsi
     state: icon
   metabolisms:
     Drink:
@@ -583,7 +583,7 @@
   flavor: alcohol
   color: "#BEFFC5"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/MilkedGreenTea.rsi
+    sprite: Stray/Objects/Consumable/Drinks/MilkedGreenTea.rsi
     state: icon
   metabolisms:
     Drink:
@@ -600,7 +600,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/AlchollessBeer.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/AlchollessBeer.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -617,7 +617,7 @@
   flavor: alcohol
   color: "#592300"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/GermanSmuzi.rsi
+    sprite: Stray/Objects/Consumable/Drinks/GermanSmuzi.rsi
     state: icon
   metabolisms:
     Drink:
@@ -637,7 +637,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/KislSladNechto.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/KislSladNechto.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -654,7 +654,7 @@
   flavor: alcohol
   color: "#F01472"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/MushroonNast.rsi
+    sprite: Stray/Objects/Consumable/Drinks/MushroonNast.rsi
     state: icon
   metabolisms:
     Drink:
@@ -687,7 +687,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/TermoatomicReactor.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/TermoatomicReactor.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -712,7 +712,7 @@
   flavor: alcohol
   color: "#009A72"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/AtmoJoy.rsi
+    sprite: Stray/Objects/Consumable/Drinks/AtmoJoy.rsi
     state: icon
   metabolisms:
     Drink:
@@ -732,7 +732,7 @@
   flavor: alcohol
   color: "#DFDADE"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/LiquidSilic.rsi
+    sprite: Stray/Objects/Consumable/Drinks/LiquidSilic.rsi
     state: icon
   metabolisms:
     Drink:
@@ -756,7 +756,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/LiquidGen.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/LiquidGen.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -780,7 +780,7 @@
   flavor: alcohol
   color: "#7DCAFF"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/AngelCry.rsi
+    sprite: Stray/Objects/Consumable/Drinks/AngelCry.rsi
     state: icon
   metabolisms:
     Drink:
@@ -802,7 +802,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/BankaCoktail.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/BankaCoktail.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -824,7 +824,7 @@
   flavor: alcohol
   color: "#7D0041"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/HappySumrak.rsi
+    sprite: Stray/Objects/Consumable/Drinks/HappySumrak.rsi
     state: icon
   metabolisms:
     Drink:
@@ -844,7 +844,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/Shlak.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/Shlak.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -864,7 +864,7 @@
   flavor: alcohol
   color: "#9F3200"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/BurningBlood.rsi
+    sprite: Stray/Objects/Consumable/Drinks/BurningBlood.rsi
     state: icon
   metabolisms:
     Drink:
@@ -888,7 +888,7 @@
   flavor: alcohol
   color: "#1C53A1"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/DeadJonnyCoktail.rsi
+    sprite: Stray/Objects/Consumable/Drinks/DeadJonnyCoktail.rsi
     state: icon
   metabolisms:
     Drink:
@@ -908,7 +908,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/LoveCoktail.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/LoveCoktail.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -925,7 +925,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/GogolMogol.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/GogolMogol.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -945,7 +945,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/Chinga.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/Chinga.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -970,7 +970,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/NekoKofe.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/NekoKofe.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:
@@ -990,7 +990,7 @@
 #  flavor: alcohol
 #  color: "#d1d1d155"
 #  metamorphicSprite:
-#    sprite: Objects/Consumable/Drinks/GoodTea.rsi
+#    sprite: Stray/Objects/Consumable/Drinks/GoodTea.rsi
 #    state: icon
 #  metabolisms:
 #    Drink:

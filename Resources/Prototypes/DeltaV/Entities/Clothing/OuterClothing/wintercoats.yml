@@ -68,8 +68,6 @@
     sprite: DeltaV/Clothing/OuterClothing/WinterCoats/NParka.rsi
   - type: TemperatureProtection
     coefficient: 0.1
-  - type: Item
-    size: 10
   - type: Armor
     modifiers:
       coefficients:
