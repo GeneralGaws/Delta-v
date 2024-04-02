@@ -1,0 +1,10 @@
+- type: entity
+  id: WizardSpawner
+  parent: BaseERTSpawner
+  suffix: Leader
+  components:
+    - type: Sprite
+      sprite: Clothing/Head/Hats/wizardhat.rsi
+      state: icon
+    - type: SpawnOnTrigger
+      proto: RandomHumanoidSpawnerWizard

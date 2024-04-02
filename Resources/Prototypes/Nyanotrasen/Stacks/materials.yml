@@ -2,6 +2,10 @@
   id: Bluespace
   name: bluespace
   icon: { sprite: Nyanotrasen/Objects/Materials/materials.rsi, state: bluespace }
-  spawn: MaterialBluespace
+  spawn: MaterialBluespace1
   maxCount: 5
   itemSize: 1
+  components:
+  - type: Currency
+    price:
+      MaterialBluespace1: 1

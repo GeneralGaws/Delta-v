@@ -1,0 +1,37 @@
+- type: entity
+  id: WizardGloves
+  parent: ClothingHandsGlovesColorYellowUnsulated
+  name: Электроперчатки
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Clothing/Gloves.rsi
+  - type: Clothing
+    sprite: Stray/wizard/Clothing/Gloves.rsi
+
+- type: entity
+  id: WizardInvisibilityCloak
+  parent: BedsheetBase
+  name: Плащ невидимости
+  description:
+  components:
+  - type: Sprite
+    state: sheetwiz
+  - type: Clothing
+    sprite: Clothing/Neck/Bedsheets/wiz.rsi
+  - type: ClothingGrantPsionicPower
+    power: PsionicInvisibilityPower
+  - type: Psionic
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: WizardSpeedBoots
+  name: Ботинки скорости
+  description: Ботинки, заряженные магией
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Clothing/Boots.rsi
+  - type: Clothing
+    sprite: Stray/wizard/Clothing/Boots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.6
+    sprintModifier: 1.6

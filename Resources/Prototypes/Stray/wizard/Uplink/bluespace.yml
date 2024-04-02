@@ -1,0 +1,8 @@
+# Currencies
+#- type: entity
+#  parent: MaterialBluespace
+#  id: Bluespace1
+#  suffix: 1 BS
+#  components:
+#  - type: Stack
+#    count: 1

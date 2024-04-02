@@ -1,0 +1,17 @@
+- type: reagent
+  parent: RobustHarvest
+  id: RODPOTION
+  name: ROD
+  group: Botanical
+  desc: reagent-desc-robust-harvest
+  flavor: bitter
+  color: "#3e901c"
+  physicalDesc: reagent-physical-desc-robust
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:Polymorph
+        prototype: WizardRod
+        conditions:
+          - !type:ReagentThreshold
+            min: 1
