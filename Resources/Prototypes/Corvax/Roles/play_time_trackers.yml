@@ -5,6 +5,9 @@
   id: JobJudge
 
 - type: playTimeTracker
+  id: JobBarber
+
+- type: playTimeTracker
   id: JobPathologist
 
 - type: playTimeTracker

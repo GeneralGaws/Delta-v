@@ -122,10 +122,6 @@
       prototype: ComputerSalvageExpedition
     - type: StealTarget
       stealGroup: SalvageExpeditionsComputerCircuitboard
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - SalvageExpeditionsComputerCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -160,10 +156,6 @@
     - type: Tag
       tags:
         - SurveillanceCameraMonitorCircuitboard
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - SurveillanceCameraMonitorCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -173,10 +165,6 @@
   components:
     - type: ComputerBoard
       prototype: ComputerSurveillanceWirelessCameraMonitor
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - SurveillanceWirelessCameraMonitorCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -188,9 +176,6 @@
       prototype: ComputerTelevision
     - type: Tag
       tags:
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
         - ComputerTelevisionCircuitboard
 
 - type: entity
@@ -242,7 +227,7 @@
   components:
     - type: ComputerBoard
       prototype: ComputerCrewMonitoring
-    - type: ReverseEngineering # delta
+    - type: ReverseEngineering # Nyano
       difficulty: 2
       recipes:
         - CrewMonitoringComputerCircuitboard
@@ -301,10 +286,6 @@
   components:
   - type: ComputerBoard
     prototype: ComputerRadar
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - RadarConsoleCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -358,10 +339,6 @@
   components:
     - type: ComputerBoard
       prototype: ComputerShuttle
-    - type: ReverseEngineering # delta
-      difficulty: 3
-      recipes:
-        - ShuttleConsoleCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -419,10 +396,6 @@
       price: 150
     - type: ComputerBoard
       prototype: ComputerMassMedia
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - ComputerMassMediaCircuitboard
 
 - type: entity
   parent: BaseComputerCircuitboard

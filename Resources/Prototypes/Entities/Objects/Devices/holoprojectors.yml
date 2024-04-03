@@ -67,11 +67,10 @@
       - HolofanProjector
   - type: StaticPrice
     price: 80
-  - type: ReverseEngineering # delta
-    difficulty: 3
+  - type: ReverseEngineering # Nyano
     recipes:
       - HolofanProjector
-  
+
 - type: entity
   parent: HolofanProjector
   id: HolofanProjectorEmpty
@@ -99,10 +98,6 @@
         - HolofanProjector
     - type: StaticPrice
       price: 130
-    - type: ReverseEngineering # delta
-      difficulty: 3
-      recipes:
-        - HoloprojectorField
 
 - type: entity
   parent: HoloprojectorField
@@ -131,10 +126,6 @@
         - HolofanProjector
     - type: StaticPrice
       price: 50
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - HoloprojectorSecurity
 
 - type: entity
   parent: HoloprojectorSecurity

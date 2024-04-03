@@ -39,7 +39,6 @@
   - ServiceWorker
   - MartialArtist
   - Gladiator
-  - Barber
 
 - type: department
   id: Command
@@ -134,3 +133,7 @@
   - Reporter
   - Zookeeper
   - Psychologist
+  - MartialArtist
+  - Gladiator
+  - Prisoner
+  - Brigmedic

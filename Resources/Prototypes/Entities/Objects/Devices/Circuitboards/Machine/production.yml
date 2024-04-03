@@ -11,9 +11,6 @@
         Manipulator: 1
       materialRequirements:
         Glass: 1
-    - type: ReverseEngineering # delta
-      recipes:
-        - AutolatheHyperConvectionMachineCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -32,10 +29,6 @@
         Amount: 1
         DefaultPrototype: Igniter
         ExamineName: Igniter
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - AutolatheHyperConvectionMachineCircuitboard
 
 - type: entity
   id: ProtolatheMachineCircuitboard
@@ -53,9 +46,6 @@
           Amount: 2
           DefaultPrototype: Beaker
           ExamineName: Glass Beaker
-    - type: ReverseEngineering # delta
-      recipes:
-        - ProtolatheMachineCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -76,10 +66,6 @@
         Amount: 1
         DefaultPrototype: Igniter
         ExamineName: Igniter
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - ProtolatheHyperConvectionMachineCircuitboard
 
 - type: entity
   id: BiofabricatorMachineCircuitboard
@@ -93,10 +79,6 @@
         MatterBin: 4
       materialRequirements:
         Glass: 1
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-       - BiofabricatorMachineCircuitboard
 
 - type: entity
   id: SecurityTechFabCircuitboard
@@ -170,6 +152,7 @@
         DefaultPrototype: Beaker
         ExamineName: Glass Beaker
   - type: ReverseEngineering # Nyano
+    difficulty: 3
     recipes:
       - CircuitImprinterMachineCircuitboard
 
@@ -188,7 +171,7 @@
     materialRequirements:
       Glass: 5
   - type: ReverseEngineering # Nyano
-    difficulty: 2
+    difficulty: 3
     recipes:
       - ExosuitFabricatorMachineCircuitboard
   - type: GuideHelp
@@ -330,10 +313,6 @@
     materialRequirements:
       Glass: 1
       Steel: 5
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - ArtifactCrusherMachineCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -371,10 +350,6 @@
       Cable: 5
       PlasmaGlass: 15
       MetalRod: 4
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - AnomalyVesselExperimentalCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -392,10 +367,6 @@
       materialRequirements:
         PlasmaGlass: 5
         Cable: 5
-    - type: ReverseEngineering # delta
-      difficulty: 3
-      recipes:
-       - AnomalyVesselExperimentalCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -480,10 +451,6 @@
     deconstructionTarget: null
     graph: ThermomachineBoard
     node: hellfirefreezer
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - HellfireFreezerMachineCircuitBoard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -519,9 +486,6 @@
       MatterBin: 1
     materialRequirements:
       Glass: 1
-  - type: ReverseEngineering # delta
-    recipes:
-      - CondenserMachineCircuitBoard
 
 - type: entity
   id: PortableScrubberMachineCircuitBoard
@@ -539,10 +503,9 @@
     materialRequirements:
       Cable: 5
       Glass: 2
-  - type: ReverseEngineering # Nayno
+  - type: ReverseEngineering # Nyano
     difficulty: 2
     recipes:
-      - PortableScrubberMachineCircuitBoard
 
 - type: entity
   id: SpaceHeaterMachineCircuitBoard
@@ -559,9 +522,6 @@
       Capacitor: 2
     materialRequirements:
       Cable: 5
-  - type: ReverseEngineering # delta
-    recipes:
-      - SpaceHeaterMachineCircuitBoard
 
 - type: entity
   id: CloningPodMachineCircuitboard
@@ -655,6 +615,7 @@
           DefaultPrototype: Beaker
           ExamineName: Glass Beaker
     - type: ReverseEngineering # Nyano
+      difficulty: 2
       recipes:
         - ChemMasterMachineCircuitboard
 
@@ -679,6 +640,7 @@
           DefaultPrototype: Beaker
           ExamineName: Glass Beaker
     - type: ReverseEngineering # Nyano
+      difficulty: 2
       recipes:
         - ChemDispenserMachineCircuitboard
 
@@ -700,7 +662,7 @@
           ExamineName: Knife
       materialRequirements:
         Steel: 5
-    - type: ReverseEngineering # Nyano 
+    - type: ReverseEngineering # Nyano
       difficulty: 2
       recipes:
         - BiomassReclaimerMachineCircuitboard
@@ -815,11 +777,6 @@
         Plastic: 30
     - type: StaticPrice
       price: 30
-    - type: ReverseEngineering # delta
-      difficulty: 3
-      recipes:
-        - PowerCageRechargerCircuitboard
-
 
 - type: entity
   id: BorgChargerCircuitboard
@@ -884,10 +841,6 @@
     materialComposition:
       Steel: 30
       Plastic: 30
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - TurboItemRechargerCircuitboard
 
 - type: entity
   id: SubstationMachineCircuitboard
@@ -947,7 +900,7 @@
           DefaultPrototype: SaxophoneInstrument
           ExamineName: Woodwind Instrument
     - type: ReverseEngineering # Nyano
-      difficulty: 2
+      difficulty: 3
       recipes:
         - DawInstrumentMachineCircuitboard
 
@@ -967,7 +920,7 @@
     - type: ReverseEngineering # Nyano
       difficulty: 2
       recipes:
-        - PortableGeneratorPacmanMachineCircuitboard
+        - GeneratorPlasmaMachineCircuitboard
     - type: PhysicalComposition
       materialComposition:
         Glass: 200
@@ -987,10 +940,6 @@
       Capacitor: 4
     materialRequirements:
       Steel: 5
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - ThrusterMachineCircuitboard
 
 - type: entity
   id: GyroscopeMachineCircuitboard
@@ -1004,10 +953,6 @@
       Capacitor: 1
     materialRequirements:
       Glass: 2
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - GyroscopeMachineCircuitboard
 
 - type: entity
   id: PortableGeneratorSuperPacmanMachineCircuitboard
@@ -1027,7 +972,7 @@
         Glass: 200
       chemicalComposition:
         Silicon: 20
-    - type: ReverseEngineering # delta
+    - type: ReverseEngineering # Nyano
       difficulty: 2
       recipes:
         - PortableGeneratorSuperPacmanMachineCircuitboard
@@ -1054,10 +999,6 @@
         Silicon: 20
     - type: StaticPrice
       price: 40
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - PortableGeneratorJrPacmanMachineCircuitboard
 
 - type: entity
   id: ReagentGrinderMachineCircuitboard
@@ -1110,11 +1051,6 @@
     materialRequirements:
       Glass: 2
       Cable: 5
-  - type: ReverseEngineering # Nyano
-    difficulty: 2
-    recipes:
-      - ElectricGrillMachineCircuitboard
-
 
 - type: entity
   id: StasisBedMachineCircuitboard
@@ -1150,9 +1086,6 @@
       Capacitor: 2
     materialRequirements:
       Cable: 1
-  - type: ReverseEngineering # delta
-    recipes:
-      - ElectrolysisUnitMachineCircuitboard
 
 - type: entity
   id: CentrifugeMachineCircuitboard
@@ -1168,9 +1101,6 @@
       Manipulator: 1
     materialRequirements:
       Steel: 1
-  - type: ReverseEngineering # delta
-    recipes:
-      - CentrifugeMachineCircuitboard
 
 - type: entity
   id: MaterialReclaimerMachineCircuitboard
@@ -1186,10 +1116,6 @@
       materialRequirements:
         Steel: 5
         Plastic: 5
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - MaterialReclaimerMachineCircuitboard
 
 - type: entity
   id: OreProcessorMachineCircuitboard
@@ -1223,10 +1149,6 @@
       Manipulator: 3
     materialRequirements:
       Glass: 1
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - OreProcessorIndustrialMachineCircuitboard
 
 - type: entity
   id: SheetifierMachineCircuitboard
@@ -1238,10 +1160,6 @@
     requirements:
       MatterBin: 1
       Manipulator: 1
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - SheetifierMachineCircuitboard
 
 - type: entity
   id: MicrowaveMachineCircuitboard
@@ -1280,10 +1198,6 @@
           Amount: 1
           DefaultPrototype: ForkPlastic
           ExamineName: Utensil
-    - type: ReverseEngineering # delta
-      difficulty: 2
-      recipes:
-        - FatExtractorMachineCircuitboard
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -1297,11 +1211,6 @@
       MatterBin: 1
     materialRequirements:
       Steel: 1
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - FlatpackerMachineCircuitboard
-
 
 - type: entity
   id: EmitterCircuitboard
@@ -1440,10 +1349,6 @@
       materialRequirements:
         Steel: 5
         Bluespace: 2  #DeltaV Bluespace Exists
-    - type: ReverseEngineering # delta
-      difficulty: 4
-      recipes:
-        - CargoTelepadMachineCircuitboard
 
 - type: entity
   id: SodaDispenserMachineCircuitboard
@@ -1514,10 +1419,6 @@
       Steel: 5
       CableHV: 5
       Uranium: 2
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - MiniGravityGeneratorCircuitboard
 
 - type: entity
   id: ShuttleGunSvalinnMachineGunCircuitboard
@@ -1535,10 +1436,6 @@
     materialRequirements:
       Steel: 5
       CableHV: 5
-  - type: ReverseEngineering #delta
-    difficulty: 3
-    recipes:
-      - ShuttleGunSvalinnMachineGunCircuitboard
 
 - type: entity
   id: ShuttleGunPerforatorCircuitboard
@@ -1556,10 +1453,6 @@
     materialRequirements:
       Steel: 10
       CableHV: 5
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - ShuttleGunPerforatorCircuitboard
 
 - type: entity
   id: ShuttleGunFriendshipCircuitboard
@@ -1577,10 +1470,6 @@
     materialRequirements:
       Steel: 7
       CableHV: 5
-  - type: ReverseEngineering # delta
-    difficulty: 3
-    recipes:
-      - ShuttleGunFriendshipCircuitboard
 
 - type: entity
   id: ShuttleGunDusterCircuitboard
@@ -1599,10 +1488,6 @@
       Steel: 10
       CableHV: 5
       Uranium: 2
-  - type: ReverseEngineering # delta
-    difficulty: 4
-    recipes:
-      - ShuttleGunDusterCircuitboard
 
 - type: entity
   id: ShuttleGunKineticCircuitboard
@@ -1620,7 +1505,3 @@
     materialRequirements:
       Steel: 5
       CableHV: 2
-  - type: ReverseEngineering # delta
-    difficulty: 2
-    recipes:
-      - ShuttleGunKineticCircuitboard
