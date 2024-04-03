@@ -225,6 +225,16 @@
   categories:
   - WizardMisc
 
+- type: listing
+  id: EmpRune
+  name: Руна ЭМИ
+  description: Даёт 10 мощных зарядов ЭМИ
+  productEntity: EmpRune
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardMisc
+
 # Pointless
 - type: listing
   id: WizardBurger
@@ -243,5 +253,16 @@
   productEntity: RGBStaff
   cost:
     Bluespace: 1
+  categories:
+  - WizardPointless
+
+- type: listing
+  id: Singa
+  name: Синга так синга блять
+  description: Молитесь
+  productEntity: Singularity
+  cost:
+    Bluespace: 1
+  restockTime: 100
   categories:
   - WizardPointless
