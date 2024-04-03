@@ -3,9 +3,6 @@
   name: job-name-barber
   description: job-description-barber
   playTimeTracker: JobBarber
-  requirements:    #If you can play service worker, you can play Barber.
-    - !type:OverallPlaytimeRequirement
-      time: 7200
   startingGear: BarberGear
   icon: "JobIconBarber"
   supervisors: job-supervisors-service
