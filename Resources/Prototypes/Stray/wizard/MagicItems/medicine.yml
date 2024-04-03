@@ -11,7 +11,9 @@
     Medicine:
       effects:
       - !type:Polymorph
-        prototype: WizardRod
+        prototype: WizardAetherForm
         conditions:
           - !type:ReagentThreshold
-            min: 1
+            min: 5
+
+

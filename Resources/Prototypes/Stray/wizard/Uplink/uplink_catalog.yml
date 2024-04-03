@@ -235,6 +235,36 @@
   categories:
   - WizardMisc
 
+- type: listing
+  id: AetherFormSpell
+  name: Дай бог
+  description: Дай боог
+  productAction: ActionPolymorphWizardSpider
+  cost:
+    Bluespace: 2
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: PyroSpell
+  name: Заклинание поджог
+  description: Гори-гори ясно
+  productAction: ActionPyrokinesis
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: MindSwapSpell
+  name: Заклинание обмен разумами
+  description: Не подставьте своих коллег по цеху
+  productAction: ActionMindSwap
+  cost:
+    Bluespace: 12
+  categories:
+  - WizardMisc
+
 # Pointless
 - type: listing
   id: WizardBurger
