@@ -9,7 +9,7 @@
       time: 1
   icon: JobIconSlugcat
   supervisors: job-supervisors-cmo
-  jobEntity: MobSlugcat
+  jobEntity: MobSpaceFerret
   startingGear: SlugcatGear
 
 - type: startingGear
