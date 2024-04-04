@@ -2,11 +2,6 @@
   parent: RobustHarvest
   id: RODPOTION
   name: ROD
-  group: Botanical
-  desc: reagent-desc-robust-harvest
-  flavor: bitter
-  color: "#3e901c"
-  physicalDesc: reagent-physical-desc-robust
   metabolisms:
     Medicine:
       effects:
@@ -14,6 +9,28 @@
         prototype: WizardAetherForm
         conditions:
           - !type:ReagentThreshold
-            min: 5
+            min: 1
 
-
+- type: entity
+  parent: DrinkGlass
+  id: DrinkRODGlass
+  suffix: RODPOTION
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 1
+        reagents:
+        - ReagentId: RODPOTION
+          Quantity: 1
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/absintheglass.rsi
+    state: icon
+  - type: SolutionRegeneration
+    solution: drink
+    generated:
+      reagents:
+        - ReagentId: RODPOTION
+          Quantity: 1
+  - type: UseDelay
+    delay: 20

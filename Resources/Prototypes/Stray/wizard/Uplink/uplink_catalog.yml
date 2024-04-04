@@ -226,6 +226,16 @@
   - WizardMisc
 
 - type: listing
+  id: Mjoilnir
+  name: Мъёлнир
+  description: Высока отдача чеееек
+  productEntity: WizardMjoilnir
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardMisc
+
+- type: listing
   id: EmpRune
   name: Руна ЭМИ
   description: Даёт 10 мощных зарядов ЭМИ

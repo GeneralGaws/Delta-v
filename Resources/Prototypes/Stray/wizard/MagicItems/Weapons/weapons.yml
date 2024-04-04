@@ -26,8 +26,8 @@
         Piercing: 2
         Structural: 25
   - type: MeleeThrowOnHit
-    unanchorOnHit: true
-    enabled: false
+    unanchorOnHit: false
+    enabled: true
   - type: Clothing
     sprite: Stray/wizard/Objects/Weapons/mjoilnir.rsi
     quickEquip: false
