@@ -3,6 +3,7 @@ using Content.Server.Popups;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using Content.Shared.Interaction.Events;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Audio;
@@ -96,6 +97,8 @@ public sealed class InteractionPopupSystem : EntitySystem
 
             if (component.InteractFailureSpawn != null)
                 Spawn(component.InteractFailureSpawn, _transform.GetMapCoordinates(uid));
+
+            RaiseLocalEvent(target, new InteractionAttemptFailed(target));
         }
 
         if (component.MessagePerceivedByOthers != null)
