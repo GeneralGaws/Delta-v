@@ -1,0 +1,18 @@
+#- type: entity
+#  id: SpawnPointGhostWizard
+#  name: ghost role spawn point
+#  suffix: wizard
+#  parent: MarkerBase
+#  components:
+#  - type: GhostRole
+#    name: Маг
+#    description: Уничтожить весь экипаж станции
+#    rules: Не бить своих (желательно)
+#  - type: GhostRoleMobSpawner
+#    prototype: Wizard
+#  - type: Sprite
+#    sprite: Markers/jobs.rsi
+#    layers:
+#      - state: green
+#      - sprite: Clothing/Head/Hats/wizardhat.rsi
+#        state: icon

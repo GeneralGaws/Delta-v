@@ -1,0 +1,16 @@
+- type: entity
+  id: ProjectileArcaneBolt
+  parent: BaseBullet
+  name: Arcane bolt
+  description: Brrrrr.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: arcane_barrage
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 15

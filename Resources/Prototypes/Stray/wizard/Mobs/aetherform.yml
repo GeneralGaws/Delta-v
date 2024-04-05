@@ -1,0 +1,54 @@
+- type: polymorph
+  id: WizardAetherForm
+  configuration:
+    entity: MobAetherFormWizard
+    inventory: Transfer
+    transerDamage: False
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 5
+    cooldown: 60
+
+- type: entity
+  id: ActionPolymorphWizardSpider
+  name: AetherForm
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 10
+    event: !type:PolymorphActionEvent
+      protoId: WizardAetherForm
+    itemIconStyle: NoItem
+    icon:
+      sprite: Stray/wizard/Actions/AetherForm.rsi
+      state: icon
+
+- type: entity
+  id: MobAetherFormWizard
+  name: Эфир
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Effects/spookysmoke.rsi
+    state: spookysmoke
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: KinematicController
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 13
+        mask:
+        - GhostImpassable
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+    baseWalkSpeed: 3
+  - type: MovementIgnoreGravity
+  - type: InputMover
+  - type: Appearance
+  - type: Eye
+    drawFov: false

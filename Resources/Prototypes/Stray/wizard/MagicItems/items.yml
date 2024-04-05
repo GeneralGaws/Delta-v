@@ -1,0 +1,16 @@
+- type: entity
+  id: WizardOrb
+  name: Шар для гаданий
+  parent: PonderingOrb
+  components:
+  - type: PointLight
+    radius: 2
+    color: "#00CCFF"
+  - type: TileFrictionModifier
+    modifier: 0.001
+  - type: ActionOnInteract
+    actions:
+      - ActionTelegnosis
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak

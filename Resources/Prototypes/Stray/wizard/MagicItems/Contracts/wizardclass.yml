@@ -1,0 +1,33 @@
+- type: thiefBackpackSet
+  id: FireCaster
+  name: Маг огня
+  description: Включает в себя
+  sprite:
+    sprite: Objects/Magic/magicactions.rsi
+    state: fireball
+  content:
+  - FireballSpellbook
+  - WeaponWandFireball
+  - ActionPyrokinesis
+
+- type: thiefBackpackSet
+  id: Polymorpher
+  name: Мастер превращений
+  description: Включает в себя
+  sprite:
+    sprite: Nyanotrasen/Interface/VerbIcons
+    state: mind_swap
+  content:
+  - WeaponWandPolymorphDoor
+  - KnockSpellbook
+  - WeaponWandPolymorphMonkey
+
+- type: thiefBackpackSet
+  id: Healer
+  name: Жрец
+  description: Включает в себя
+  sprite:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  content:
+  - WeaponStaffHealing

@@ -1,0 +1,43 @@
+- type: polymorph
+  id: WizardRod
+  configuration:
+    entity: ImmovableRodKeepTilesStill
+    forced: true
+    transferName: true
+    transferDamage: false
+    allowRepeatedMorphs: true
+    inventory: Transfer
+    revertOnCrit: true
+    revertOnDeath: true
+    duration: 5
+
+- type: entity
+  parent: ImmovableRod
+  id: WizardImmovableRodSlow
+  suffix: Slow
+  components:
+  - type: InputMover
+  - type: Input
+    context: "human"
+  - type: MobMover
+  - type: ImmovableRod
+    destroyTiles: false
+    hitSoundProbability: 1.0
+    minSpeed: 1
+    maxSpeed: 1
+  - type: TimedDespawn
+    lifetime: 4
+
+- type: entity
+  name: immovable rod launcher
+  parent: WeaponLauncherAdmemeImmovableRodSlow
+  id: WizardRodGun
+  suffix: Admeme
+  description: It fires slow immovable rods.
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRocket
+    proto: WizardImmovableRodSlow
+    capacity: 1

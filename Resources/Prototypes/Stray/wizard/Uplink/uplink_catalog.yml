@@ -1,0 +1,308 @@
+# Uplinks
+- type: entity
+  parent: BaseItem
+  id: WizardUplinkRadio
+  name: wizard uplink
+  description: You're a wizard, harry!
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+    netsync: false
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+    - key: enum.StoreUiKey.Key
+      type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    preset: WizardStorePresetUplink
+    balance:
+      Bluespace: 40
+
+
+
+# Books
+- type: listing
+  id: WizardSpawnBook
+  name: Книга заклинания призыва
+  description: Призывает союзного меджикарпа
+  productEntity: SpawnSpellbook
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardWallBook
+  name: uplink-book-forcewall-name
+  description: uplink-book-forcewall-desc
+  productEntity: ForceWallSpellbook
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardBooks
+
+#- type: listing
+#  id: WizardSmiteBook
+#  name: uplink-book-smite-name
+#  description: uplink-book-smite-desc
+#  productEntity: SmiteBook
+#  cost:
+#    Bluespace: 50
+#  categories:
+#  - WizardBooks
+
+- type: listing
+  id: WizardKnockBook
+  name: Книга заклинания стук
+  description: Превращает объект в дверь
+  productEntity: KnockSpellbook
+  cost:
+    Bluespace: 14
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardFireballBook
+  name: uplink-book-fireball-name
+  description: uplink-book-fireball-desc
+  productEntity: FireballSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardBlinkBook
+  name: Книга заклинания прыжок
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: BlinkBook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+
+# Wands
+
+- type: listing
+  id: WeaponStaffHealing
+  name: Жезл исцеления
+  description: Лечит существо, в который был направлен жезл
+  productEntity: WeaponStaffHealing
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardWands
+
+- type: listing
+  id: WeaponWandPolymorphDoor
+  name: Волшебная палочка входа
+  description: Превращает объект в дверь
+  productEntity: WeaponWandPolymorphDoor
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardWands
+
+- type: listing
+  id: WeaponWandDeath
+  name: Волшебная палочка мгновенной смерти
+  description: Существо, в которое был направлен снаряд палочки, моментально умирает
+  productEntity: WeaponWandDeath
+  cost:
+    Bluespace: 20
+  categories:
+  - WizardWands
+
+- type: listing
+  id: WeaponWandFireball
+  name: Волшебная палочка огненного шара
+  description: Бросайте в людей мощную взрывчатку, главное не попадите под неё сами
+  productEntity: WeaponWandFireball
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardWands
+
+- type: listing
+  id: WeaponWandPolymorphMonkey
+  name: Волшебная палочка превращения в обезьяну
+  description: Превратите тяжеловооружённого бойца в жалкую макаку
+  productEntity: WeaponWandPolymorphMonkey
+  cost:
+    Bluespace: 20
+  categories:
+  - WizardWands
+
+# Armor
+- type: listing
+  id: WizardHardsuit
+  name: uplink-armor-hardsuit-name
+  description: uplink-armor-hardsuit-desc
+  productEntity: ClothingOuterHardsuitWizard
+  cost:
+    Bluespace: 6
+  categories:
+  - WizardArmor
+
+- type: listing
+  id: WizardGloves
+  name: Электроперчатки
+  description: Позволяет бить молниями неприятелей
+  productEntity: WizardGloves
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardArmor
+
+- type: listing
+  id: WizardInvisibilityCloak
+  name: Плащ невидимости
+  description: Позволяет пройти к личному санузлу капитана незаметным
+  productEntity: WizardInvisibilityCloak
+  cost:
+    Bluespace: 20
+  categories:
+  - WizardArmor
+
+- type: listing
+  id: SpeedBoots
+  name: Ботинки скорости
+  description: Ботинки, заряженные магиией
+  productEntity: WizardSpeedBoots
+  cost:
+    Bluespace: 6
+  categories:
+  - WizardArmor
+
+# Utility
+- type: listing
+  id: WizardSpellBelt
+  name: uplink-utility-spellbelt-name
+  description: uplink-utility-spellbelt-desc
+  productEntity: ClothingBeltWand
+  cost:
+    Bluespace: 4
+  categories:
+  - WizardUtility
+
+- type: listing
+  id: WizardSpellBeltFilled
+  name: Полный пояс для палочек
+  description: Содержит палочки мгновенной смерти, огненного шара, входа и превращения в карпа
+  productEntity: ClothingBeltWandFilled
+  cost:
+    Bluespace: 30
+  categories:
+  - WizardUtility
+
+# Miscellanious
+
+- type: listing
+  id: Runebook
+  name: Свиток рун
+  description: Содержит руны оглушения, поджога, взрыва и вспышки
+  productEntity: ScrollRunes
+  cost:
+    Bluespace: 30
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: RuneBlade
+  name: Рунный меч
+  description: Крайне хрупок, предназначен для дальнего боя
+  productEntity: RuneBlade
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: Mjoilnir
+  name: Мъёлнир
+  description: Высока отдача чеееек
+  productEntity: WizardMjoilnir
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: EmpRune
+  name: Руна ЭМИ
+  description: Даёт 10 мощных зарядов ЭМИ
+  productEntity: EmpRune
+  cost:
+    Bluespace: 10
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: AetherFormSpell
+  name: Дай бог
+  description: Дай боог
+  productAction: ActionPolymorphWizardSpider
+  cost:
+    Bluespace: 2
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: PyroSpell
+  name: Заклинание поджог
+  description: Гори-гори ясно
+  productAction: ActionPyrokinesis
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardMisc
+
+- type: listing
+  id: MindSwapSpell
+  name: Заклинание обмен разумами
+  description: Не подставьте своих коллег по цеху
+  productAction: ActionMindSwap
+  cost:
+    Bluespace: 12
+  categories:
+  - WizardMisc
+
+# Pointless
+- type: listing
+  id: WizardBurger
+  name: uplink-pointless-spellburger-name
+  description: uplink-pointless-spellburger-desc
+  productEntity: FoodBurgerSpell
+  cost:
+    Bluespace: 1
+  categories:
+  - WizardPointless
+
+- type: listing
+  id: RGBStaff
+  name: RGB посох
+  description: Делает людей счастливее
+  productEntity: RGBStaff
+  cost:
+    Bluespace: 1
+  categories:
+  - WizardPointless
+
+- type: listing
+  id: Singa
+  name: Синга так синга блять
+  description: Молитесь
+  productEntity: Singularity
+  cost:
+    Bluespace: 1
+  restockTime: 100
+  categories:
+  - WizardPointless

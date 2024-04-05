@@ -1,0 +1,26 @@
+#Снаряга для мага, дальше сами купят, не маленькие
+- type: startingGear
+  id: WizardEventGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorDarkBlue
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesWizard
+    id: PassengerPDA
+    ears: ClothingHeadsetService
+    pocket1: WizardUplinkRadio
+  innerClothingSkirt: ClothingUniformJumpskirtColorDarkBlue
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled
+
+- type: startingGear
+  id: StudentWizardEventGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorDarkBlue
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesWizard
+    id: PassengerPDA
+    ears: ClothingHeadsetService
+    pocket1: WizardClassSelector
+  innerClothingSkirt: ClothingUniformJumpskirtColorDarkBlue
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

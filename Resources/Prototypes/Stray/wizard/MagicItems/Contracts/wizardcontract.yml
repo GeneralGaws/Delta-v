@@ -1,0 +1,41 @@
+- type: entity
+  id: WizardClassSelector
+  name: Выбрать класс
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Contract.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    transformAfterSelect: AlwaysPoweredWallLight
+    possibleSets:
+    - ChemistrySet
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.ThiefBackpackUIKey.Key
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  parent: ReinforcementRadioSyndicate
+  id: ReinforcementWizard
+  suffix: Ученик мага
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Contract.rsi
+    state: icon
+  - type: GhostRoleMobSpawner
+    prototype: MobWizardReinforcement
+
+- type: entity
+  parent: MobHuman
+  id: MobWizardReinforcement
+  name: Ученик мага
+  components:
+    - type: Loadout
+      prototypes: [ StudentWizardEventGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_wizard_first
+        - names_wizard_last
