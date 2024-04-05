@@ -32,12 +32,4 @@
   files:
   - /Audio/DeltaV/Voice/Vulpkanin/howl.ogg
   
-- type: soundCollection
-  id: VulpkaninYell
-  files:
-  - /Audio/DeltaV/Voice/Vulpkanin/vulp_yell.ogg
 
-- type: soundCollection
-  id: VulpkaninLaugh
-  files:
-  - /Audio/DeltaV/Voice/Vulpkanin/vulp_laugh.ogg
