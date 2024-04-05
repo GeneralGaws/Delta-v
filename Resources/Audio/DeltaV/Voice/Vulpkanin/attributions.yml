@@ -47,3 +47,13 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "Original sound taken from Goonstation. Renamed to howl.ogg"
   source: "https://github.com/goonstation/goonstation/blob/master/sound/voice/animal/werewolf_howl.ogg"
+
+- files: ["vulp_laugh.ogg"]
+  license: "CC0-1.0"
+  copyright: "https://www.youtube.com/watch?v=unpwkP42LKc&t=38s cutted and converted to ogg"
+  source: "https://www.youtube.com/watch?v=unpwkP42LKc&t=38s"
+  
+- files: ["vulp_scream.ogg"]
+  license: "CC0-1.0"
+  copyright: "https://www.youtube.com/watch?v=unpwkP42LKc&t=38s cutted and converted to ogg"
+  source: "https://www.youtube.com/watch?v=unpwkP42LKc&t=38s"
