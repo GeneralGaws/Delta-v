@@ -107,9 +107,9 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: MaleScreams
+      collection: FemaleScreams
     Laugh:
-      collection: MaleLaugh
+      collection: FemaleLaugh
     Sneeze:
       collection: FemaleSneezes
     Cough:
