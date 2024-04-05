@@ -96,8 +96,8 @@
       collection: VulpkaninWhines
     Howl:
       collection: VulpkaninHowls
-    VulpScream:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_scream.ogg
+    VulpYell:
+      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_yell.ogg
       params:
         volume: -3
     VulpLaugh:
@@ -142,7 +142,7 @@
       path: /Audio/DeltaV/Voice/Vulpkanin/vulp_laugh.ogg
       params:
         volume: -3
-    VulpScream:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_scream.ogg
+    VulpYell:
+      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_yell.ogg
       params:
         volume: -3

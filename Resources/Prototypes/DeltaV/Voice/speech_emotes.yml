@@ -166,7 +166,7 @@
     - воет.
 
 - type: emote
-  id: VulpScream
+  id: VulpYell
   category: Vocal
   chatMessages: [кричит!]
   chatTriggers:
