@@ -68,6 +68,10 @@
   params:
     variation: 0.125
   sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -96,20 +100,16 @@
       collection: VulpkaninWhines
     Howl:
       collection: VulpkaninHowls
-    VulpYell:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_yell.ogg
-      params:
-        volume: -3
-    VulpLaugh:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_laugh.ogg
-      params:
-        volume: -3
       
 - type: emoteSounds
   id: FemaleVulpkanin
   params:
     variation: 0.125
   sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
     Sneeze:
       collection: FemaleSneezes
     Cough:
@@ -138,11 +138,3 @@
       collection: VulpkaninWhines
     Howl:
       collection: VulpkaninHowls
-    VulpLaugh:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_laugh.ogg
-      params:
-        volume: -3
-    VulpYell:
-      path: /Audio/DeltaV/Voice/Vulpkanin/vulp_yell.ogg
-      params:
-        volume: -3
