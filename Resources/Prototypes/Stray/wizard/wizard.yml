@@ -12,6 +12,10 @@
     - type: RandomHumanoidSpawner
       settings: Wizard
     - type: InitialInfectedExempt
+    - type: NpcFactionMember
+      factions:
+        - Wizard
+
 
 - type: randomHumanoidSettings
   id: Wizard
@@ -28,3 +32,6 @@
         - names_wizard_first
         - names_wizard_last
     - type: InitialInfectedExempt
+    - type: NpcFactionMember
+      factions:
+        - Wizard

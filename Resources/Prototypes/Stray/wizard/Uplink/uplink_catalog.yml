@@ -29,10 +29,34 @@
 
 # Books
 - type: listing
-  id: WizardSpawnBook
-  name: Книга заклинания призыва
-  description: Призывает союзного меджикарпа
-  productEntity: SpawnSpellbook
+  id: WizardCarpSpawnBook
+  name: Книга заклинания призыв карпов
+  description: Призывает союзных карпов, открывает к покупке книгу призыва акулы
+  productEntity: WizardCarpSpellbook
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardSharkSpawnBook
+  name: Книга заклинания призыва акулы
+  description: Призывает союзную акулу
+  productEntity: WizardSharkSpellbook
+  cost:
+    Bluespace: 8
+  categories:
+  - WizardBooks
+  conditions:
+    - !type:BuyBeforeCondition #САМОЕ ПЕРВОЕ ИСПОЛЬЗОВАНИЕ В ИГРЕ, я первопроходец
+      whitelist:
+      - WizardCarpSpawnBook
+
+- type: listing
+  id: WizardBearSpawnBook
+  name: Книга заклинания призыв медведя
+  description: Призывает союзного медведя
+  productEntity: WizardBearSpellbook
   cost:
     Bluespace: 8
   categories:
@@ -41,7 +65,7 @@
 - type: listing
   id: WizardWallBook
   name: uplink-book-forcewall-name
-  description: uplink-book-forcewall-desc
+  description: Создаёт барьер 1х3, который пропускает ТОЛЬКО вас
   productEntity: ForceWallSpellbook
   cost:
     Bluespace: 10

@@ -1,0 +1,81 @@
+﻿# Карп
+- type: entity
+  id: ActionSpawnWizardCarpSpell
+  name: Призвать волшебного карпа
+  description: Призывает 2 дружественных карпов
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 30
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: WizardCarp
+        amount: 2
+      offset: 0, 1
+      speech: action-speech-spell-summon-magicarp
+
+- type: entity
+  id: WizardCarpSpellbook
+  name: Книга призыва карпов
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardCarpSpell: -1
+
+# Медведь
+
+- type: entity
+  id: WizardBearSpellbook
+  name: Книга призыва медведя
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardBearSpell: -1
+
+- type: entity
+  id: ActionSpawnWizardBearSpell
+  name: Призвать волшебного медведя
+  description: Призывает 1 дружественного медведя
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 45
+    range: 4
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: WizardBear
+        amount: 1
+
+# АКУЛА ЕБАТЬ
+
+- type: entity
+  id: WizardSharkSpellbook
+  name: Книга призыва акулы
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardSharkSpell: -1
+
+- type: entity
+  id: ActionSpawnWizardSharkSpell
+  name: Призвать волшебную акулу
+  description: Призывает 1 дружественную акулу
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 180
+    range: 4
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: WizardShark
+        amount: 1

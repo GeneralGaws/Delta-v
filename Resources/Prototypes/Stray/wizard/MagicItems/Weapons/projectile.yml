@@ -14,3 +14,45 @@
     damage:
       types:
         Heat: 15
+
+- type: entity
+  parent: BaseArrow
+  id: LightningArrow
+  name: Громовая стрела
+  description: я ебу?
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Guns/Projectiles/lightningarrows.rsi
+    layers:
+    - state: tail
+      color: yellow
+    - state: rod
+      color: yellow
+    - state: tip
+      color: yellow
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Heat: 10
+  - type: EmpOnTrigger
+    range: 5
+    energyConsumption: 50000
+    disableDuration: 10
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Tazinide
+          Quantity: 2
+  - type: Tag
+    tags:
+    - LightningArrow
+  - type: PointLight
+    radius: 2.0
+    energy: 5.0
+    color: "#ffd700"
+    castShadows: false

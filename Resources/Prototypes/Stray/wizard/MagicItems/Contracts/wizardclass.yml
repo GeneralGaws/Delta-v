@@ -11,23 +11,36 @@
   - ActionPyrokinesis
 
 - type: thiefBackpackSet
+  id: Healer
+  name: Жрец
+  description: Включает в себя
+  sprite:
+    sprite: Stray/wizard/Objects/Consumable/Drinks/healpotion.rsi
+    state: icon
+  content:
+  - WeaponStaffHealing
+  - MugwortPotion
+  - MugwortPotion
+  - MugwortPotion
+
+- type: thiefBackpackSet
   id: Polymorpher
   name: Мастер превращений
   description: Включает в себя
   sprite:
-    sprite: Nyanotrasen/Interface/VerbIcons
-    state: mind_swap
+    sprite: Mobs/Animals/mouse.rsi
+    state: icon-0
   content:
   - WeaponWandPolymorphDoor
   - KnockSpellbook
   - WeaponWandPolymorphMonkey
 
 - type: thiefBackpackSet
-  id: Healer
-  name: Жрец
+  id: Summoner
+  name: Призыватель
   description: Включает в себя
   sprite:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: firstaid
+    sprite: Mobs/Aliens/Carps/space.rsi
+    state: icon
   content:
-  - WeaponStaffHealing
+  - WizardCarpSpellbook

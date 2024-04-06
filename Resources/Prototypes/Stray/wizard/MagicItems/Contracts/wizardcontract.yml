@@ -4,12 +4,15 @@
   parent: BaseItem
   components:
   - type: Sprite
-    sprite: Stray/wizard/Objects/Contract.rsi
-    state: icon
+    sprite: Stray/wizard/Objects/сontract.rsi
+    state: old-radio
   - type: ThiefUndeterminedBackpack
     transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
-    - ChemistrySet
+    - FireCaster
+    - Healer
+    - Polymorpher
+    - Summoner
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface
@@ -20,13 +23,17 @@
 - type: entity
   parent: ReinforcementRadioSyndicate
   id: ReinforcementWizard
+  name: Договор ученичества
   suffix: Ученик мага
   components:
   - type: Sprite
-    sprite: Stray/wizard/Objects/Contract.rsi
-    state: icon
+    sprite: Stray/wizard/Objects/сontract.rsi
+    state: old-radio
   - type: GhostRoleMobSpawner
     prototype: MobWizardReinforcement
+  - type: GhostRole
+    name: Ученик мага
+    rules: Не ебашить своих (по ситуации)
 
 - type: entity
   parent: MobHuman

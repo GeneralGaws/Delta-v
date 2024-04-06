@@ -1,0 +1,26 @@
+- type: entity
+  name: Волшебный карп
+  parent: MobCarp
+  id: WizardCarp
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+
+- type: entity
+  name: Волшебный медведь
+  parent: MobSpaceBasic
+  id: WizardBear
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+
+- type: entity
+  name: Волшебная акула
+  parent: MobShark
+  id: WizardShark
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon

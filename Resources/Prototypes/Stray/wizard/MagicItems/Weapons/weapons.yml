@@ -1,3 +1,5 @@
+#Мъёлнир
+
 - type: entity
   name: Мъёлнир
   parent: SecBreachingHammer
@@ -39,6 +41,8 @@
     color: "#ffffaa"
     castShadows: false
 
+#рунный меч
+
 - type: entity
   id: RuneBlade
   name: Рунный меч
@@ -63,6 +67,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
+    useKey: false
     fireRate: 2
     selectedMode: SemiAuto
     availableModes:
@@ -119,3 +124,93 @@
     damage:
       types:
         Blunt: 5
+
+# громовой лук
+
+- type: entity
+  name: громовой лук
+  parent: BaseBow
+  id: LightningBow
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/lightningbow.rsi
+    layers:
+    - state: unwielded
+      map: [ base ]
+    - state: unwielded-arrow
+      map: [ arrow ]
+      visible: false
+    - state: unwielded-plunger
+      map: [ plunger ]
+      visible: false
+    - state: unwielded-lightningarrow
+      map: [ lightningarrow ]
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.WieldableVisuals.Wielded:
+        arrow:
+          True: { state: wielded-arrow }
+          False: { state: unwielded-arrow }
+        lightningarrow:
+          True: { state: wielded-lightningarrow }
+          False: { state: unwielded-lightningarrow }
+        plunger:
+          True: { state: wielded-plunger }
+          False: { state: unwielded-plunger }
+        base:
+          True: { state: wielded }
+          False: { state: unwielded }
+  - type: ItemSlots
+    slots:
+      projectiles:
+        name: Projectiles
+        startingItem: null
+        insertSound: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+        whitelist:
+          tags:
+          - Arrow
+          - Plunger
+          - LightningArrow
+  - type: ItemMapper
+    spriteLayers:
+    - lightningarrow
+    - arrow
+    - plunger
+    mapLayers:
+      lightningarrow:
+        whitelist:
+          tags:
+          - LightningArrow
+      arrow:
+        whitelist:
+          tags:
+          - Arrow
+      plunger:
+        whitelist:
+          tags:
+          - Plunger
+  - type: PointLight
+    radius: 2.0
+    energy: 5.0
+    color: "#ffd700"
+    castShadows: false
+
+# Колчан
+
+- type: entity
+  parent: ClothingBeltQuiver
+  id: LightingQuilver
+  name: громовой колчан
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/quiver.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,3
+    maxItemSize: Small
+    whitelist:
+      tags:
+      - Arrow
+      - LightingArrow

@@ -1,0 +1,9 @@
+- type: npcFaction
+  id: WizardSummon
+  hostile:
+  - NanoTrasen
+  - Passive
+  - Zombie
+  - Revolutionary
+  friendly:
+  - Wizard
