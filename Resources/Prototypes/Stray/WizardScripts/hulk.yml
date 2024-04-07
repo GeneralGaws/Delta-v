@@ -1,0 +1,125 @@
+- type: entity
+  name: Hulk
+  id: WizardHulk
+  parent: SimpleSpaceMobBase
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: NpcFactionMember
+    factions:
+    - Xeno
+  - type: Hands
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Stray/wizardscripts/hulk.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: hulk
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.5
+  - type: Stamina
+    critThreshold: 200
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 20
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: hulk
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: PotentialPsionic #Nyano - Summary: makes potentially psionic.
+    chance: -2
+  - type: Psionic #Nyano - Summary: makes psionic by default.
+    removable: false
+
+- type: polymorph
+  id: WizardHulkForm
+  configuration:
+    entity: WizardHulk
+    inventory: None
+    transerDamage: False
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 5
+    cooldown: 10
+
+- type: entity
+  id: ActionPolymorphWizardHulkForm
+  name: Hulk form
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 10
+    event: !type:HulkFormSpellEvent
+    itemIconStyle: NoItem
+    icon:
+      sprite: Mobs/Animals/gorilla.rsi
+      state: icon
