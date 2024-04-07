@@ -94,36 +94,15 @@
     enabled: true
     reflectProb: 0.5
     spread: 90
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Glass
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 5
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-          params:
-            volume: 4
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          Telecrystal:
-            min: 1
-            max: 3
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: DamageOnLand
-    ignoreResistances: true
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 5
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Blunt: 5
+        Slash: 25
+    soundHit:
+         path: /Audio/Weapons/bladeslice.ogg
+  - type: DisarmMalus
 
 # громовой лук
 
@@ -201,7 +180,7 @@
 
 - type: entity
   parent: ClothingBeltQuiver
-  id: LightingQuilver
+  id: LightingQuiver
   name: громовой колчан
   components:
   - type: Sprite
@@ -214,3 +193,13 @@
       tags:
       - Arrow
       - LightingArrow
+
+- type: entity
+  parent: LightningQuiverFilled
+  name: Громовой колчан
+  suffix: полный
+  components:
+    - type: StorageFill
+      contents:
+      - id: LightingArrow
+        amount: 15

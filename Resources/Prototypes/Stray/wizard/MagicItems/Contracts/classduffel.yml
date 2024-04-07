@@ -15,6 +15,19 @@
     sprintModifier: 0.9
   - type: HeldSpeedModifier
 
+# наборы из аплинка
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardArcher
+  name: Набор громового лука
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: LightningBow
+    - id: LightingQuilverFilled
+
 # наборы с класс селектора
 
 - type: entity

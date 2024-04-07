@@ -112,6 +112,85 @@
   categories:
   - WizardBooks
 
+- type: listing
+  id: WizardHulkBook
+  name: Книга превращения в халка
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: HulkSpellSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardAetherBook
+  name: Книга заклинания эфирная форма
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: AetherSpellSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardDevolveBook
+  name: Книга превращения в обезьяну
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: DevolveSpellBook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardEMPBook
+  name: Книга заклинания ЭМ импульса
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: EmpSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardAnimateBook
+  name: Книга заклинания поднятие трупа
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: WizardAnimateSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardBlindBook
+  name: Книга заклинания ослепления
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: WizardBlindSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardSmokeBook
+  name: Книга заклинания дым
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: WizardSmokeSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
+
+- type: listing
+  id: WizardSwapBook
+  name: Книга заклинания замены
+  description: Позволяет проникнуть в любую точку в радиусе видимости
+  productEntity: WizardSwapSpellbook
+  cost:
+    Bluespace: 16
+  categories:
+  - WizardBooks
 
 # Wands
 
@@ -218,6 +297,16 @@
   - WizardUtility
 
 - type: listing
+  id: WizardMugwort
+  name: Настойка из полыни
+  description: Лечит за все 20u 60 урона каждого типа
+  productEntity: MugwortPotion
+  cost:
+    Bluespace: 2
+  categories:
+  - WizardUtility
+
+- type: listing
   id: WizardSpellBeltFilled
   name: Полный пояс для палочек
   description: Содержит палочки мгновенной смерти, огненного шара, входа и превращения в карпа
@@ -260,22 +349,23 @@
   - WizardMisc
 
 - type: listing
-  id: EmpRune
-  name: Руна ЭМИ
-  description: Даёт 10 мощных зарядов ЭМИ
-  productEntity: EmpRune
+  id: LightningArcher
+  name: Громовой лук
+  description: Вместе с колчаном на 15 громовых стрел
+  icon: { sprite: Stray/wizard/Objects/Weapons/lightningbow.rsi, state: base }
+  productEntity: ClothingDuffelWizardArcher
   cost:
     Bluespace: 10
   categories:
   - WizardMisc
 
 - type: listing
-  id: AetherFormSpell
-  name: Дай бог
-  description: Дай боог
-  productAction: ActionPolymorphWizardSpider
+  id: EmpRune
+  name: Руна ЭМИ
+  description: Даёт 10 мощных зарядов ЭМИ
+  productEntity: EmpRune
   cost:
-    Bluespace: 2
+    Bluespace: 10
   categories:
   - WizardMisc
 
