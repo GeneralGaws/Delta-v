@@ -1,0 +1,28 @@
+- type: entity
+  id: ActionGrandKnock
+  name: Knock
+  description: This spell opens nearby doors.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 600
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: knock
+    event: !type:KnockSpellEvent
+      speech: action-speech-spell-knock
+      range: 300
+
+- type: entity
+  id: GrandKnockSpellbook
+  name: knock spellbook
+  parent: BaseSpellbook
+  components:
+    - type: Sprite
+      sprite: Objects/Magic/spellbooks.rsi
+      layers:
+        - state: bookknock
+    - type: Spellbook
+      spells:
+        ActionGrandKnock: -1

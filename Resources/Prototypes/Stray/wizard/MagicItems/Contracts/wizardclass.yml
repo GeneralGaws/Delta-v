@@ -6,9 +6,7 @@
     sprite: Objects/Magic/magicactions.rsi
     state: fireball
   content:
-  - FireballSpellbook
-  - WeaponWandFireball
-  - ActionPyrokinesis
+  - ClothingDuffelWizardFireCaster
 
 - type: thiefBackpackSet
   id: Healer
@@ -18,10 +16,7 @@
     sprite: Stray/wizard/Objects/Consumable/Drinks/healpotion.rsi
     state: icon
   content:
-  - WeaponStaffHealing
-  - MugwortPotion
-  - MugwortPotion
-  - MugwortPotion
+  - ClothingDuffelWizardHealer
 
 - type: thiefBackpackSet
   id: Polymorpher
@@ -31,9 +26,7 @@
     sprite: Mobs/Animals/mouse.rsi
     state: icon-0
   content:
-  - WeaponWandPolymorphDoor
-  - KnockSpellbook
-  - WeaponWandPolymorphMonkey
+  - ClothingDuffelWizardPolymorper
 
 - type: thiefBackpackSet
   id: Summoner
@@ -44,3 +37,4 @@
     state: icon
   content:
   - WizardCarpSpellbook
+  - ClothingDuffelWizardSummoner

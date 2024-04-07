@@ -85,12 +85,27 @@
 - type: listing
   id: WizardKnockBook
   name: Книга заклинания стук
-  description: Превращает объект в дверь
+  description: Открывает все шлюзы в радиусе 4 тайлов
   productEntity: KnockSpellbook
   cost:
     Bluespace: 14
   categories:
   - WizardBooks
+
+- type: listing
+  id: WizardGrandKnockBook
+  name: Книга заклинания великий стук
+  description: Открывает все внутренние шлюзы на станции
+  productEntity: GrandKnockSpellbook
+  cost:
+    Bluespace: 14
+  categories:
+  - WizardBooks
+  conditions:
+    - !type:BuyBeforeCondition
+      whitelist:
+      - WizarKnockBook
+  restockTime: 100
 
 - type: listing
   id: WizardFireballBook
