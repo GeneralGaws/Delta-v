@@ -3,7 +3,7 @@ using Robust.Shared.Audio;
 
 namespace Content.Shared.Magic.Events;
 
-public sealed partial class AnimateDeadSpellEvent : InstantActionEvent, ISpeakSpell
+public sealed partial class AnimateDeadSpellEvent : EntityTargetActionEvent, ISpeakSpell
 {
     /// <summary>
     /// The range this spell opens doors in

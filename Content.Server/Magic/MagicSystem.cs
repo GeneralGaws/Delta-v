@@ -44,7 +44,13 @@ using Content.Server.Explosion.EntitySystems;
 using System.Transactions;
 using Content.Server.Mind;
 using Content.Shared.StatusEffect;
+using Content.Server.Stunnable;
+using Content.Server.Beam;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
+using Content.Shared.Damage;
         //Stray
+
 namespace Content.Server.Magic;
 
 /// <summary>
@@ -79,7 +85,13 @@ public sealed class MagicSystem : EntitySystem
     [Dependency] private readonly ExplosionSystem _explosionSystem = default!;
     [Dependency] private readonly MindSystem _mind = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private readonly BeamSystem _beam = default!;
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
+    [Dependency] private readonly StunSystem _stunSystem = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     //Stray
+
     public override void Initialize()
     {
         base.Initialize();
@@ -104,6 +116,8 @@ public sealed class MagicSystem : EntitySystem
         SubscribeLocalEvent<AnimateDeadSpellEvent>(OnAnimateDead);
         SubscribeLocalEvent<BlindSpellEvent>(OnBlindSpell);
         SubscribeLocalEvent<SmokeSpellEvent>(OnSmokeSpell);
+        SubscribeLocalEvent<LightningStrikeSpellEvent>(OnLightningStrikeSpell);
+        SubscribeLocalEvent<HealSpellEvent>(OnHealSpell);
         //Stray
     }
 
@@ -598,6 +612,82 @@ public sealed class MagicSystem : EntitySystem
         var ent = Spawn("Smoke", coords.SnapToGrid());
         _smoke.StartSmoke(ent, new(), 15, 40);
     }
+
+    private void OnLightningStrikeSpell(LightningStrikeSpellEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.Handled = true;
+        Speak(args);
+
+        if (!HasComp<MobStateComponent>(args.Target))
+            return;
+
+        _beam.TryCreateBeam(args.Performer, args.Target, "LightningNoospheric");
+        _stunSystem.TryParalyze(args.Target, TimeSpan.FromSeconds(5), false);
+
+        args.Handled = true;
+//
+    }
+
+    private void OnHealSpell(HealSpellEvent ev)
+    {
+        if (ev.Handled)
+            return;
+
+        args.Handled = true;
+        Speak(args);
+
+        if (!TryComp<BodyComponent>(ev.Target, out var body)) return;
+
+        _damageableSystem.TryChangeDamage(ev.Target, ev.HealAmount, true, origin: ev.Target);
+        args.Handled = true;
+        Speak(args);
+
+        args.Handled = true;
+
+    }
+
+    private void OnHealSpell(HealSpellEvent ev)
+    {
+        if (ev.Handled)
+            return;
+
+        args.Handled = true;
+        Speak(args);
+
+        var xform = Transform(ev.Performer);
+
+        if (!TryComp<BodyComponent>(ev.Target, out var body)) return;
+
+        _damageableSystem.TryChangeDamage(ev.Target, ev.HealAmount, true, origin: ev.Target);
+        args.Handled = true;
+        Speak(args);
+
+        args.Handled = true;
+
+//    private void OnSaintFireSpell(SaintFireEvent args)
+//    {
+//        if (args.Handled)
+//            return;
+//
+//        args.Handled = true;
+//        Speak(args);
+//
+//        var transform = Transform(args.Performer);
+//        var coords = transform.Coordinates;
+//
+//        foreach (var target in _lookup.GetEntitiesInRange(coords, args.Range))
+//        {
+//            if (TryComp<SpellbookComponent>(entity))
+//                return;
+//
+//            if (TryComp<FlammableComponent>(entity))
+//                _flammable.Ignite(entity);
+//
+//        }
+//    }
 
     //Stray
 

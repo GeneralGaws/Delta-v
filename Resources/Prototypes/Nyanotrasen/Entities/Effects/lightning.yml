@@ -6,5 +6,7 @@
   components:
   - type: Electrified
     enabled: false
+    shockDamage: 50
   - type: Lightning
     canArc: false
+    shockDamage: 30

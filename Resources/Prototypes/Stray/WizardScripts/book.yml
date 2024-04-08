@@ -21,6 +21,8 @@
     layers:
     - state: book_demonomicon
   - type: Spellbook
+    learnPermanently: true
+    deleteAfterLearn: true
     spells:
       ActionDevolve: -1
 
@@ -49,3 +51,81 @@
   - type: Spellbook
     spells:
       ActionPolymorphWizardHulkForm: -1
+
+- type: entity
+  id: WizardAnimateSpellbook
+  name: animate dead spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellAnimate: -1
+
+- type: entity
+  id: WizardBlindSpellbook
+  name: blind spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellBlind: -1
+
+- type: entity
+  id: WizardSmokeSpellbook
+  name: smoke spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSmoke: -1
+
+- type: entity
+  id: WizardSwapSpellbook
+  name: Swap spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSwap: -1
+
+- type: entity
+  id: WizardLightningStrikeSpellbook
+  name: Lightning strike spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellLightningStrike: -1
+
+- type: entity
+  id: WizardHealSpellbook
+  name: Heal spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellHeal: -1
