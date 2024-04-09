@@ -79,3 +79,29 @@
       prototypes:
       - id: WizardShark
         amount: 1
+
+# череп с лаваленда
+
+- type: entity
+  id: ActionSpawnWizardSkullSpell
+  name: Призвать 2 черепа
+  description: Призывает 2 дружественных черепа
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 60
+    range: 3
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: LavalandSkull
+        amount: 2
+
+- type: entity
+  id: WizardSkullSpellbook
+  name: Книга призыва черепов
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardSkullSpell: -1

@@ -1,0 +1,41 @@
+- type: entity
+  id: ActionIceBurst
+  name: Ice Burst
+  description: Fires an ice burst towards the clicked location, freezes those who are hit.
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    range: 60
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Magic/iceburst.ogg
+    icon:
+      sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+      state: ice
+    event: !type:ProjectileSpellEvent
+      prototype: ProjectileIceBurst
+      posData: !type:TargetCasterPos
+      speech: action-speech-spell-iceburst
+
+- type: entity
+  id: ActionAcidSpray
+  name: Acid Spray
+  description: Fires an ice burst towards the clicked location, freezes those who are hit.
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    range: 30
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Voice/Human/male_sneeze_1.ogg
+    icon:
+      sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+      state: declone
+    event: !type:ProjectileSpellEvent
+      prototype: ProjectileAcidSpray
+      posData: !type:TargetCasterPos
+      speech: action-speech-spell-iceburst

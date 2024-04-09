@@ -1,0 +1,26 @@
+- type: entity
+  id: IceBurstSpellbook
+  name: ice burst spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Magic/spellbooks.rsi
+    layers:
+    - state: bookiceburst
+  - type: Spellbook
+    spells:
+      ActionIceBurst: -1
+
+- type: entity
+  id: AcidSpraySpellbook
+  name: ice burst spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Magic/spellbooks.rsi
+    layers:
+    - state: bookiceburst
+  - type: Spellbook
+    spells:
+      ActionAcidSpray: -1
+
