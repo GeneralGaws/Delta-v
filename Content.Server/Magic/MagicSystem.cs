@@ -31,6 +31,7 @@ using Content.Server.Polymorph.Systems;
 using Content.Shared.Polymorph;
 using Content.Server.Fluids.EntitySystems;
 using System.Diagnostics;
+using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Server.NPC.HTN;
@@ -49,7 +50,12 @@ using Content.Server.Beam;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared.Damage;
-        //Stray
+using Content.Shared.Mobs;
+using Content.Server.Lightning.Components;
+using Content.Shared.Lightning;
+using Content.Server.Lightning;
+using Content.Shared.Magic.Components;
+//Stray
 
 namespace Content.Server.Magic;
 
@@ -90,6 +96,9 @@ public sealed class MagicSystem : EntitySystem
     [Dependency] private readonly StunSystem _stunSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly LightningSystem _lightning = default!;
+
     //Stray
 
     public override void Initialize()
@@ -118,6 +127,8 @@ public sealed class MagicSystem : EntitySystem
         SubscribeLocalEvent<SmokeSpellEvent>(OnSmokeSpell);
         SubscribeLocalEvent<LightningStrikeSpellEvent>(OnLightningStrikeSpell);
         SubscribeLocalEvent<HealSpellEvent>(OnHealSpell);
+        SubscribeLocalEvent<SacrificeSpellEvent>(OnSacrificeSpell);
+        SubscribeLocalEvent<LightningSphereSpellEvent>(OnLightningSphereSpell);
         //Stray
     }
 
@@ -625,7 +636,8 @@ public sealed class MagicSystem : EntitySystem
             return;
 
         _beam.TryCreateBeam(args.Performer, args.Target, "LightningNoospheric");
-        _stunSystem.TryParalyze(args.Target, TimeSpan.FromSeconds(5), false);
+        _damageableSystem.TryChangeDamage(args.Target, args.DamageAmount, true, origin: args.Target);
+        _stunSystem.TryParalyze(args.Target, TimeSpan.FromSeconds(3), false);
 
         args.Handled = true;
 //
@@ -636,58 +648,53 @@ public sealed class MagicSystem : EntitySystem
         if (ev.Handled)
             return;
 
-        args.Handled = true;
-        Speak(args);
+        ev.Handled = true;
+        Speak(ev);
 
         if (!TryComp<BodyComponent>(ev.Target, out var body)) return;
 
         _damageableSystem.TryChangeDamage(ev.Target, ev.HealAmount, true, origin: ev.Target);
-        args.Handled = true;
-        Speak(args);
 
-        args.Handled = true;
+        ev.Handled = true;
 
     }
 
-    private void OnHealSpell(HealSpellEvent ev)
+    public void OnSacrificeSpell(SacrificeSpellEvent ev)
     {
         if (ev.Handled)
+            return;
+
+        ev.Handled = true;
+        Speak(ev);
+
+        if (!TryComp<MobStateComponent>(ev.Target, out var body))
+            return;
+        if (_mobState.IsAlive(ev.Target))
+            return;
+
+        _damageableSystem.TryChangeDamage(ev.Target, ev.HealAmount, true, origin: ev.Target);
+        _mobState.ChangeMobState(ev.Target, MobState.Alive);
+        _damageableSystem.TryChangeDamage(ev.Performer, ev.DamageAmount, true, origin: ev.Performer);
+
+        ev.Handled = true;
+
+    }
+
+    private void OnLightningSphereSpell(LightningSphereSpellEvent args)
+    {
+        if (args.Handled)
             return;
 
         args.Handled = true;
         Speak(args);
 
-        var xform = Transform(ev.Performer);
+        var transform = Transform(args.Performer);
+        var coords = transform.MapPosition;
 
-        if (!TryComp<BodyComponent>(ev.Target, out var body)) return;
-
-        _damageableSystem.TryChangeDamage(ev.Target, ev.HealAmount, true, origin: ev.Target);
-        args.Handled = true;
-        Speak(args);
+        _lightning.ShootRandomLightnings(args.Performer, 6, 10);
 
         args.Handled = true;
-
-//    private void OnSaintFireSpell(SaintFireEvent args)
-//    {
-//        if (args.Handled)
-//            return;
-//
-//        args.Handled = true;
-//        Speak(args);
-//
-//        var transform = Transform(args.Performer);
-//        var coords = transform.Coordinates;
-//
-//        foreach (var target in _lookup.GetEntitiesInRange(coords, args.Range))
-//        {
-//            if (TryComp<SpellbookComponent>(entity))
-//                return;
-//
-//            if (TryComp<FlammableComponent>(entity))
-//                _flammable.Ignite(entity);
-//
-//        }
-//    }
+    }
 
     //Stray
 

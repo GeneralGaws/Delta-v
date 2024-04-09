@@ -129,3 +129,29 @@
   - type: Spellbook
     spells:
       ActionSpellHeal: -1
+
+- type: entity
+  id: WizardSacrificeSpellbook
+  name: Sacrifice spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSacrifice: -1
+
+- type: entity
+  id: WizardLightningSphereSpellbook
+  name: Lightning sphere spellbook
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellLightningSphere: -1

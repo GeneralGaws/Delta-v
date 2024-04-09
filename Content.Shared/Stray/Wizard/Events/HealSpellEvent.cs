@@ -8,4 +8,5 @@ public sealed partial class HealSpellEvent : EntityTargetActionEvent
     [DataField("healAmount", required: true)]
     [ViewVariables(VVAccess.ReadWrite)]
     public DamageSpecifier HealAmount = default!;
+
 }

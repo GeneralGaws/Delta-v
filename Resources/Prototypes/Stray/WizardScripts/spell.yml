@@ -110,6 +110,8 @@
       sprite: Objects/Magic/magicactions.rsi
       state: shield
     event: !type:LightningStrikeSpellEvent
+      damageAmount:
+        Burn: 16
       speech: action-speech-spell-emp
 
 - type: entity
@@ -131,5 +133,47 @@
           Brute: -60
           Burn: -40
           Toxin: -40
-          Airloss: -20
+          Airloss: -40
+      speech: action-speech-spell-emp
+
+- type: entity
+  id: ActionSpellSacrifice
+  name: Sacrifice spell
+  description: This spell triggers an EMP effect around you
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 5
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: shield
+    event: !type:SacrificeSpellEvent
+      healAmount:
+        groups:
+          Brute: -999
+          Burn: -999
+          Toxin: -940
+          Airloss: -920
+      damageAmount:
+        groups:
+          Brute: 999
+          Burn: 999
+          Toxin: 999
+          Airloss: 999
+      speech: action-speech-spell-emp
+
+- type: entity
+  id: ActionSpellLightningSphere
+  name: Lightning sphere spell
+  description: This spell triggers an EMP effect around you
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 5
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: shield
+    event: !type:LightningSphereSpellEvent
       speech: action-speech-spell-emp
