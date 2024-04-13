@@ -100,6 +100,9 @@ SpaceTickSpawnerNPC: SpaceTickSpawner
 LockableButtonBrig: LockableButtonSecurity
 SignDirectionalICU: SignDirectionalIcu
 
+# 2024-03-23 - Corvax
+ComputerAlert: PrinterDoc
+
 # 2024-03-29
 #Remove whenever holoparasite isn't broken I suppose
 MagicalLamp: Lamp

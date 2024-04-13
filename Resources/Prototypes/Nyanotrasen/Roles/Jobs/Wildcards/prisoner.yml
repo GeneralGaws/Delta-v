@@ -6,13 +6,12 @@
   startingGear: PrisonerGear
   alwaysUseSpawner: true
   canBeAntag: false
-#  whitelistRequired: true
   icon: "JobIconPrisoner"
   supervisors: job-supervisors-security
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 21600
+    - !type:OverallPlaytimeRequirement
+      time: 1
+    - !type:WhitelistRequirement # DeltaV - Whitelist requirement
 
 - type: startingGear
   id: PrisonerGear

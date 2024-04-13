@@ -2,8 +2,7 @@
   id: Edge
   mapName: 'Edge'
   mapPath: /Maps/edge.yml
-  minPlayers: 10
-  maxPlayers: 80
+  minPlayers: 0
   stations:
     Edge:
       stationProto: StandardNanotrasenStation
@@ -14,7 +13,7 @@
           mapNameTemplate: '{0} Edge Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'DV'
+            prefixCreator: '14'
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -40,6 +39,7 @@
           #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 1, 2 ]
+            Slugcat: [ 1, 1 ]
             Paramedic: [ 1, 2 ]
             Psychologist: [ 1, 1 ]
             MedicalDoctor: [ 3, 5 ]
@@ -65,4 +65,13 @@
             CargoTechnician: [ 2, 4 ]
           #civilian
             Passenger: [ -1, -1 ]
-
+          #silicon
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

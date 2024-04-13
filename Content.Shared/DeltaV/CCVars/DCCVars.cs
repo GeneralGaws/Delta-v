@@ -21,4 +21,28 @@ public sealed class DCCVars
     /// </summary>
     public static readonly CVarDef<bool> NoVisionFilters =
         CVarDef.Create("accessibility.no_vision_filters", false, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>
+    /// Prevent VPN and proxy connections from joining
+    /// </summary
+    public static readonly CVarDef<bool> BlockProxyConnections =
+        CVarDef.Create("game.deltav.blockproxy", false, CVar.SERVERONLY);
+
+    /// <summary>
+    /// neutrinoapi.com API user for proxy detection
+    /// </summary>
+    public static readonly CVarDef<string> ProxyApiUser =
+        CVarDef.Create("game.deltav.proxyapiuser", "", CVar.SERVERONLY);
+
+    /// <summary>
+    /// neutrinoapi.com API key for proxy detection
+    /// </summary>
+    public static readonly CVarDef<string> ProxyApiKey =
+        CVarDef.Create("game.deltav.proxyapikey", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
+    /// <summary>
+    /// Probe IPs?
+    /// </summary>
+    public static readonly CVarDef<bool> ProxyProbe =
+        CVarDef.Create("game.deltav.proxyprobe", false, CVar.SERVERONLY);
 }

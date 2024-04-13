@@ -1,135 +1,75 @@
-﻿﻿[color=#ff0000]YOU MUST BE AT LEAST 17 YEARS OF AGE TO PLAY ON DELTA-V SERVERS. ANY USERS SUSPECTED OF BEING UNDER 17 YEARS OF AGE WILL BE BANNED UNTIL THEY ARE OF AGE.[/color]
+       [color=#fff4cc]Приветствуем Вас на сервере Stray Station 14.[/color]
+Это "краткая" форма правил, в которой содержится вся информация, необходимая любому обычному игроку, но, увы, она не может дать ответы на все ситуации в игре, где, буквально, каждый раунд уникален.
+Кроме того задать свой вопрос, предложить свои идеи по развитию, поддержать материально и в целом быть в курсе жизни проекта можно в [color=#b5e0ff]Discord'е сервера.[/color]
+Сервер имеет множество [color=#b5e0ff]уникальных механик[/color], чтобы облегчить их изучение, мы создали в Discord-сервере канал "Вики". Также для того, чтобы уменьшить количество новичков на важных ролях, на сервере действует система [color=#b5e0ff]WhiteList[/color], в который входят опытные игроки. Узнать подробнее можно в каналах Discord'а "Wl-Инфо" и "Wl-запросы"
+ 
 
-[color=#ff0000]DISCONNECTING FROM OR IGNORING/EVADING ADMIN-HELPS WILL RESULT IN AN APPEAL ONLY BAN.[/color]
+[color=#ffdd00]Администрация может устанавливать или менять правила игры для конкретного или нескольких раундов (проводить ивенты), если на это есть разрешение. Обычно об изменениях делаются объявления в чат.[/color]
 
-[color=#ff0000]THE USAGE OF ANY THIRD-PARTY APPLICATIONS/SCRIPTS/CLIENT MODIFICATIONS TO GAIN AN ADVANTAGE, AVOID INTENDED GAME/SERVER MECHANICS, OR TO HARM SERVER INFRASTRUCTURE IS STRICTLY PROHIBITED. ANY AND ALL INSTANCES OF THIS WILL BE MET WITH AN APPEAL-ONLY BAN.[/color]
+[color=#ffdd00]Воспринимайте эти правила так, как они должны быть задуманы, а не так, как они написаны буквально. Обход правил запрещён.[/color]
 
-[color=#00ff00]Rules Update 11Mar2024 - Added Cryo Rules, Changed the Prisoner Rule, Expanded on EORG, added rules aimed at meta-grudging/vitriolic OOC/LOOC, and clarified part of Rule 6[/color]
+[color=#fff4cc]Если у вас есть жалобы на игроков, вопросы по игре или сомнения в ваших действиях — пишите в "AHelp" (F1)[/color]
 
-[color=#ffff00]Delta-V is a Medium Roleplay server. Try to immerse yourself into your character. This includes doing your job, interacting with your fellow crewmates, and using roleplay as the primary vessel to play the game. MRP places less emphasis on “winning” and more on just telling a story.[/color]
+[color=#ff0000][font="NotoSansDisplayBold" size=14]ОБЩИЕ ПРАВИЛА[/font][/color]
+[bold][color=#a4885c]1.[/color] [color=#ffdd00]Не будь мудаком, за это администратор в праве забанить вас на любой срок, вплоть до перманентного[/color][/bold]. 
+    [color=#a4885c]1.1.[/color] Запрещены попытки [color=#ede29f]негативно повлиять[/color] или [color=#ede29f]испортить игру[/color] кому-то по сомнительным IC причинам.
+    [color=#a4885c]1.2.[/color] Русский язык является основным языком сервера[/color].
+    [color=#a4885c]1.3.[/color] Нарушение правил по сомнительным и мелким причинам вроде "Мой персонаж — психопат" не одобряются.
+    [color=#a4885c]1.4.[/color] Запрещен гриф, гриферством является любое негативное действия по отношении к станции или игрокам, не имеющие ролевой или игровой причины.
+    [color=#a4885c]1.5.[/color] Запрещено использование недочетов игры (багоюз) и сторонних приложений для получения преимущества или порчи игры остальным игрокам.
+    [color=#a4885c]1.6.[/color] Правила применяются до момента появления окна манифеста раунда (конец раунда). После окончания правила не действуют, кроме "Спам", "Неприемлемое поведение в OOC", "ERP".
+    [color=#a4885c]1.8.[/color] Запрещен Спам/Флуд в любые чаты.
+    [color=#a4885c]1.9.[/color] Неприемлемое поведение в ООС чатах (OOC, Чат мертвых, LOOC). Например, чрезмерная токсичность, унижения, пропаганда (нацизм, расизм и прочее), дискриминации по какому-то признаку.
+    [color=#a4885c]1.10.[/color] Все формы эротического ролеплея (ERP)/шокирующего контента запрещены. ERP считается всё то, что заходит дальше поцелуев. Также если администратор посчитает ваши действия «на грани» с ERP, он имеет право Вас остановить. 
 
-If you have any questions about these rules, please use the admin help (ahelp) menu by hitting F1 in-game or clicking the “Ahelp” button in the lobby.
+[bold][color=#a4885c]2.[/color] [color=#ffdd00]Метаинформация и метагейминг[/color][/bold]
+    [color=#a4885c]2.1.[/color] Метаинформацией считается информация из текущего раунда, которую нельзя получить, не заходя в раунд; информация, не соответствующая должности, конкретно на сервере – знания о предметах, тайников синдиката и им подобные.
+    [color=#a4885c]2.2.[/color] Запрещено использование игровой информации, полученной за пределами игры, например, в дискорде или в OOC чатах.
+    [color=#a4885c]2.3.[/color] Запрещено распространять игровую информацию за пределы текущего раунда.
+    [color=#a4885c]2.4.[/color] Коммуникация в раунде неигровыми способами или метакооп также запрещён.
+    [color=#a4885c]2.5.[/color] Запрещен мультиаккаунтинг - ведение больше одного аккаунта.
+    [color=#a4885c]2.6.[/color] Все [color=#ede29f]раунды никак между собой не взаимосвязаны[/color]. События в прошлом раунде не влияют на последующие.
+        [color=#d1bc7b]-[/color] Однако это не мешает персонажам поддерживать дружеские или серьёзные отношения между игроками, когда это не ведёт к нечестной игре путём метакоопа или мешает выполнять Вам обязанности Вашей роли.
+ 
+[bold][color=#a4885c]3.[/color] [color=#ffdd00]IC в OOC и наоборот[/color][/bold]
+      [color=#a4885c]3.1.[/color] Не допускайте игровую информацию (IC) в неигровой чат (OOC). Например, нельзя сообщать в OOC канале, что Вы умираете или кто-то является антагонистом.
+      [color=#a4885c]3.2.[/color] Использование LOOC/OOC чата для общения в IC запрещено.
+      [color=#ff4000]*[/color] Для объяснения механик другому игроку лучше использовать OOC-чаты (OOC, LOOC, Мёртвые).
 
-[color=#a4885c]0.[/color] Admins can disregard any and all of these rules if they deem it in the best interest of the current round, server, and/or community at large.
-    - Administrators will be held fully accountable for their actions if they exercise this privilege.
-    - All of these rules apply as they are intended. Every example of a rule break cannot be defined as written, therefore, enforcement of the rules is subject to staff interpretation of the rule's intention.
+[bold][color=#a4885c]4.[/color] [color=#ffdd00]Нарушение игровой атмосферы[/color][/bold]
+      [color=#a4885c]4.1.[/color] Сообщения в игровом чате вроде "У меня игра зависла" недопустимы. Используйте LOOC-чат для подобных сообщений.
+      [color=#a4885c]4.2.[/color] Использование интернет-сленга ("втф", "лол", "ирл"), эмодзи вроде ":)", "xD", а также скобочек-улыбок в сообщениях IC чата не приветствуется.
+      [color=#a4885c]4.3.[/color] Запрещён уход от РП-ситуации, с помощью выхода из игры. 
 
-[color=#a4885c]1.[/color] Erotic Roleplay (ERP), erotic content, or 18+ sexual content is [color=#ff0000]not allowed under any circumstance[/color]. This includes comments not explicitly sexual in nature that contain words, phrases, or ideations that are deemed inappropriate. [color=#ff0000]If roleplay reaches a point where it has become sexual and/or uncomfortable, immediately stop and contact an administrator.[/color]
+[bold][color=#a4885c]5.[/color] [color=#ffdd00]Профессия[/color][/bold]
+      [color=#ff4000]5.1[/color] Не стоит покидать игру в начале раунда. Оповестите модераторов, если вам нужно покинуть раунд, играя на роли командного состава или любой другой важной для станции роли, чтобы модераторы смогли передать вашего персонажа другому игроку.
 
-[color=#a4885c]2.[/color] Follow the server expectations
-    - Do not cheat.
-    - Do not abuse glitches and exploits. [color=#ff0000]We have zero tolerance for abusing exploits/bugs. If you’re not sure, ask an admin.[/color] Otherwise, please use the #bug-reports channel on the Discord to report the bug.
-    - If you are banned from a role or department, you may not play that role. This includes seeking or accepting promotions into roles you are banned from.
-    - Do not make yourself a major problem/annoyance/disruption for the crew while not being an antagonist (i.e. self-antagging).
-    - Do not make yourself a major problem/annoyance/disruption for one specific crew member in a way that would actively detract from the other player's enjoyment of the shift.
-    - Do not, as a crewmate, hide the nuclear fission explosive (i.e. "the nuke") in an impossible to see location.
-    - Do not ignore the admin help relay or abuse it by flooding it with garbage, checking for admins before stating a problem (ex: "hello?", "any admins?"), using it as a chatroom, or sending messages of no substance. Hostility to administrators in the relay will result in your removal. All ahelp messages are sent to the Delta-V Discord.
-    - Department strikes (ex: cargonia and any variation thereof), riots, cults, and any other type of similar largely disruptive behavior are strictly forbidden. These activities are generally antagonist-only and all players regardless of antagonist status must obtain admin Central Command permission before engaging in this behavior (you are extremely unlikely to get permission).
-    - AFK (aka SSD) and catatonic players are considered to have the same rights as a conscious crewmate.
-    - End-of-round grief (EORG) is not allowed. This includes attacking, destroying, polluting, and injuring without reason both *at* and *on the way to* Central Command.
-        * This also extends to the following:
-            * Neutral parties, such as space dragons or sentient artifacts activating harmful nodes.
-            * Attempts to block the docking ports or ports leading into Central Command.
+[bold][color=#a4885c]6.[/color] [color=#ffdd00]Антагонисты[/color][/bold]
+      [color=#ff4000]*[/color] Антагонисты - специальная роль для внесения интересных ситуаций в раунд. Их суть является в выполнении своих целей, например убийство игрока/кража предмета и прочее. От них требуется ответственная игра, поэтому не могут нарушать правила, если этим они не могут напрямую выполнить цель.
+      [color=#a4885c]6.1.[/color] Мелкие антагонисты не нацелены на уничтожение станции, они имеют конкретные цели. От них ожидается преимущественно скрытая игра. 
+      [color=#a4885c]6.2.[/color] Крупными антагонистами считаются те, кто занимает собой целый раунд в результате выпадения случайным образом или голосованием игрового режима с ними. Для достижения своих целей им запрещается только саботаж атмосферы и сингулярности.
+      [color=#a4885c]6.3.[/color] Командным антагонистам запрещено каким-либо способом намеренно вредить сокомандникам.
+      [color=#ff4000]*[/color] Против крупных антагонистов не действуют правило Валидханта (целенаправленной охоты на антагониста, не будучи сотрудником службы безопасности)
 
-[color=#a4885c]3.[/color] Follow Chat Guidelines
-    - Use English as your primary method of communication.
-    - Do not spam.
-    - Do not advertise.
-    - Be respectful towards other players in LOOC and OOC channels, and avoid making others uncomfortable. This can range anywhere from starting arguments to personal attacks against others, depending on the context.
-    - Do not use netspeak in character (i.e. btw, lmfao).
-    - Do not use the Emotes channel to bypass an inability to speak. This includes examples like "motions for you to put parmesan THEN sauce on the spaghetti," "im friendly," and "huh weird looks like I can't type."
-    - Use the LOOC and OOC channels properly. Don’t speak of in-character matters in those channels unless you’re asking questions related to in-game concepts.
-       * DO NOT use in-character channels to bypass a lack of ability to use OOC/LOOC chats (e.g. "Huh, wonder where captain went? *OOC* He probably left to get dinner lol"). This will result in an immediate dewhitelist.
-    - Hate speech, slurs and bigotry are [color=#ff0000]not allowed[/color]. Words that are closely tied to real life slurs are [color=#ff0000]not allowed[/color].
-    - No racist remarks towards in-game races/morphotypes (i.e. Simulated Racism), while you don’t have to like everybody, you should not be acting upon nor expressing your distaste for other races/morphotypes.
+[bold][color=#a4885c]7.[/color] [color=#ffdd00]Поражение — часть игры[/color][/bold]
+      [color=#a4885c]7.1.[/color] Критическое состояние — состояние без сознания. Вы не можете помнить события, разговоры и прочее, произошедшие в критическом состоянии и за 2 минуты до его наступления.
+      [color=#a4885c]7.2.[/color] После смерти происходит потеря памяти - последних 5 минут до смерти.
+      [color=#ff4000]*[/color] Поражение тоже часть игры. Если ваш персонаж умер не стоит унывать , Вы можете выбрать второстепенную роль, будучи призраком. Не стоит портить другим людям игру.
+  
+[bold][color=#a4885c]8.[/color] [color=#ffdd00]Протесты, революции и культы без участия модераторов[/color][/bold]
+      [color=#a4885c]8.1.[/color] Для персонала станции не-антагонистов [color=#ede29f]нужно иметь адекватную причину[/color] на революцию или бунт, в том числе и вступать в существующий. Кровавые восстания без одобрения модератора запрещены.
+      [color=#a4885c]8.2.[/color] Недеструктивные культы разрешены. Учтите, что [color=#ede29f]оккультизм не делает вас антагонистом[/color] и не является причиной для убийства или разрушений.
 
-[color=#a4885c]4.[/color] Follow Metagaming guidelines
-    - If you die and get revived, do not act on things you saw while you were dead.
-    - Do not engage in meta-communications. This includes using chat channels outside of what is available in-game to communicate with other players in the same game.
-    - Players are allowed to have in-character relationships (friends, enemies, or otherwise), however they cannot be used as a reason to grant or deny things based exclusively on having a relationship with one another(i.e. Meta-Friending).
-    - You are allowed to have knowledge of past experiences with someone else in prior shifts. This does not give you permission to hold a grudge against someone that results in you treating them differently in an unfair way (i.e. Meta-Grudging).
-    - Specific players who were antagonists in previous rounds must not be treated differently because of it.
-    - Do not "Antag Roll." This is the act of joining rounds for the purpose of seeing if you joined as an antagonist, and leaving soon after if not. Players who have a history of this behavior will have their whitelist revoked and/or face a ban.
-    - [color=#ff0000]Do not stream the current round to the Delta-V Discord.[/color]
-    - Do not place players into cryosleep unless they have given consent to do so, they are fully catatonic, or they have been sentenced to preservative stasis. Always examine a character to double check if they are SSD or catatonic prior to placing them into cryosleep.
+[bold][color=#a4885c]9.[/color] [color=#ffdd00]Администрация[/color][/bold]
+      [color=#a4885c]9.1.[/color] При выходе из игры во время разбирательства, Вы будете забанены на более больший срок.
+      [color=#a4885c]9.2.[/color] Запрещено обманывать администрацию в корыстных целях.
+      [color=#a4885c]9.3.[/color] Решение администрации является финальным. В случае злоупотребления админа его положением, халатности — обращайтесь на Discord сервер.
+      [color=#a4885c]*[/color] Воздержитесь от оффтопа в ахелп, а также "админы?" "админы на месте?" и подобного, напишите свою жалобу/вопрос одним сообщением, указав все подробности. Таким образом Вы ускоряете процесс помощи администратора. 
 
-[color=#a4885c]5.[/color] If a player dies and is brought back by way of cloning or borgification, they forget the last five minutes leading up to their death and cannot describe who or what killed them.
+   [color=#ffdd00]НРП-Тайм[/color][/bold]
+   [color=#d1bc7b]-[/color]Представляет собой временной интервал с 01:00 МСК до 07:00 МСК, в который администрация не контролирует РП процесс на сервере и не банит за нарушения.
+   [color=#d1bc7b]-[/color]Начинается с раунда, начавшегося после 01:00 и заканчивается с раунда, начавшегося после 07:00.
+   [color=#d1bc7b]*[/color]Однако ЕРП, пропаганда деструктивной идеологии, деятельности всё ещё запрещена. Если вы заметили нарушение данных правил, то можете сообщить в Discord сервере.
 
-Players that are revived by using a defibrillator CAN recall what killed them and do not have any forgetfulness about what happened while they were alive.
-
-[color=#ff0000]Please report players who violate this rule.[/color]
-
-[color=#a4885c]6.[/color] All constructed/summoned beings that have laws are bound by those laws and must abide by them.
-    - If a being has a master, they MUST follow their master's orders.
-    - Your master is held accountable if they order you to do something malicious.
-        *This does not apply to breaking server rules. If you are ordered to do something that would break a server rule, disregard it and inform an admin.
-    - Not having orders, or being given free will by your master does NOT give you permission to self-antag or grief the crew.
-
-[color=#a4885c]7.[/color] Follow Naming Conventions
-    - In-character names must fit the server standards of:
-        * Doesn't make obvious references
-        * Doesn't disturb roleplay
-      OR
-        * Is a result of random name generation.
-    - The only exception to the above is that theatrical roles like clown, boxer, and mime are allowed stage names with some freedom, as long as it is not obscene.
-
-[color=#a4885c]8.[/color] Follow Roleplay Guidelines
-    - Treat your character as a separate entity from you, the player. Your character's actions, feelings, and knowledge in-game should be based solely on the character's experiences and not your own as the player. Low roleplay actions that have no regard for your character or the setting (Memes, silly copy paste spam IC) are not acceptable.
-    - Character development can occur over rounds but each round is a soft-reset, meaning you can have previous shift experience but your character will never have died in the past.
-    - Command and Security will be held to a higher standard for roleplay.
-    - By picking prisoner, you have chosen to RP as a prisoner. You are still subject to rules pertaining to escalation, and should only seek to escape from the brig with good roleplay reasoning, such as abusive security, or a badly damaged perma. Escaping for no reason is considered a self-antag activity. If you are unsure whether your escape reason is valid, feel free to AHelp it first.
-
-[color=#a4885c]9.[/color] Follow Escalation Guidelines
-    - Do not escalate situations needlessly. Very few things are deserving of a fight to the death.
-    - Antagonistic ghost roles, and pest ghost roles like mice are always fair game for attacking. Don't grief crew-aligned ghost roles like familiars, drones, or pets without provocation.
-    - If a fight results in someone being critically injured, seek medical help for them. If they die, do not destroy or otherwise hide their body.
-
-[color=#a4885c]10.[/color] Follow Antagonist Guidelines
-    - The damage antagonists cause should be roughly proportional to their objectives, and contribute towards achieving them in some way. However antagonists have leniency in regards to what they can and can’t do.  If you are concerned as to whether or not what you're about to do is allowed, feel free to ahelp and ask an admin.
-    - Other antagonists are not necessarily your friends. Traitors, rat kings, and possibly even space dragons are free agents, but no one should be working together with xenomorphs or zombies.
-    - Exploits, arrivals camping, unnecessary round extensions, and other extremely lame behavior are forbidden.
-    - Ghost roles have their own independent rules that must be followed. [color=#ff0000]Breaking these rules can result in a ban, whitelist removal, or both.[/color]
-
-[color=#a4885c]11.[/color] Psionics
-    - Players that have psionic powers are allowed to use them at-will to accomplish their roleplay goals. It should be noted that in-character consequences can happen as a result of their use, including being stripped of psionic powers or even death.
-    - As a psionic mantis, it is not your goal to hunt down psionics. Do not mindbreak others against their will solely because they have psionic powers.
-
-[color=#a4885c]12.[/color] Don't rush for or prepare equipment unrelated to your job for no purpose other than to have it "just in case" (referred to as "Powergaming").
-    - A medical doctor does not need insulated gloves, and the Head of Personnel does not need to give themselves armory access so they can go grab a gun. Have an actual reason for needing these things.
-    - Don't manufacture weapons, bombs, or deadly poisons before you know of any reason you would need them.
-    - Don't preemptively hide antagonist objectives or preemptively secure them with higher security than normally required.
-    - Don't manufacture or prepare things for the "end of the round" when the shuttle docks with Central Command.
-
-[color=#ff0000]SECURITY & COMMAND RULES[/color]
-These rules apply to any individual who is promoted or is acting in the place of a Security/Command role (unless they are an antagonist).
-
-[color=#a4885c]13.[/color] Security and command roles are held to a higher standard and must follow space law.
-    - If you don’t have time to play a full round, do not select these roles.
-    - If you need to leave your computer, send an ahelp or notify your fellow crew via the radio.
-    - Be competent in your job and department. Failure to know the basics of your department is liable to result in a job ban.
-    - Security and Command roles are forbidden from using a syndicate uplink to receive contraband without written permission from Central Command.
-    - Do not give away your objective items (e.g. Captain’s equipment, Head of Personnel’s ID, etc.). Some leeway is given to making deals with criminals if the deal benefits the safety or situation of the station as a whole and not just yourself.
-    - Uphold the Law & maintain order. Do not engage in lawbreaking activity or troublemaker behavior. Security is expected to intervene into criminal activity where possible. Heads of Staff are at minimum expected to report criminal activity to Security.
-    - Do not immediately abandon your position as a Command role and go do whatever you want instead of managing your department/the station. Do not abuse your position or use it to make arbitrary choices to the detriment of the station.
-    - Do not hire random crew to be your bodyguards or promote random crewmember to Captain or a Head of Staff at random. If you need bodyguards, talk to your security department. If you need a new Command role, talk to the personnel in that related department.
-    - Do not abandon the station during Nuclear Operatives. You are supposed to protect the station, not let operatives kill everyone on it without a fight.
-
-[color=#a4885c]14.[/color] Security (and Command where applicable) should try to remain non-lethal and effect arrests. Security/Command will be expected to answer for use of lethal force. Security/Command will be expected to effect arrests on criminals and prevent them from dying while in custody, even if lethal force is used.
-
-In the following special circumstances, lethal force may be used by Security:
-    - Lethal force is used against you (ex: firearms, lasers, disabling/stunning weapons with intent to kill, deadly melee weapons)
-    - Suspect is equipped with dangerous equipment only used by enemy agents/antagonists and is not cuffed nor surrendering (ex: Bloodred Hardsuit, China Lake, C-20R, etc.).
-    - You determine that your life or the life of another person is in immediate danger.
-    - The suspect is unable to be safely detained by less-lethal means. This includes suspects who continually resist efforts to be cuffed or continuously manage to escape.
-    - If no other reasonable options are readily available and allowing the suspect to continue would be an unreasonable danger to the station/crew.
-
-[color=#a4885c]15.[/color] Security/Command are expected to protect detainees in their custody to the best of their ability so as long as it does not come to unreasonable risk to themselves, the crew, or the station at large to do so.
-    - Brig times should generally not exceed 20 minutes unless the crime is permabriggable.
-    - Security may choose to confiscate dangerous items (weapons, firearms) as well as items used to commit crimes or items that prove problematic in possession of the detainee (tools, insulated gloves, etc.).
-    - Security may inspect PDAs of detainees and withhold them for the duration of detention, but can only confiscate them if they are obviously contraband. Suspicion alone is NOT sufficient for PDA confiscation by Security.
-    - Security is prohibited from checking crewmates for implants without reasonable suspicion.
-    - Detainees that die in your custody must be cloned unless they have been (legally) executed or have committed suicide.
-    - Executions must be for a capital crime, used only as a last resort, and MUST be authorized by the highest ranking member of Security, who will answer to the use of execution.
-    - Detainees in the brig have the right to know what they are being charged with.
-
-[color=#a4885c]16.[/color] Command members besides the Logistics Officer are not permitted to leave the station on salvage expeditions.
+   [color=#fff4cc]За более подробной информацией можете обратиться к администрации в AHelp или Discord
+   Надеемся Вы хорошо проведёте время нашем сервере![/color]

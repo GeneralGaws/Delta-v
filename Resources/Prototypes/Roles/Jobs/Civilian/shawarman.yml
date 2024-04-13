@@ -1,0 +1,35 @@
+- type: job
+  id: Shawarman
+  name: "Шауршеф"
+  description: "Шеф-повар по приготовлению шаурмы, виртуозно владеющий ножом и секретами восточных специй."
+  playTimeTracker: JobShawarman
+  setPreference: false
+  startingGear: ShawarmanGear
+  icon: "JobIconShawarman"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+  - Kitchen
+  extendedAccess:
+  - Hydroponics
+  - Bar
+  special: 
+  - !type:AddComponentSpecial
+    components:
+    - type: ProfessionalChef
+
+- type: startingGear
+  id: ShawarmanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+    head: ClothingHeadHatChef
+    back: ClothingBackpackFilled
+    mask: ClothingMaskItalianMoustache
+    shoes: ClothingShoesColorBlack
+    id: ChefPDA
+    outerClothing: ClothingOuterWinterChef
+    ears: ClothingHeadsetService
+  innerClothingSkirt: ClothingUniformJumpskirtChef
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

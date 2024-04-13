@@ -94,7 +94,7 @@
 - type: entity
   parent: AirlockExternal
   id: AirlockExternalCargoLocked
-  suffix: External, Logistics, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: External, Cargo, Locked
   components:
   - type: ContainerFill
     containers:
@@ -184,7 +184,7 @@
 - type: entity
   parent: AirlockCargo
   id: AirlockCargoLocked
-  suffix: Logistics, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: Cargo, Locked
   components:
   - type: ContainerFill
     containers:
@@ -238,7 +238,7 @@
 - type: entity
   parent: AirlockScience
   id: AirlockScienceLocked
-  suffix: Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Science, Locked
   components:
   - type: ContainerFill
     containers:
@@ -247,7 +247,7 @@
 - type: entity
   parent: AirlockScience
   id: AirlockMedicalScienceLocked
-  suffix: Medical/Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Medical/Science, Locked
   components:
   - type: ContainerFill
     containers:
@@ -328,7 +328,7 @@
 - type: entity
   parent: AirlockCommand
   id: AirlockQuartermasterLocked
-  suffix: Logistics Officer, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: Quartermaster, Locked
   components:
   - type: ContainerFill
     containers:
@@ -451,7 +451,7 @@
 - type: entity
   parent: AirlockExternalGlass
   id: AirlockExternalGlassCargoLocked
-  suffix: External, Glass, Logistics, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: External, Glass, Cargo, Locked
   components:
   - type: ContainerFill
     containers:
@@ -550,7 +550,7 @@
 - type: entity
   parent: AirlockCargoGlass
   id: AirlockCargoGlassLocked
-  suffix: Logistics, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: Cargo, Locked
   components:
   - type: ContainerFill
     containers:
@@ -604,7 +604,7 @@
 - type: entity
   parent: AirlockScienceGlass
   id: AirlockScienceGlassLocked
-  suffix: Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Science, Locked
   components:
   - type: ContainerFill
     containers:
@@ -613,7 +613,7 @@
 - type: entity
   parent: AirlockScienceGlass
   id: AirlockMedicalScienceGlassLocked
-  suffix: Medical/Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Medical/Science, Locked
   components:
   - type: ContainerFill
     containers:
@@ -694,7 +694,7 @@
 - type: entity
   parent: AirlockCommandGlass
   id: AirlockQuartermasterGlassLocked
-  suffix: Logistics Officer, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: Quartermaster, Locked
   components:
   - type: ContainerFill
     containers:
@@ -804,7 +804,7 @@
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintCargoLocked
-  suffix: Logistics, Locked # DeltaV - Logistics Department replacing Cargo
+  suffix: Cargo, Locked
   components:
   - type: ContainerFill
     containers:
@@ -952,7 +952,7 @@
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintRnDLocked
-  suffix: Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Science, Locked
   components:
   - type: ContainerFill
     containers:
@@ -963,7 +963,7 @@
 - type: entity
   parent: AirlockMaintRnDLocked
   id: AirlockMaintRnDMedLocked
-  suffix: Medical/Epistemics, Locked # DeltaV - Epistemics Department replacing Science
+  suffix: Medical/Science, Locked
   components:
   - type: ContainerFill
     containers:

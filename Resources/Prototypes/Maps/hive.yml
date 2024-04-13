@@ -2,8 +2,7 @@
   id: TheHive
   mapName: 'The Hive'
   mapPath: /Maps/hive.yml
-  minPlayers: 30
-  #maxPlayers: 80 Temporary maybe
+  minPlayers: 0
   stations:
     TheHive:
       stationProto: StandardNanotrasenStation
@@ -12,7 +11,7 @@
           mapNameTemplate: 'The Hive'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'DV'
+            prefixCreator: 'TG'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Seal.yml
         - type: StationJobs
@@ -70,3 +69,13 @@
             CargoTechnician: [ 2, 3 ]
             SalvageSpecialist: [ 2, 3 ]
             MailCarrier: [ 2, 2 ]
+            Slugcat: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
