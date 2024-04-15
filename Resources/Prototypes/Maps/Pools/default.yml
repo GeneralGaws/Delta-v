@@ -1,29 +1,14 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+# DeltaV
   - Arena
   - Asterisk
-  - Atlas
-  - Bagel
-  - Box
-  - Cluster
-  - Core
-  - CorvaxAvrite
-  - CorvaxDelta
-  - CorvaxGate
-  - CorvaxSilly
   - Edge
-  - Europa
-  - Fland
-  - Marathon
-  - Meta
-  - Omega
-  - Origin
-  - Packed
+  - Hammurabi
+  - Lighthouse
   - Pebble
-  - Reach
-  #- Train <- return after station anchoring PR is finished and merged
-  - Saltern
   - Shoukou
-  - TheHive
   - Tortuga
+  - TheHive
+  - Submarine

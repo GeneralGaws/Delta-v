@@ -59,9 +59,6 @@
     - id: FoodMeat
       amount: 4 # Good eatin', though. You monster.
   # They wawa
-  - type: Speech
-    speechVerb: SpaceFerret
-    speechSounds: SpaceFerret
   - type: TypingIndicator
     proto: moth
   # They hard to pet
