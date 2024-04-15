@@ -101,7 +101,7 @@ ghost-role-information-skeleton-biker-description = Колесите на сво
 ghost-role-information-onestar-mecha-name = мех Onestar
 ghost-role-information-onestar-mecha-description = Вы - экспериментальный мех, созданный неизвестно кем. Всё, что вы знаете, это что у вас есть оружие, а поблизости обнаружены движущиеся мясные мишени...
 ghost-role-information-closet-skeleton-name = Скелет из шкафа
-ghost-role-information-closet-skeleton-description = Вы сотрудник станции, который по непонятным причинам пребывал в шкафу так долго, что превратился в скелета...(МИРНЫЙ по отношению к станции)
+ghost-role-information-closet-skeleton-description = Устройте хаос! Вы - первозданная сила, не имеющая хозяина. Живите счастливо с экипажем или развяжите священную войну скелетов.
 ghost-role-information-onestar-mecha-rules = Примените своё оружие, чтобы посеять хаос. Вы - антагонист.
 ghost-role-information-remilia-name = Ремилия, фамильяр священника
 ghost-role-information-remilia-description = Слушайте своего хозяина. Ешьте фрукты.
@@ -113,6 +113,8 @@ ghost-role-information-ert-leader-name = ОБР Лидер
 ghost-role-information-ert-leader-description = Руководите командой специалистов для решения проблем станции.
 ghost-role-information-ert-janitor-name = ОБР Уборщик
 ghost-role-information-ert-janitor-description = Оказывайте содействие в попытках навести чистоту для решения проблем станции.
+ghost-role-information-ert-chaplain-name = ОБР Священник
+ghost-role-information-ert-chaplain-description = Оказывайте помощь в разрешении моральных проблем экипажа станции.
 ghost-role-information-ert-engineer-name = ОБР Инженер
 ghost-role-information-ert-engineer-description = Оказывайте содействие в инженерных работах для решения проблем станции.
 ghost-role-information-ert-security-name = ОБР Офицер безопасности
@@ -156,7 +158,7 @@ ghost-role-information-syndicate-reinforcement-rules = Действуют обы
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент-обезьяна Синдиката
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
 ghost-role-information-syndicate-monkey-reinforcement-rules = Действуют обычные правила антагонистов Синдиката. Работайте с тем, кто вас вызвал, и не причиняйте ему вреда.
-ghost-role-information-artifact-name = Sentient Artifact
+ghost-role-information-artifact-name = Разумный артефакт
 ghost-role-information-artifact-description =
-    Enact your eldritch whims.
-    Forcibly activate your nodes for good or for evil.
+    Осуществляйте свои инопланетные прихоти.
+    Принудительно активируйте свои узлы во благо или во зло.
