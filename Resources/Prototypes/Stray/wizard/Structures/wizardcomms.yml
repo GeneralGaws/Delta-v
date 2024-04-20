@@ -1,0 +1,25 @@
+- type: entity
+  parent: SyndicateComputerComms
+  id: WizardComputerComms
+  name: Волшебная консоль связи
+  description: Действительно волшебная
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: telesci
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: CommunicationsConsole
+    title: Космическая Федерация Магов
+    color: "#ff7aff"
+    canShuttle: false
+    global: true
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff7aff"

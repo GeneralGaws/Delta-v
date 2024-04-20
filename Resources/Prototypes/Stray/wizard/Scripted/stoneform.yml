@@ -1,0 +1,90 @@
+- type: entity
+  parent: BaseMob
+  id: StonedMob
+  name: Статуя
+  noSpawn: true
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 0
+    baseSprintSpeed: 0
+  - type: StandingState
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: stone
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Stray/wizard/Scripted/stoneform.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stone
+  - type: Damageable
+    damageContainer: StoneForm
+    damageModifierSet: StoneForm
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 200
+      behaviors:
+      - !type:GibBehavior { }
+
+- type: damageModifierSet
+  id: StoneForm
+  coefficients:
+    Blunt: 0.2
+    Slash: 0.2
+    Piercing: 0.2
+    Shock: 0
+    Heat: 0.2
+    Poison: 0
+    Radiation: 0
+    Cold: 0
+    Cellular: 0
+    Asphyxiation: 0
+    Bloodloss: 0
+    Caustic: 0
+  flatReductions:
+    Blunt: 5
+
+- type: polymorph
+  id: WizardStoneForm
+  configuration:
+    entity: StonedMob
+    inventory: None
+    forced: true
+    transferDamage: true
+    revertOnDeath: false
+    revertOnCrit: false
+    duration: 180
+    cooldown: 180
+
+- type: entity
+  id: ActionPolymorphWizardStoneForm
+  name: Превратить цель в статую на 3 минуты
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 180
+    event: !type:StoneTargetSpellEvent
+    itemIconStyle: NoItem
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: stone
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/fleshtostone.ogg

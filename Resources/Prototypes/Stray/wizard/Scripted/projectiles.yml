@@ -1,0 +1,16 @@
+- type: entity
+  name: Hulk Laser
+  parent: BulletDisabler
+  id: HulkLaserBolt
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      layers:
+        - state: bolt
+    - type: StaminaDamageOnCollide
+      damage: 5
+    - type: Projectile
+      damage:
+        types:
+          Heat: 15

@@ -146,6 +146,7 @@
     sprite: Clothing/Shoes/Specific/wizard.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Specific/wizard.rsi
+  - type: NoSlip
 
 - type: entity
   parent: ClothingShoesBase

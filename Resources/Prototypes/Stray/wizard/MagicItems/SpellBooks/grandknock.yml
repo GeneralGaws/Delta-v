@@ -1,0 +1,28 @@
+- type: entity
+  id: ActionGrandKnock
+  name: Великий стук
+  description: Открывает все шлюзы на станции
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 300
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: grandknock
+    event: !type:KnockSpellEvent
+      speech: AULIE OXIN FIERA
+      range: 300
+
+- type: entity
+  id: GrandKnockSpellbook
+  name: Книга заклинания великий стук
+  parent: BaseSpellbook
+  components:
+    - type: Sprite
+      sprite: Objects/Magic/spellbooks.rsi
+      layers:
+        - state: bookknock
+    - type: Spellbook
+      spells:
+        ActionGrandKnock: -1

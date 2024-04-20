@@ -1,0 +1,307 @@
+- type: entity
+  id: ActionSpellEMP
+  name: ЭМИ
+  description: Вызывает ЭМИ в радиусе 4 тайлов
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: emp
+    event: !type:EMPSpellEvent
+      speech: NEC CANTIO!
+
+- type: entity
+  id: ActionDevolve
+  name: Превратить в обезъяну
+  description: На 20 секунд
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    canTargetSelf: true
+    interactOnMiss: false
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/staff_animation.ogg
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: devolve
+    event: !type:DevolveSpellEvent
+      speech: FREYAL LGARDE!
+
+- type: entity
+  id: ActionSpellAnimate
+  name: Призвать мертвеца
+  description: Использовать на мертвеца, чтобы призвать союзного скелета
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 120
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: animate
+    event: !type:AnimateDeadSpellEvent
+      speech: EL NECRIS!
+
+- type: entity
+  id: ActionSpellBlind
+  name: Ослепление
+  description: Ослепить цель в радиусе вытянутой руки
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: blind
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/blind.ogg
+    event: !type:BlindSpellEvent
+      speech: STI KALY!
+
+- type: entity
+  id: ActionSpellSmoke
+  name: Дым
+  description: Скрыться от неприятелей в дыму
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 30
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: smoke
+    event: !type:SmokeSpellEvent
+      speech: NAHLAP SO'RYU!
+
+- type: entity
+  id: ActionSpellSwap
+  name: Поменяться местами
+  description:  Меняет вас с выбранным существом
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 50
+    range: 10
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: swap
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/blink.ogg
+    event: !type:SwapSpellEvent
+      speech: FRO'BRT'TRO'DA!
+
+- type: entity
+  id: ActionSpellLightningStrike
+  name: Электрический удар
+  description: Бьёт молнией цель в радиусе видимости
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 30
+    itemIconStyle: BigAction
+    range: 100
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: lightning_strike
+    event: !type:LightningStrikeSpellEvent
+      damageAmount:
+        types:
+          Heat: 16
+      speech: UN'LTD P'WAH!
+
+- type: entity
+  id: ActionSpellHeal
+  name: Исцеляющее касание
+  description: Можно вылечить и себя
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 30
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: heal
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/staff_healing.ogg
+    event: !type:HealSpellEvent
+      healAmount:
+        groups:
+          Brute: -60
+          Burn: -40
+          Toxin: -40
+          Airloss: -40
+      speech: AULIE OXIN FIERA
+
+- type: entity
+  id: ActionSpellSacrifice
+  name: Самопожертвование
+  description: Возвращает из мертвых выбранную цель, обменивая его жизнь на вашу
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 600
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: sacrifice
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/staff_healing.ogg
+    event: !type:SacrificeSpellEvent
+      healAmount:
+        groups:
+          Brute: -999
+          Burn: -999
+          Toxin: -940
+          Airloss: -920
+      damageAmount:
+        groups:
+          Brute: 999
+          Burn: 999
+          Toxin: 999
+          Airloss: 999
+      speech: AULIE OXIN FIERA
+
+- type: entity
+  id: ActionSpellLightningSphere
+  name: Электрический удар II
+  description: В радиусе 6 тайлов бьёт по всем существам и приборам
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 60
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: lightning_sphere
+    event: !type:LightningSphereSpellEvent
+      speech: UN'LTD P'WAH!
+
+- type: entity
+  id: ActionHulkLaser
+  name: Выстрелить лазером
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 5
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: iceburst
+    event: !type:ProjectileSpellEvent
+      prototype: HulkLaserBolt
+      posData: !type:TargetCasterPos
+      speech: action-speech-spell-fireball
+
+- type: entity
+  id: ActionFireStolb
+  name: Огненный столб
+  description: Поджигает цель в радиусе 10 тайлов
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 30
+    range: 7
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    canTargetSelf: false
+    interactOnMiss: false
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: pyro
+    event: !type:FireStolbSpellEvent
+      speech: action-speech-spell-fireball
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/fireball.ogg
+
+- type: entity
+  id: ActionFireStorm
+  name: fire storm
+  description: Поджигает всех в радиусе 6 тайлов
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 90
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: saint_fire
+    event: !type:FireStormSpellEvent
+      speech: action-speech-spell-fireball
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/fireball.ogg
+
+- type: entity
+  id: ActionPulseSpell
+  name: Пульс
+  description: Оттолкнуть всех существ в радиусе 5 тайлов
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 50
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: repulse
+    event: !type:PulseSpellEvent
+      speech: action-speech-spell-fireball
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/repulse.ogg
+
+- type: entity
+  id: ActionPacificationSpell
+  name: Пасификация
+  description: На 20 секунд не даёт цели использовать оружие. Радиус 5 тайлов
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 60
+    range: 5
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: pacification
+    event: !type:PacificationSpellEvent
+      speech: action-speech-spell-fireball
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/repulse.ogg
+
+- type: entity
+  id: ActionSummonDyrnwynSpell
+  name: Призвать огненный меч
+  description: На 20 секунд призывает в руку огненный меч
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 60
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: dyrnwyn
+    event: !type:SummonDyrnwynSpellEvent
+      speech: action-speech-spell-fireball
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/fireball.ogg

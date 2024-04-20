@@ -1,0 +1,99 @@
+- type: thiefBackpackSet
+  id: FireCaster
+  name: Маг огня
+  description: Включает в себя книгу заклинания,дыма ,палочку огненного шара и робу огня
+  sprite:
+    sprite: Objects/Magic/magicactions.rsi
+    state: fireball
+  content:
+  - ClothingDuffelWizardFireCaster
+
+- type: thiefBackpackSet
+  id: Healer
+  name: Жрец
+  description: Включает в себя посох исцеления, 3 настойки из полыни, книгу заклинания исцеления
+  sprite:
+    sprite: Stray/wizard/Objects/Consumable/Drinks/healpotion.rsi
+    state: icon
+  content:
+  - ClothingDuffelWizardHealer
+
+- type: thiefBackpackSet
+  id: Polymorpher
+  name: Мастер превращений
+  description: Включает в себя книгу халка, посохи превращения в дверь и обезьяну
+  sprite:
+    sprite: Mobs/Animals/mouse.rsi
+    state: icon-0
+  content:
+  - ClothingDuffelWizardPolymorper
+
+- type: thiefBackpackSet
+  id: Summoner
+  name: Призыватель
+  description: Включает в себя книгу призыва карпов и медведя
+  sprite:
+    sprite: Mobs/Aliens/Carps/space.rsi
+    state: icon
+  content:
+  - ClothingDuffelWizardSummoner
+
+- type: thiefBackpackSet
+  id: Trickster
+  name: Ловкач
+  description: Включает в себя книгу телепорта и эфирной формы
+  sprite:
+    sprite: Stray/wizard/Actions/actions.rsi
+    state: blink
+  content:
+  - ClothingDuffelWizardTrickster
+
+- type: thiefBackpackSet
+  id: TechFob
+  name: Технофоб
+  description: Включает в себя книгу ЭМИ и электроперчатки
+  sprite:
+    sprite: Stray/wizard/Actions/actions.rsi
+    state: emp
+  content:
+  - ClothingDuffelWizardTechFob
+
+- type: thiefBackpackSet
+  id: Zeus
+  name: Последователь Зевса
+  description: Включает в себя книгу Мъёлнир,книгу электроудара II и шлем гровомержца
+  sprite:
+    sprite: Stray/wizard/Objects/Weapons/mjoilnir.rsi
+    state: icon
+  content:
+  - ClothingDuffelWizardZeus
+
+- type: thiefBackpackSet
+  id: Crusader
+  name: Хранитель
+  description: Включает в себя голопаразита и книгу силового барьего
+  sprite:
+    sprite: Objects/Misc/guardian_info.rsi
+    state: icon
+  content:
+  - ClothingDuffelWizardCrusader
+
+- type: thiefBackpackSet
+  id: Necromant
+  name: Некромант
+  description: Включает в себя книгу оживления мертвеца, самопожертвования и шляпу ведьмы
+  sprite:
+    sprite: Stray/wizard/Actions/actions.rsi
+    state: sacrifice
+  content:
+  - ClothingDuffelWizardNecromant
+
+- type: thiefBackpackSet
+  id: BattleMage
+  name: Боевой маг
+  description: Включает в себя рунный меч, громовой лук и броню боевого мага
+  sprite:
+    sprite: Stray/wizard/Objects/Weapons/spellblade.rsi
+    state: icon
+  content:
+  - ClothingDuffelWizardBattleMage

@@ -1,0 +1,12 @@
+- type: storePreset
+  id: WizardStorePresetUplink
+  storeName: Uplink
+  categories:
+  - WizardBooks
+  - WizardWands
+  - WizardArmor
+  - WizardWeapon
+  - WizardUtility
+  - WizardPointless
+  currencyWhitelist:
+  - Bluespace

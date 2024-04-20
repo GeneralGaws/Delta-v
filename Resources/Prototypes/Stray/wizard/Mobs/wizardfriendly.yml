@@ -1,0 +1,114 @@
+- type: entity
+  name: Волшебный карп
+  parent: MobCarp
+  id: WizardCarp
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+
+- type: entity
+  name: Волшебный медведь
+  parent: MobSpaceBasic
+  id: WizardBear
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+
+- type: entity
+  name: Волшебная акула
+  parent: MobShark
+  id: WizardShark
+  components:
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+
+- type: entity
+  name: Lavaland skull
+  parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat]
+  id: LavalandSkull
+  components:
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 3
+      baseSprintSpeed: 4
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        state: skull
+        sprite: Stray/wizard/Mobs/lava_skull.rsi
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.25
+          density: 10
+          mask:
+          - FlyingMobMask
+          layer:
+          - FlyingMobLayer
+    - type: DamageStateVisuals
+      states:
+         Alive:
+            Base: skull
+         Dead:
+            Base: dead
+    - type: MeleeWeapon
+      soundHit:
+         path: /Audio/Effects/bite.ogg
+      angle: 0
+      animation: WeaponArcBite
+      damage:
+        types:
+          Piercing: 5
+    - type: MobThresholds
+      thresholds:
+       0: Alive
+       30: Dead
+    - type: NpcFactionMember
+      factions:
+        - WizardSummon
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#f71713"
+
+- type: entity
+  name: Поднятый мертвец
+  parent: MobSkeletonPerson
+  id: MobSkeletonAngry
+  components:
+  - type: GhostRole
+    name: Поднятый мертвец
+    description: Помогать магам
+  - type: GhostTakeoverAvailable
+  - type: RandomHumanoidAppearance
+  - type: NpcFactionMember
+    factions:
+      - WizardSummon
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Critical
+      75: Dead
+  - type: TransferMindOnGib
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#f71713"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:GibBehavior { }

@@ -1,0 +1,122 @@
+﻿# Карп
+- type: entity
+  id: ActionSpawnWizardCarpSpell
+  name: Призвать волшебного карпа
+  description: Призывает 2 дружественных карпов
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 50
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: summon_carp
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: WizardCarp
+        amount: 2
+      offset: 0, 1
+      speech: AIE KHUSE EU
+
+- type: entity
+  id: WizardCarpSpellbook
+  name: Книга призыва карпов
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardCarpSpell: -1
+
+# Медведь
+
+- type: entity
+  id: WizardBearSpellbook
+  name: Книга призыва медведя
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardBearSpell: -1
+
+- type: entity
+  id: ActionSpawnWizardBearSpell
+  name: Призвать волшебного медведя
+  description: Призывает 1 дружественного медведя
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 60
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: summon_bear
+    event: !type:WorldSpawnSpellEvent
+      speech: AIE KHUSE EU
+      prototypes:
+      - id: WizardBear
+        amount: 1
+
+# АКУЛА ЕБАТЬ
+
+- type: entity
+  id: WizardSharkSpellbook
+  name: Книга призыва акулы
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardSharkSpell: -1
+
+- type: entity
+  id: ActionSpawnWizardSharkSpell
+  name: Призвать волшебную акулу
+  description: Призывает 1 дружественную акулу
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 180
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: summon_shark
+    event: !type:WorldSpawnSpellEvent
+      speech: AIE KHUSE EU
+      prototypes:
+      - id: WizardShark
+        amount: 1
+
+# череп с лаваленда
+
+- type: entity
+  id: ActionSpawnWizardSkullSpell
+  name: Призвать 2 черепа
+  description: Призывает 2 дружественных черепа
+  parent: ActionSpawnWizardCarpSpell
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 60
+    range: 3
+    itemIconStyle: BigAction
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: summon_skull
+    event: !type:WorldSpawnSpellEvent
+      speech: AIE KHUSE EU
+      prototypes:
+      - id: LavalandSkull
+        amount: 2
+
+- type: entity
+  id: WizardSkullSpellbook
+  name: Книга призыва черепов
+  parent: BaseSpellbook
+  components:
+    - type: Spellbook
+      spells:
+        ActionSpawnWizardSkullSpell: -1

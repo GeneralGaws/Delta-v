@@ -5,7 +5,7 @@
   noSpawn: true
   components:
   - type: EntityTargetAction
-    useDelay: 60
+    useDelay: 150
     itemIconStyle: BigAction
     whitelist:
       components:

@@ -1,0 +1,248 @@
+- type: entity
+  id: EmpSpellbook
+  name: Книга заклинания ЭМИ
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellEMP: -1
+
+- type: entity
+  id: DevolveSpellbook
+  name: Книга превращения в обезьяну
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    learnPermanently: true
+    deleteAfterLearn: true
+    spells:
+      ActionDevolve: -1
+
+- type: entity
+  id: AetherSpellbook
+  name: Книга превращения в эфирное облако
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPolymorphWizardAetherForm: -1
+
+- type: entity
+  id: HulkSpellbook
+  name: Книга превращения в халка
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPolymorphWizardHulkForm: -1
+
+- type: entity
+  id: WizardAnimateSpellbook
+  name: Книга оживления мертвеца
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellAnimate: -1
+
+- type: entity
+  id: WizardBlindSpellbook
+  name: Книга ослепления
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellBlind: -1
+
+- type: entity
+  id: WizardSmokeSpellbook
+  name: Книга призыва дыма
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSmoke: -1
+
+- type: entity
+  id: WizardSwapSpellbook
+  name: Книга заклинания подмена
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSwap: -1
+
+- type: entity
+  id: WizardLightningStrikeSpellbook
+  name: Книга заклинания электрический удар
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellLightningStrike: -1
+
+- type: entity
+  id: WizardHealSpellbook
+  name: Книга заклинания исцеление
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellHeal: -1
+
+- type: entity
+  id: WizardSacrificeSpellbook
+  name: Книга заклинания самопожертвования
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellSacrifice: -1
+
+- type: entity
+  id: WizardLightningSphereSpellbook
+  name: Книга заклинания электрический удар II
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSpellLightningSphere: -1
+
+- type: entity
+  id: FireStolbSpellbook
+  name: Книга заклинания столб огня
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionFireStolb: -1
+
+- type: entity
+  id: FireStormSpellbook
+  name: Книга заклинания священный огонь
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionFireStorm: -1
+
+- type: entity
+  id: PulseSpellbook
+  name: Книга заклинания пульс
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPulseSpell: -1
+
+- type: entity
+  id: StoneTargetSpellbook
+  name: Книга превращения в статую
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPolymorphWizardStoneForm: -1
+
+- type: entity
+  id: ItemToSnakeSpellbook
+  name: Книга заклинания превращения в змею
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPolymorphWizardItemSnakeForm: -1
+
+- type: entity
+  id: PacificationSpellbook
+  name: Книга заклинания пасификации
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionPacificationSpell: -1
+
+- type: entity
+  id: SummonDyrnwynSpellbook
+  name: Книга призыва огненного меча
+  parent: BaseSpellbook
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/books.rsi
+    layers:
+    - state: book_demonomicon
+  - type: Spellbook
+    spells:
+      ActionSummonDyrnwynSpell: -1

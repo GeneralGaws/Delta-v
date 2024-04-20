@@ -1,0 +1,279 @@
+#Мъёлнир
+
+- type: entity
+  name: Мъёлнир
+  parent: SecBreachingHammer
+  id: WizardMjoilnir
+  description: holy fuck
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Melee/mjoilnir.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.70
+    damage:
+      types:
+        Blunt: 15
+        Piercing: 3
+        Structural: 10
+        Heat: 10
+    soundHit:
+      path: /Audio/Effects/Lightning/lightningshock.ogg
+    bluntStaminaDamageFactor: 1.50 # 15 stamina damage
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Piercing: 2
+        Structural: 25
+  - type: MeleeThrowOnHit
+    unanchorOnHit: false
+    enabled: true
+  - type: Clothing
+    sprite: Stray/wizard/Objects/Weapons/Melee/mjoilnir.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: PointLight
+    radius: 2.0
+    energy: 5.0
+    color: "#ffffaa"
+    castShadows: false
+
+#рунный меч
+
+- type: entity
+  id: RuneBlade
+  name: Рунный меч
+  description: Магический камень на рукоятке. Выпускает магические снаряды. Очень хрупкий
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Melee/spellblade.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Stray/wizard/Objects/Weapons/spellblade.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    useKey: false
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser.ogg
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: ProjectileBatteryAmmoProvider
+    proto: ProjectileArcaneBolt
+    fireCost: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 20
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Reflect
+    enabled: true
+    reflectProb: 0.5
+    spread: 90
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 25
+    soundHit:
+         path: /Audio/Weapons/bladeslice.ogg
+  - type: DisarmMalus
+  - type: Item
+    size: Small
+
+# громовой лук
+
+- type: entity
+  name: громовой лук
+  parent: BaseBow
+  id: LightningBow
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Guns/lightningbow.rsi
+    layers:
+    - state: unwielded
+      map: [ base ]
+    - state: unwielded-arrow
+      map: [ arrow ]
+      visible: false
+    - state: unwielded-plunger
+      map: [ plunger ]
+      visible: false
+    - state: unwielded-lightningarrow
+      map: [ lightningarrow ]
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.WieldableVisuals.Wielded:
+        arrow:
+          True: { state: wielded-arrow }
+          False: { state: unwielded-arrow }
+        lightningarrow:
+          True: { state: wielded-lightningarrow }
+          False: { state: unwielded-lightningarrow }
+        plunger:
+          True: { state: wielded-plunger }
+          False: { state: unwielded-plunger }
+        base:
+          True: { state: wielded }
+          False: { state: unwielded }
+  - type: ItemSlots
+    slots:
+      projectiles:
+        name: Projectiles
+        startingItem: null
+        insertSound: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+        whitelist:
+          tags:
+          - Arrow
+          - Plunger
+          - LightningArrow
+  - type: ItemMapper
+    spriteLayers:
+    - lightningarrow
+    - arrow
+    - plunger
+    mapLayers:
+      lightningarrow:
+        whitelist:
+          tags:
+          - LightningArrow
+      arrow:
+        whitelist:
+          tags:
+          - Arrow
+      plunger:
+        whitelist:
+          tags:
+          - Plunger
+  - type: PointLight
+    radius: 2.0
+    energy: 5.0
+    color: "#ffd700"
+    castShadows: false
+
+# Колчан
+
+- type: entity
+  parent: ClothingBeltQuiver
+  id: LightningQuiver
+  name: громовой колчан
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/quiver.rsi
+  - type: Item
+    size: Small
+  - type: Storage
+    grid:
+    - 0,0,7,3
+    maxItemSize: Small
+    whitelist:
+      tags:
+      - Arrow
+      - LightningArrow
+
+- type: entity
+  parent: LightningQuiver
+  id: LightningQuiverFilled
+  name: Громовой колчан
+  suffix: полный
+  components:
+    - type: StorageFill
+      contents:
+      - id: LightningArrow
+        amount: 15
+
+- type: entity
+  name: Огненный меч
+  parent: BaseItem
+  id: DyrnwynSword
+  description: Имеет 2 режима
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Magic/fireball.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Effects/burning.ogg
+  - type: ItemToggleSharp
+  - type: ItemToggleHot
+  - type: ItemToggleDisarmMalus
+    activatedDisarmMalus: 0.6
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Effects/fire.ogg
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Effects/fire.ogg
+    activatedSoundOnSwing:
+      path: /Audio/Effects/fire.ogg
+    activatedDamage:
+        types:
+            Slash: 8
+            Heat: 20
+            Structural: 20
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Melee/Dyrnwyn/dyrnwyn.rsi
+    layers:
+      - state: icon
+      - state: icon_blade
+        visible: false
+        map: [ "blade" ]
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Slash: 18
+  - type: Item
+    size: Small
+    sprite: Stray/wizard/Objects/Weapons/Melee/Dyrnwyn/dyrnwyn-inhands.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: PointLight
+    enabled: false
+    radius: 3
+    energy: 2
+    color: orange
+    netsync: false
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+      right:
+      - state: inhand-right-blade
+  - type: DisarmMalus
+    malus: 0
+  - type: IgnitionSource
+    temperature: 700
+  - type: TimedDespawn
+    lifetime: 20

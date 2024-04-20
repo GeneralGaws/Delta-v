@@ -1,0 +1,33 @@
+- type: entity
+  name: столб огня
+  id: stolb
+  noSpawn: true
+  description: Looking at this anomaly makes you feel strange, like something is pushing at your eyes.
+  components:
+  - type: TimedDespawn
+    lifetime: 0.8
+  - type: Sprite
+    sprite: Stray/wizard/Scripted/firestolb.rsi
+    state: icon
+  - type: PointLight
+    enabled: false
+    color: "#E25822"
+    radius: 1.0
+    energy: 5.0
+    netsync: false
+  - type: IgnitionSource
+    temperature: 400
+    ignited: false
+  - type: TriggerOnCollide
+    fixtureID: ignition
+  - type: Fixtures
+    fixtures:
+      ignition:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        hard: false
+        mask:
+        - ItemMask
+        layer:
+        - SlipLayer

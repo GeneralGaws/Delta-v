@@ -1,0 +1,28 @@
+- type: polymorph
+  id: WizardItemSnakeForm
+  configuration:
+    entity: PlushieSnake
+    inventory: None
+    transferDamage: false
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 120
+    cooldown: 120
+
+- type: entity
+  id: ActionPolymorphWizardItemSnakeForm
+  name: Превратить предмет в руке объекта в змею
+  description: на 2 минуты, радиус 8 тайлов
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 120
+    range: 8
+    canTargetSelf: true
+    event: !type:ItemToSnakeSpellEvent
+    itemIconStyle: NoItem
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: snake
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Items/Toys/rattle.ogg
