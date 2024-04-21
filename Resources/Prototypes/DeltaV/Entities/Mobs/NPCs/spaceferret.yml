@@ -24,17 +24,22 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       sprite: DeltaV/Mobs/Animals/legallydistinctspaceferret.rsi
-      state: spaceferret
+      state: spaceferret1
     - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
   - type: RandomSprite
-    getAllGroups: true
     available:
-    - enum.DamageStateVisualLayers.Base:
-        spaceferret: SpaceFerretColors
+      - 0:
+          spaceferret1: ""                               
+          spaceferret2: ""
+          spaceferret3: ""
+          spaceferret4: ""
+          spaceferret5: ""
+          spaceferret6: ""
+          spaceferret7: ""
   - type: DamageStateVisuals
     states:
       Alive:

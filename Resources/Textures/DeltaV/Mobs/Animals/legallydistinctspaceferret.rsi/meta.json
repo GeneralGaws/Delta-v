@@ -8,7 +8,31 @@
     },
     "states": [
         {
-            "name": "spaceferret",
+            "name": "spaceferret1",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret2",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret3",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret4",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret5",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret6",
+            "directions": 4
+        },
+        {
+            "name": "spaceferret7",
             "directions": 4
         },
         {
