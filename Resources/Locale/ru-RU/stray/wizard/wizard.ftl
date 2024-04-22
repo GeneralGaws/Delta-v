@@ -43,4 +43,4 @@ ent-MugwortPotion = Настойка из полыни
 wizard-mjoinir-desc = Каждый удар сопровождается отталкиванием цели на далёкие земли
 uplink-archer-name = Громовой лук
 uplink-archer-description = Поставляется вместе с колчаном на 15 громовых стрел, оглушающие при попадании
-wizard-comms-announcement = Космическая Федерация Магов
+wizard-comms-announcement = Космическая Федерация Волшебников
