@@ -15,7 +15,7 @@
     - map: ["computerLayerKeys"]
       state: telesci_key
   - type: CommunicationsConsole
-    title: Космическая Федерация Магов
+    title: wizard-comms-announcement
     color: "#ff7aff"
     canShuttle: false
     global: true
@@ -23,3 +23,5 @@
     radius: 1.5
     energy: 1.6
     color: "#ff7aff"
+  - type: AccessReader
+    access: [["Maintenance"]]

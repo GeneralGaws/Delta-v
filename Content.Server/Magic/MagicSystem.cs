@@ -708,7 +708,7 @@ public sealed class MagicSystem : EntitySystem
         var transform = Transform(args.Performer);
         var coords = transform.MapPosition;
 
-        _lightning.ShootRandomLightnings(args.Performer, 6, 10, "SuperchargedLightning");
+        _lightning.ShootRandomLightnings(args.Performer, 6, 20, "SuperchargedLightning");
 
         args.Handled = true;
     }

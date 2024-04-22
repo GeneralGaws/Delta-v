@@ -4,7 +4,7 @@
   id: WizardUplinkRadio
   name: Книга заклинаний
   description: Изучение различных заклинаний
-  suffix: Empty
+  suffix: 100 BS
   components:
   - type: Sprite
     sprite: Stray/wizard/Objects/spellbook.rsi
@@ -31,18 +31,21 @@
 - type: listing
   id: WizardCarpSpawnBook
   name: Книга заклинания призыв карпов
-  description: Призывает союзных карпов. Открывает к изучению "призыв акулы"
+  description: action-spell-spawn-carp
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: summon_carp }
   productEntity: WizardCarpSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSharkSpawnBook
   name: Книга заклинания призыва акулы
-  description: Призывает союзную акулу
+  description: action-spell-spawn-shark
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: summon_shark }
   productEntity: WizardSharkSpellbook
   cost:
@@ -53,39 +56,50 @@
     - !type:BuyBeforeCondition #САМОЕ ПЕРВОЕ ИСПОЛЬЗОВАНИЕ В ИГРЕ, я первопроходец
       whitelist:
       - WizardCarpSpawnBook
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: WizardBearSpawnBook
   name: Книга заклинания призыв медведя
-  description: Призывает союзного медведя
+  description: action-spell-spawn-bear
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: summon_bear }
   productEntity: WizardBearSpellbook
   cost:
-    Bluespace: 25
+    Bluespace: 30
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSkullBook
   name: Книга призыва черепов
-  description: Призывает 2 союзных летающих черепа
+  description: action-spell-spawn-skulls
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: summon_skull }
   productEntity: WizardSkullSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardWallBook
   name: uplink-book-forcewall-name
-  description: Создаёт барьер 1х3, который пропускает ТОЛЬКО вас
+  description: action-spell-forcewall
   icon: { sprite: Objects/Magic/magicactions.rsi, state: shield }
   productEntity: ForceWallSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSmiteBook
@@ -97,33 +111,40 @@
     Bluespace: 90
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardKnockBook
   name: Книга заклинания стук
-  description: Открывает все шлюзы в радиусе 4 тайлов. Открывает для изучения "Великий стук"
+  description: action-spell-knock
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: knock }
   productEntity: KnockSpellbook
   cost:
     Bluespace: 20
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardGrandKnockBook
   name: Книга заклинания великий стук
-  description: Открывает все внутренние шлюзы на станции
+  description: action-spell-grand-knock
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: grandknock }
   productEntity: GrandKnockSpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 15
   categories:
   - WizardBooks
   conditions:
     - !type:BuyBeforeCondition
       whitelist:
       - WizardKnockBook
-  restockTime: 100
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: WizardFireballBook
@@ -132,172 +153,216 @@
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: fireball }
   productEntity: FireballSpellbook
   cost:
-    Bluespace: 30
+    Bluespace: 35
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardIceBurstBook
   name: Ледяной выстрел
-  description: Даёт возможность выстрелить ледяным осколком в указанном направлении
+  description: action-spell-ice-blast
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: iceburst }
   productEntity: IceBurstSpellbook
   cost:
     Bluespace: 30
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardAcidSprayBook
   name: Едкий чих
-  description: Чихнуть токсичной мокротой. Фууу
+  description: action-spell-acid-spray
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: acidspray }
   productEntity: AcidSpraySpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 15
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardBlinkBook
   name: Книга заклинания прыжок
-  description: Позволяет проникнуть в любую точку в радиусе видимости
+  description: action-spell-blink
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: blink }
   productEntity: BlinkBook
-  cost:
-    Bluespace: 16
-  categories:
-  - WizardBooks
-
-- type: listing
-  id: WizardHulkBook
-  name: Книга превращения в халка
-  description: Позволяет на 30 секунд превратиться в огромный зелёный "шкаф"
-  icon: { sprite: Stray/wizard/Actions/actions.rsi, state: hulk }
-  productEntity: HulkSpellbook
-  cost:
-    Bluespace: 25
-  categories:
-  - WizardBooks
-
-- type: listing
-  id: WizardAetherBook
-  name: Книга заклинания эфирная форма
-  description: Дает возможность стать на 4 секунды эфирным облаком, игнорирующим препятствия
-  icon: { sprite: Stray/wizard/Actions/actions.rsi, state: aether_form }
-  productEntity: AetherSpellbook
   cost:
     Bluespace: 22
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: WizardHulkBook
+  name: Книга превращения в халка
+  description: action-spell-hulk
+  icon: { sprite: Stray/wizard/Actions/actions.rsi, state: hulk }
+  productEntity: HulkSpellbook
+  cost:
+    Bluespace: 32
+  categories:
+  - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: WizardAetherBook
+  name: Книга заклинания эфирная форма
+  description: action-spell-aether-form
+  icon: { sprite: Stray/wizard/Actions/actions.rsi, state: aether_form }
+  productEntity: AetherSpellbook
+  cost:
+    Bluespace: 28
+  categories:
+  - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardDevolveBook
   name: Книга превращения в обезьяну
-  description: Коснитесь цель, чтобы превратить его в жалкую макаку
+  description: action-spell-devolve
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: devolve }
   productEntity: DevolveSpellbook
   cost:
-    Bluespace: 16
+    Bluespace: 26
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardEMPBook
   name: Книга заклинания ЭМ импульса
-  description: Позволяет вызвать в радиусе 4 тайлов ЭМИ
+  description: action-spell-emp
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: emp }
   productEntity: EmpSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 24
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardAnimateBook
   name: Книга заклинания поднятие трупа
-  description: Превращает мертвеца в союзного скелета
+  description: action-spell-animate
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: animate }
   productEntity: WizardAnimateSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 30
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardBlindBook
   name: Книга заклинания ослепления
-  description: Ваше касание ослепляет неудачника
+  description: action-spell-blind
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: blind }
   productEntity: WizardBlindSpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 20
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSmokeBook
   name: Книга заклинания дым
-  description: Позволяет призвать дым под ногами и сбежать от неприятелей
+  description: action-spell-smoke
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: smoke }
   productEntity: WizardSmokeSpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 20
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSwapBook
   name: Книга заклинания замены
-  description: Сможете поменяться местами в целью в радиусе 10 тайлов
+  description: action-spell-swap
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: swap }
   productEntity: WizardSwapSpellbook
   cost:
     Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardLightningStrikeBook
   name: Книга заклинания электрический удар
-  description: Цель в радиусе видимости ощутит 220 вольт. Открывает для изучения электроудар II
+  description: action-spell-lightning
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: lightning_strike  }
   productEntity: WizardLightningStrikeSpellbook
   cost:
     Bluespace: 24
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardLightningSphereBook
   name: Книга заклинания электроудара II
-  description: В радиусе 6 тайлов существа и приборы получат удар
+  description: action-spell-lightning-two
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: lightning_sphere }
   productEntity: WizardLightningSphereSpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 16
   categories:
   - WizardBooks
   conditions:
     - !type:BuyBeforeCondition
       whitelist:
       - WizardLightningStrikeBook
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: WizardHealBook
   name: Книга заклинания лечение
-  description: Ваше касание вылечит 20 повреждений каждого повреждения. Открывает для изучения "самопожертвование
+  description: action-spell-heal
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: heal }
   productEntity: WizardHealSpellbook
   cost:
-    Bluespace: 15
+    Bluespace: 20
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSacrificeBook
   name: Книга заклинания самопожертвование
-  description: Позволяет обменять свою жизнь на воскрешение цели.
+  description: action-spell-sacrifice
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: sacrifice }
   productEntity: WizardSacrificeSpellbook
   cost:
@@ -308,150 +373,185 @@
     - !type:BuyBeforeCondition
       whitelist:
       - WizardHealBook
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: WizardPyroBook
   name: Книга заклинания столб огня
-  description: Призывает под целью столб огня, поджигающий цель. Открывает для изучения "священный огонь"
+  description: action-spell-fire-stolb
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: pyro }
   productEntity: FireStolbSpellbook
   cost:
-    Bluespace: 14
+    Bluespace: 20
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardSaintFireBook
   name: Книга заклинания священный огонь
-  description: Поджигает всех, кто оказался в радиусе 6 тайлов
+  description: action-spell-saint-fire
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: saint_fire }
   productEntity: FireStormSpellbook
   cost:
-    Bluespace: 10
+    Bluespace: 15
   categories:
   - WizardBooks
   conditions:
     - !type:BuyBeforeCondition
       whitelist:
       - WizardPyroBook
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: MindSwapSpell
   name: Заклинание обмен разумами
-  description: Не подставьте своих коллег по цеху
+  description: action-spell-mind-swap
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: mind_swap }
   productAction: ActionMindSwap
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardRepulseBook
   name: Книга заклинания пульс
-  description: Отталкивает всех сущностей в радиусе 5 тайлов
+  description: action-spell-pulse
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: repulse }
   productEntity: PulseSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardStoneTargetBook
   name: Книга превращения в статую
-  description: На 3 минуты превращает жертву в статую
+  description: action-spell-stone
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: stone }
   productEntity: FireStolbSpellbook
   cost:
-    Bluespace: 35
+    Bluespace: 40
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardItemSnakeBook
   name: Книга превращения в змею
-  description: На 2 минуты превращает предмет в руке жертвы в плюшевую змею
+  description: action-spell-turn-snake
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: snake }
   productEntity: ItemToSnakeSpellbook
   cost:
     Bluespace: 30
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardPacificationBook
   name: Книга заклинания пасификации
-  description: На 20 секунд не даёт цели причинять вред
+  description: action-spell-pacify
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: pacification }
   productEntity: PacificationSpellbook
   cost:
-    Bluespace: 20
+    Bluespace: 25
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardDyrnwynBook
   name: Книга призыва огненного меча
-  description: На 20 секунд призывает огненный меч вам в руку
+  description: action-spell-dyrnwyn
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: dyrnwyn }
   productEntity: SummonDyrnwynSpellbook
   cost:
-    Bluespace: 26
+    Bluespace: 30
   categories:
   - WizardBooks
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 # Wands
 
 - type: listing
   id: WeaponStaffHealing
   name: Жезл исцеления
-  description: Лечит существо, в который был направлен жезл
   productEntity: WeaponStaffHealing
   cost:
     Bluespace: 16
   categories:
   - WizardWands
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
 
 - type: listing
   id: WeaponWandPolymorphDoor
   name: Волшебная палочка входа
-  description: Превращает объект в дверь
   productEntity: WeaponWandPolymorphDoor
   cost:
-    Bluespace: 10
+    Bluespace: 15
   categories:
   - WizardWands
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
 
 - type: listing
   id: WeaponWandDeath
   name: Волшебная палочка мгновенной смерти
-  description: Существо, в которое был направлен снаряд палочки, моментально умирает
   productEntity: WeaponWandDeath
   cost:
     Bluespace: 60
   categories:
   - WizardWands
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WeaponWandFireball
   name: Волшебная палочка огненного шара
-  description: Бросайте в людей мощную взрывчатку, главное не попадите под неё сами
   productEntity: WeaponWandFireball
   cost:
-    Bluespace: 20
+    Bluespace: 30
   categories:
   - WizardWands
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WeaponWandPolymorphMonkey
   name: Волшебная палочка превращения в обезьяну
-  description: Превратите тяжеловооружённого бойца в жалкую макаку
   productEntity: WeaponWandPolymorphMonkey
   cost:
-    Bluespace: 12
+    Bluespace: 18
   categories:
   - WizardWands
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 # Armor
 - type: listing
@@ -467,32 +567,41 @@
 - type: listing
   id: WizardGloves
   name: Электроперчатки
-  description: Позволяет бить молниями неприятелей
+  description: uplink-gloves-desc
   productEntity: WizardGloves
   cost:
     Bluespace: 15
   categories:
   - WizardArmor
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: WizardInvisibilityCloak
   name: Плащ невидимости
-  description: Позволяет пройти к личному санузлу капитана незаметным
+  description: uplink-cloak-desc
   productEntity: WizardInvisibilityCloak
   cost:
-    Bluespace: 60
+    Bluespace: 65
   categories:
   - WizardArmor
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: SpeedBoots
   name: Ботинки скорости
-  description: Ботинки, заряженные магией ускоряют вас
+  description: uplink-speed-boots-desc
   productEntity: WizardSpeedBoots
   cost:
-    Bluespace: 28
+    Bluespace: 30
   categories:
   - WizardArmor
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
 
 # Utility
 - type: listing
@@ -508,10 +617,10 @@
 - type: listing
   id: WizardMugwort
   name: Настойка из полыни
-  description: Лечит за все 20u 60 урона каждого типа
+  description: uplink-mugwort-desc
   productEntity: MugwortPotion
   cost:
-    Bluespace: 2
+    Bluespace: 5
   categories:
   - WizardUtility
 
@@ -521,9 +630,12 @@
   description: Содержит палочки мгновенной смерти, огненного шара, входа и превращения в карпа
   productEntity: ClothingBeltWandFilled
   cost:
-    Bluespace: 50
+    Bluespace: 65
   categories:
   - WizardUtility
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: UplinkHoloparaKit
@@ -539,56 +651,67 @@
 - type: listing
   id: Runebook
   name: Свиток рун
-  description: Содержит руны оглушения, поджога, взрыва и вспышки
   productEntity: ScrollRunes
   cost:
     Bluespace: 30
   categories:
   - WizardUtility
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: EmpRune
   name: Руна ЭМИ
-  description: Даёт 3 мощных зарядов ЭМИ
   productEntity: EmpRune
   cost:
     Bluespace: 10
   categories:
   - WizardUtility
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
 
 #Weapons
 
 - type: listing
   id: RuneBlade
   name: Рунный меч
-  description: Стильный меч, который в придачу может стрелять магическими снарядами
   productEntity: RuneBlade
   cost:
-    Bluespace: 28
+    Bluespace: 35
   categories:
   - WizardWeapon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: Mjoilnir
   name: Мъёлнир
-  description: Каждый удар сопровождается отталкиванием цели на далёкие земли
+  description: wizard-mjoinir-desc
   productEntity: WizardMjoilnir
   cost:
-    Bluespace: 28
+    Bluespace: 40
   categories:
   - WizardWeapon
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 - type: listing
   id: LightningArcher
   name: Громовой лук
-  description: Поставляется вместе с колчаном на 15 громовых стрел, оглушающие при попадании
-  icon: { sprite: Stray/wizard/Objects/Weapons/lightningbow.rsi, state: unwielded }
+  description: uplink-archer-description
+  icon: { sprite: Stray/wizard/Objects/Weapons/Guns/lightningbow.rsi, state: unwielded }
   productEntity: ClothingDuffelWizardArcher
   cost:
     Bluespace: 20
   categories:
   - WizardWeapon
-
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
 
 # Pointless
 - type: listing

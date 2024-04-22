@@ -7,3 +7,11 @@
   - Revolutionary
   friendly:
   - Wizard
+
+- type: npcFaction
+  id: Wizard
+  hostile:
+  - NanoTrasen
+  - Zombie
+  friendly:
+  - WizardSummon

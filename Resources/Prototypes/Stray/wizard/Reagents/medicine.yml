@@ -1,9 +1,9 @@
 - type: reagent
   id: Mugwort
-  name: Полынь
+  name: mugwort
   group: Medicine
-  desc: Довольно горькая трава. Когда-то считалось, что она обладает магическими защитными свойствами.
-  physicalDesc: Горько
+  desc: awlful
+  physicalDesc: Salty
   flavor: medicine
   color: "#fcf7f9"
   metabolisms:

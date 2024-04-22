@@ -74,6 +74,12 @@
       "name": "repulse"
     },
     {
+      "name": "pacification"
+    },
+    {
+      "name": "dyrnwyn"
+    },
+    {
       "name": "stone"
     },
     {
@@ -89,7 +95,7 @@
       "name": "gib"
     },
     {
-        "name": "saint_fire"
+      "name": "saint_fire"
     },
     {
       "name": "fireball"

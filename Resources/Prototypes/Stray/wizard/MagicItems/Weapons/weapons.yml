@@ -14,8 +14,7 @@
     range: 1.70
     damage:
       types:
-        Blunt: 15
-        Piercing: 3
+        Blunt: 10
         Structural: 10
         Heat: 10
     soundHit:
@@ -25,7 +24,6 @@
     damage:
       types:
         Blunt: 10
-        Piercing: 2
         Structural: 25
   - type: MeleeThrowOnHit
     unanchorOnHit: false
@@ -97,7 +95,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Slash: 25
+        Slash: 18
     soundHit:
          path: /Audio/Weapons/bladeslice.ogg
   - type: DisarmMalus
