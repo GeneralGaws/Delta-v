@@ -167,7 +167,7 @@
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: iceburst }
   productEntity: IceBurstSpellbook
   cost:
-    Bluespace: 30
+    Bluespace: 27
   categories:
   - WizardBooks
   conditions:
