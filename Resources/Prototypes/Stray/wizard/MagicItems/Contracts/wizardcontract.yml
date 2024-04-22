@@ -39,6 +39,7 @@
     prototype: MobWizardReinforcement
   - type: GhostRole
     name: Ученик мага
+    description: Похоже ваши учителя не справляются
     rules: Не ебашить своих (по ситуации)
 
 - type: entity
