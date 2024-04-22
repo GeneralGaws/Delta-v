@@ -60,6 +60,7 @@ namespace Content.Server.IoC
             IoCManager.Register<DiscordWebhook>();
             IoCManager.Register<ProxyDetectionManager>();
             IoCManager.Register<ServerDbEntryManager>();
+            IoCManager.Register<ServerApi>();
         }
     }
 }

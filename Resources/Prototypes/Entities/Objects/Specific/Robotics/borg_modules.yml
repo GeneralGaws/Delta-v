@@ -238,7 +238,6 @@
   - type: ItemBorgModule
     items:
     - WeaponGrapplingGun
-    - WeaponCrusherDagger
     - HandheldGPSBasic
 
 # engineering modules
