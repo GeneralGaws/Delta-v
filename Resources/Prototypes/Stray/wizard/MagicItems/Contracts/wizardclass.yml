@@ -63,7 +63,7 @@
   name: Последователь Зевса
   description: Включает в себя книгу Мъёлнир,книгу электроудара II и шлем гровомержца
   sprite:
-    sprite: Stray/wizard/Objects/Weapons/mjoilnir.rsi
+    sprite: Stray/wizard/Objects/Weapons/Melee/mjoilnir.rsi
     state: icon
   content:
   - ClothingDuffelWizardZeus
@@ -93,7 +93,7 @@
   name: Боевой маг
   description: Включает в себя рунный меч, громовой лук и броню боевого мага
   sprite:
-    sprite: Stray/wizard/Objects/Weapons/spellblade.rsi
+    sprite: Stray/wizard/Objects/Weapons/Melee/spellblade.rsi
     state: icon
   content:
   - ClothingDuffelWizardBattleMage
