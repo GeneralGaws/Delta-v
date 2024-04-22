@@ -440,7 +440,7 @@
   name: Книга превращения в статую
   description: action-spell-stone
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: stone }
-  productEntity: FireStolbSpellbook
+  productEntity: StoneTargetSpellbook
   cost:
     Bluespace: 40
   categories:
