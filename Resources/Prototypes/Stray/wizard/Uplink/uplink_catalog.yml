@@ -167,7 +167,7 @@
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: iceburst }
   productEntity: IceBurstSpellbook
   cost:
-    Bluespace: 30
+    Bluespace: 27
   categories:
   - WizardBooks
   conditions:
@@ -440,7 +440,7 @@
   name: Книга превращения в статую
   description: action-spell-stone
   icon: { sprite: Stray/wizard/Actions/actions.rsi, state: stone }
-  productEntity: FireStolbSpellbook
+  productEntity: StoneTargetSpellbook
   cost:
     Bluespace: 40
   categories:
