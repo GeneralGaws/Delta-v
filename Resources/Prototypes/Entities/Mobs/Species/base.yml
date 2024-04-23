@@ -291,7 +291,6 @@
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 25
   - type: Perishable
-  - type: CharacterInformation # Parkstation-CharacterInformation
   - type: Butcherable
     butcheringType: Spike # TODO human.
     spawned:

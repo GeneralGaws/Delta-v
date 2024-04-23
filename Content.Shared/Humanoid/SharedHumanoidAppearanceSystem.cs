@@ -2,7 +2,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
-using Content.Shared.SimpleStation14.DetailExaminable;
+using Content.Shared.Examine;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
@@ -411,15 +411,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         _heightAdjust.SetScale(uid, new Vector2(profile.Width, profile.Height)); // Parkstation-HeightSlider
 
         humanoid.LastProfileLoaded = profile; // DeltaV - let paradox anomaly be cloned
-
-        // Parkstation-CharacterInformation-Start
-        if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
-        {
-            var detail = EnsureComp<DetailExaminableComponent>(uid);
-            detail.Content = profile.FlavorText;
-            Dirty(detail);
-        }
-        // Parkstation-CharacterInformation-End
 
         Dirty(uid, humanoid);
     }
