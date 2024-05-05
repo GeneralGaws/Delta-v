@@ -9,7 +9,7 @@
     tag: GlassesNearsight
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons]
   id: ClothingEyesGlassesCorpsman
   name: corpsman sunglasses
   description: Strangely ancient technology used to help provide rudimentary eye cover. Enhanced shielding blocks many flashes. Often worn by budget corpsman.
@@ -21,7 +21,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: ShowSecurityIcons
   - type: ClothingGrantComponent
     component:
     - type: ShowHealthBars
