@@ -229,14 +229,6 @@ namespace Content.Server.Connection
                 }
             }
 
-            var bans = await _db.GetServerBansAsync(addr, userId, hwId, includeUnbanned: false);
-            if (bans.Count > 0)
-            {
-                var firstBan = bans[0];
-                var message = firstBan.FormatBanMessage(_cfg, _loc);
-                return (ConnectionDenyReason.Ban, message, bans);
-            }
-
             // DeltaV - Replace existing softwhitelist implementation
             if (false)// _cfg.GetCVar(CCVars.WhitelistEnabled))
             {
