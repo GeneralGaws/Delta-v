@@ -9,7 +9,6 @@
     - rings!
     - ringing.
     - ringed.
-    - подражает звонку
 
 - type: emote
   id: Pew
@@ -19,9 +18,6 @@
     - pew.
     - pews.
     - pew!
-    - пиу
-    - пиу!
-    - пиу.
 
 - type: emote
   id: Bang
@@ -55,7 +51,6 @@
     - rev!
     - revving
     - revved
-    - врум
 
 #- type: emote
 #  id: Click
@@ -71,25 +66,19 @@
 - type: emote
   id: Caw
   category: Vocal
-  chatMessages: [каркает.]
+  chatMessages: [caws.]
   chatTriggers:
     - caws.
     - caw.
     - caw!
     - cawing
     - cawed
-    - кар
-    - кар!
-    - кар.
-    - каркает
-    - каркает!
-    - каркает.
-    
+
 #Vulpkanin
 - type: emote
   id: Bark
   category: Vocal
-  chatMessages: [лает.]
+  chatMessages: [barks.]
   chatTriggers:
     - bark.
     - bark!
@@ -98,9 +87,6 @@
     - barked.
     - barked!
     - barking.
-    - лает
-    - гав
-    - гавкает
 
 - type: emote
   id: Snarl
@@ -114,11 +100,11 @@
     - snarled.
     - snarled!
     - snarling.
-    
+
 - type: emote
   id: Whine
   category: Vocal
-  chatMessages: [скулит.]
+  chatMessages: [whines.]
   chatTriggers:
     - whine.
     - whine!
@@ -127,14 +113,11 @@
     - whined.
     - whined!
     - whining.
-    - скулит
-    - скулит!
-    - скулит.
 
 - type: emote
   id: Howl
   category: Vocal
-  chatMessages: [воет.]
+  chatMessages: [howls.]
   chatTriggers:
     - howl.
     - howl!
@@ -142,6 +125,15 @@
     - howls!
     - howling.
     - howled.
-    - воет
-    - воет!
-    - воет.
+
+- type: emote
+  id: Awoo
+  category: Vocal
+  chatMessages: [awoos.]
+  chatTriggers:
+    - awoo.
+    - awoo!
+    - awoos.
+    - awoos!
+    - awooing.
+    - awooed.
