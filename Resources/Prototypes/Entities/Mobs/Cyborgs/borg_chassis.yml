@@ -122,7 +122,7 @@
     templateId: borgShort
   - type: NoSlip # Delta-V , Unparents NoSlip component
   - type: SiliconLawProvider # Delta-V - Adds custom lawset for Engineering Cyborg
-    laws: Engineer 
+    laws: Engineer
 
 - type: entity
   id: BorgChassisJanitor
@@ -232,6 +232,11 @@
   - type: NoSlip # Delta-V , Unparents NoSlip component
   - type: SiliconLawProvider # Delta-V - Adds custom lawset for Medical cyborg
     laws: Medical
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHoverBorg
+      params:
+        volume: -6
 
 - type: entity
   id: BorgChassisService

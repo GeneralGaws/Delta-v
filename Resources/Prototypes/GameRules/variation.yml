@@ -24,8 +24,8 @@
   components:
   - type: WallReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 5
-    entitiesPerReplacementStdDev: 1
+    entitiesPerReplacementAverage: 50
+    entitiesPerReplacementStdDev: 10
     replacements:
     - id: WallSolidRust
 
@@ -36,8 +36,8 @@
   components:
   - type: ReinforcedWallReplaceVariationPass
   - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 6
-    entitiesPerReplacementStdDev: 1
+    entitiesPerReplacementAverage: 50
+    entitiesPerReplacementStdDev: 10
     replacements:
     - id: WallReinforcedRust
 
@@ -47,8 +47,8 @@
   noSpawn: true
   components:
   - type: EntitySpawnVariationPass
-    tilesPerEntityAverage: 15
-    tilesPerEntityStdDev: 2
+    tilesPerEntityAverage: 35
+    tilesPerEntityStdDev: 4
     entities:
     - id: RandomSpawner
 
@@ -116,8 +116,8 @@
   noSpawn: true
   components:
   - type: PuddleMessVariationPass
-    tilesPerSpillAverage: 75
-    tilesPerSpillStdDev: 5
+    tilesPerSpillAverage: 150
+    tilesPerSpillStdDev: 10
     randomPuddleSolutionFill: RandomFillTrashPuddleBloodbath
 
 - type: entity

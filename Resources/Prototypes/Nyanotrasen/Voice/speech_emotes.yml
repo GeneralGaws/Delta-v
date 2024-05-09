@@ -1,6 +1,7 @@
 # vocal emotes
 - type: emote
   id: Hiss
+  name: nyan-chat-emote-name-hiss
   category: Vocal
   chatMessages: [шипит.]
   chatTriggers:
@@ -15,6 +16,7 @@
 
 - type: emote
   id: Meow
+  name: nyan-chat-emote-name-meow
   category: Vocal
   chatMessages: [мяукает.]
   chatTriggers:
@@ -47,6 +49,7 @@
     
 - type: emote
   id: Mew
+  name: nyan-chat-emote-name-mew
   category: Vocal
   chatMessages: [миукает.]
   chatTriggers:
@@ -68,6 +71,7 @@
 
 - type: emote
   id: Growl
+  name: chat-emote-name-growl
   category: Vocal
   chatMessages: [рычит.]
   chatTriggers:
@@ -84,6 +88,7 @@
 
 - type: emote
   id: Purr
+  name: chat-emote-name-purr
   category: Vocal
   chatMessages: [мурчит.]
   chatTriggers:
