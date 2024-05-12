@@ -33,7 +33,6 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: stone
   - type: Damageable
-    damageContainer: StoneForm
     damageModifierSet: StoneForm
   - type: Destructible
     thresholds:

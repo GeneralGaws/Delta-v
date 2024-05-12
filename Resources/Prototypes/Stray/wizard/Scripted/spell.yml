@@ -251,9 +251,6 @@
   - type: InstantAction
     useDelay: 50
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: repulse
