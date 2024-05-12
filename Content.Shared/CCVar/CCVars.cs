@@ -1466,6 +1466,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> GridFill =
             CVarDef.Create("shuttle.grid_fill", true, CVar.SERVERONLY);
 
+        /// <summary>
+        /// Whether the Shipyard is enabled.
+        /// </summary>
+        public static readonly CVarDef<bool> Shipyard =
+            CVarDef.Create("shuttle.shipyard", true, CVar.SERVERONLY);
+
         /*
          * Emergency
          */
