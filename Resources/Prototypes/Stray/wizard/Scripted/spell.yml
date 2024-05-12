@@ -280,9 +280,6 @@
   - type: InstantAction
     useDelay: 60
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: dyrnwyn
