@@ -42,8 +42,8 @@
         - GameCard
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -70,8 +70,8 @@
         - GameCard
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -91,7 +91,6 @@
       - id: CarDpd
       - id: CarDpk
       - id: CarDpv
-
       - id: CarDkt
       - id: CarDk2
       - id: CarDk3
@@ -105,7 +104,6 @@
       - id: CarDkd
       - id: CarDkk
       - id: CarDkv
-
       - id: CarDbt
       - id: CarDb2
       - id: CarDb3
@@ -119,7 +117,6 @@
       - id: CarDbd
       - id: CarDbk
       - id: CarDbv
-
       - id: CarDht
       - id: CarDh2
       - id: CarDh3
