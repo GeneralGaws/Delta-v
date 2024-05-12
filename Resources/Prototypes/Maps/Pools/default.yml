@@ -2,6 +2,31 @@
   id: DefaultMapPool
   maps:
 # DeltaV
+  - CorvaxDelta
+  - CorvaxAvrite
+  - CorvaxSilly
+  - CorvaxOutpost
+  - CorvaxAstra
+  - CorvaxGelta
+  - CorvaxMaus
+  - CorvaxIshimura
+  - CorvaxPaper
+  - CorvaxPilgrim
+  - CorvaxSplit
+  - Atlas
+  - Bagel
+  - Box
+  - Cluster
+  - Core
+  - Fland
+  - Marathon
+  - Meta
+  - Omega
+  - Origin
+  - Saltern
+  - Train
+  - Packed
+  - Reach
   - Arena
   - Asterisk
   - Edge

@@ -14,6 +14,9 @@
             prefixCreator: 'MT'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml
+        - type: StationRandomTransform
+          enableStationRotation: false
+          maxStationOffset: null
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -35,7 +38,6 @@
             Zookeeper: [ 1, 1 ]
             # command
             Captain: [ 1, 1 ]
-            Judge: [0, 1]
             IAA: [ 1, 1 ]
             # engineering
             ChiefEngineer: [ 1, 1 ]

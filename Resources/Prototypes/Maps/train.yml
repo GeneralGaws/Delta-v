@@ -2,12 +2,13 @@
   id: Train
   mapName: 'Train'
   mapPath: /Maps/train.yml
-  minPlayers: 10
-  maxPlayers: 50
+  minPlayers: 0
   stations:
     Train:
       stationProto: StandardNanotrasenStation
       components:
+        - type: StationRandomTransform
+          enableStationRotation: false
         - type: StationNameSetup
           mapNameTemplate: 'Train "Sentipode" {0}-{1}'
           nameGenerator:
@@ -48,8 +49,8 @@
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ]
-            SecurityCadet: [ 2, 3 ]
+            SecurityOfficer: [ 6, 6 ]
+            SecurityCadet: [ 3, 3 ]
             #Lawyer: [ 1, 2 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]
@@ -61,3 +62,16 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Borg: [ 2, 2 ]
+            Judge: [ 0, 1]
+            Paramedic: [ 1, 1 ]
+            MailCarrier: [ 2, 2 ]
+            Slugcat: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
