@@ -2,6 +2,7 @@ using System.Data;
 using System.Text.RegularExpressions;
 using Content.Server.Corvax.GameTicking;
 using Content.Server.Fax;
+using Content.Shared.Fax.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Random;
