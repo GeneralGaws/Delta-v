@@ -16,8 +16,11 @@
     solutions:
       stomach:
         maxVol: 100
-  - type: Stomach
-    maxVolume: 100
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Metabolizer
     maxReagents: 3
     metabolizerTypes: [ Plasmaman ]

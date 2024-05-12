@@ -36,9 +36,9 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/cargo.rsi
   - type: PaintableAirlock
+    department: Cargo
   - type: Wires
     layoutId: AirlockCargo
-    department: Cargo
 
 - type: entity
   parent: Airlock
@@ -73,9 +73,9 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/science.rsi
   - type: PaintableAirlock
+    department: Science
   - type: Wires
     layoutId: AirlockScience
-    department: Science
 
 - type: entity
   parent: Airlock
@@ -190,9 +190,9 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/cargo.rsi
   - type: PaintableAirlock
+    department: Cargo
   - type: Wires
     layoutId: AirlockCargo
-    department: Cargo
 
 - type: entity
   parent: AirlockGlass
@@ -227,9 +227,9 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/science.rsi
   - type: PaintableAirlock
+    department: Science
   - type: Wires
     layoutId: AirlockScience
-    department: Science
 
 - type: entity
   parent: AirlockGlass
