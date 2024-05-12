@@ -56,7 +56,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: Stray/wizard/Objects/Weapons/spellblade.rsi
+    sprite: Stray/wizard/Objects/Weapons/Melee/spellblade.rsi
     quickEquip: false
     slots:
     - Back

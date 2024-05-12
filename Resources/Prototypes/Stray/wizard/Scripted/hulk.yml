@@ -124,4 +124,4 @@
       sprite: Stray/wizard/Actions/actions.rsi
       state: hulk
     sound: !type:SoundPathSpecifier
-      path: /Audio/Stray/Wizard/Mobs/hulkscream.ogg
+      path: /Audio/Stray/Wizard/Mobs/hulk_scream.ogg

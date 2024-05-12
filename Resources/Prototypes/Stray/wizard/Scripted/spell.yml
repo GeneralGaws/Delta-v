@@ -234,9 +234,6 @@
   - type: InstantAction
     useDelay: 90
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: saint_fire
