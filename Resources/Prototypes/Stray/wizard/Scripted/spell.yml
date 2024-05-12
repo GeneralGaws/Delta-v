@@ -22,9 +22,6 @@
   - type: EntityTargetAction
     useDelay: 40
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     canTargetSelf: true
     interactOnMiss: false
     sound: !type:SoundPathSpecifier
@@ -212,9 +209,6 @@
     useDelay: 30
     range: 7
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     canTargetSelf: false
     interactOnMiss: false
     icon:
@@ -269,9 +263,6 @@
     useDelay: 60
     range: 5
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: pacification
