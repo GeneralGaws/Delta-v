@@ -104,7 +104,7 @@
     description: "You are a servant of the mystagogue. Obey them directly."
     requirements:
     - !type:DepartmentTimeRequirement
-      department: Epistemics
+      department: Science
       time: 14400 # DeltaV - 4 hours
 
 - type: entity

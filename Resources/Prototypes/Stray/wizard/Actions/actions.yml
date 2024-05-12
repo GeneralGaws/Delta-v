@@ -1,0 +1,41 @@
+- type: entity
+  id: ActionIceBurst
+  name: Ледяной выстрел
+  description: Выстрелить в указанном направлении.
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    range: 60
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/iceburst.ogg
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: iceburst
+    event: !type:ProjectileSpellEvent
+      prototype: ProjectileIceBurst
+      posData: !type:TargetCasterPos
+      speech: ONI'SOMA!
+
+- type: entity
+  id: ActionAcidSpray
+  name: Кислотный чих
+  description: Чихнуть в указанном направлении волшебной мокротой.
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 40
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    range: 30
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Voice/Human/male_sneeze_1.ogg
+    icon:
+      sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+      state: declone
+    event: !type:ProjectileSpellEvent
+      prototype: ProjectileAcidSpray
+      posData: !type:TargetCasterPos
+      speech: ONI'SOMA!

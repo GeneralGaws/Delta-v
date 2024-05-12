@@ -1,0 +1,34 @@
+- type: storeCategory
+  id: WizardBooks
+  name: Книги
+  priority: 0
+
+- type: storeCategory
+  id: WizardWands
+  name: Палочки
+  priority: 1
+
+- type: storeCategory
+  id: WizardArmor
+  name: Снаряжение
+  priority: 2
+
+- type: storeCategory
+  id: WizardWeapon
+  name: Оружие
+  priority: 3
+
+- type: storeCategory
+  id: WizardUtility
+  name: Утилиты
+  priority: 4
+
+- type: storeCategory
+  id: WizardBundles
+  name: Наборы
+  priority: 6
+
+- type: storeCategory
+  id: WizardPointless
+  name: Бесполезное
+  priority: 8

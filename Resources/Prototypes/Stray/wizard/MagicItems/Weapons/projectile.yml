@@ -1,0 +1,95 @@
+- type: entity
+  id: ProjectileArcaneBolt
+  parent: BaseBullet
+  name: Arcane bolt
+  description: Brrrrr.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: arcane_barrage
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 15
+
+- type: entity
+  parent: BaseArrow
+  id: LightningArrow
+  name: Громовая стрела
+  description: я ебу?
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Guns/Projectiles/lightningarrows.rsi
+    layers:
+    - state: tail
+      color: yellow
+    - state: rod
+      color: yellow
+    - state: tip
+      color: yellow
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Heat: 10
+  - type: EmpOnTrigger
+    range: 5
+    energyConsumption: 50000
+    disableDuration: 10
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: Tazinide
+          Quantity: 2
+  - type: Tag
+    tags:
+    - LightningArrow
+  - type: PointLight
+    radius: 2.0
+    energy: 5.0
+    color: "#ffd700"
+    castShadows: false
+
+- type: entity
+  id: ProjectileIceBurst
+  name: ice burst
+  description: Brrrrr.
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Cold: 15
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Weapons/Guns/Projectiles/iceburst.rsi
+    layers:
+    - state: ice
+      shader: unshaded
+  - type: StaminaDamageOnHit
+    damage: 25
+
+- type: entity
+  id: ProjectileAcidSpray
+  name: acid spray
+  description: Brrrrr.
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Toxin: 10
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: declone
+      shader: unshaded
+

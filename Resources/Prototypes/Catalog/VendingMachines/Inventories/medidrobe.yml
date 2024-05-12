@@ -22,6 +22,9 @@
     ClothingHeadHatSurgcapBlue: 4
     ClothingHeadHatSurgcapPurple: 4
     ClothingShoesBootsWinterMed: 2
+    ClothingUnderSocksStripedWhiteandLightBlueBunnySlipper: 3 # DeltaV - Neptune's striped socks
+    ClothingUnderSocksStripedWhiteandLightBlue: 3 # DeltaV - Neptune's striped socks
+
   contrabandInventory: #DeltaV
     UniformScrubsColorCybersun: 1 #DeltaV
     ClothingHeadHatSurgcapCybersun: 1 #DeltaV

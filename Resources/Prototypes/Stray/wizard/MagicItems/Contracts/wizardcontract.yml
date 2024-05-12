@@ -1,0 +1,54 @@
+- type: entity
+  id: WizardClassSelector
+  name: Выбрать класс
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/сontract.rsi
+    state: old-radio
+  - type: ThiefUndeterminedBackpack
+    transformAfterSelect: AlwaysPoweredWallLight
+    possibleSets:
+    - FireCaster
+    - Healer
+    - Polymorpher
+    - Summoner
+    - Trickster
+    - TechFob
+    - Zeus
+    - Crusader
+    - Necromant
+    - BattleMage
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
+
+- type: entity
+  parent: ReinforcementRadioSyndicate
+  id: ReinforcementWizard
+  name: Договор ученичества
+  suffix: Ученик мага
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Objects/сontract.rsi
+    state: old-radio
+  - type: GhostRoleMobSpawner
+    prototype: MobWizardReinforcement
+  - type: GhostRole
+    name: Ученик мага
+    rules: Не ебашить своих (по ситуации)
+
+- type: entity
+  parent: MobHuman
+  id: MobWizardReinforcement
+  name: Ученик мага
+  components:
+    - type: Loadout
+      prototypes: [ StudentWizardEventGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_wizard_first
+        - names_wizard_last

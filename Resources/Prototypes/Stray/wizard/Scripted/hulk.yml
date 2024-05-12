@@ -1,0 +1,127 @@
+- type: entity
+  name: Халк
+  id: WizardHulk
+  parent: SimpleSpaceMobBase
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: NpcFactionMember
+    factions:
+    - Xeno
+  - type: Hands
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Stray/wizard/Scripted/hulk.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: hulk
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 15500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.5
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     path: /Audio/Weapons/punch3.ogg
+    animation: WeaponArcFist
+    damage:
+      types:
+        Blunt: 20
+        Structural: 80
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: hulk
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: Stamina
+    decay: 6
+    cooldown: 1
+    critThreshold: 400
+
+
+- type: polymorph
+  id: WizardHulkForm
+  configuration:
+    entity: WizardHulk
+    inventory: None
+    transferDamage: false
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 30
+    cooldown: 60
+
+- type: entity
+  id: ActionPolymorphWizardHulkForm
+  name: Превратиться в халка
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 60
+    event: !type:HulkFormSpellEvent
+    itemIconStyle: NoItem
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: hulk
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Mobs/hulkscream.ogg

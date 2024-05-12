@@ -16,7 +16,7 @@
     soundHit:
       collection: MetalThud
   - type: CombatMode
-  - type: NoSlip
+  #- type: NoSlip # Delta-V , Unparents NoSlip component
   - type: StaticPrice
     price: 1250
   - type: Fixtures
@@ -243,28 +243,24 @@
   parent: BaseBorgChassis
   abstract: true
   components:
-  - type: NpcFactionMember
-    factions:
-    - Syndicate
-  - type: Access
-    tags:
-    - NuclearOperative
-    - SyndicateAgent
-  - type: AccessReader
-    access: [["SyndicateAgent"], ["NuclearOperative"]]
-  - type: SiliconLawProvider
-    laws: SyndicateStatic
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - Binary
-    - Syndicate
-  - type: ActiveRadio
-    channels:
-    - Syndicate
-  - type: ShowSyndicateIcons
-  - type: MovementAlwaysTouching
-  - type: Speech
-    speechSounds: SyndieBorg
-  - type: Vocal
-    sounds:
-      Unsexed: UnisexSiliconSyndicate
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+    - type: Access
+      tags:
+       - NuclearOperative
+       - SyndicateAgent
+    - type: AccessReader
+      access: [["SyndicateAgent"], ["NuclearOperative"]]
+    - type: SiliconLawProvider
+      laws: SyndicateStatic
+    - type: IntrinsicRadioTransmitter
+      channels:
+        - Binary
+        - Syndicate
+    - type: ActiveRadio
+      channels:
+        - Syndicate
+    - type: ShowSyndicateIcons
+    - type: MovementAlwaysTouching
+    - type: NoSlip # Delta-V , Unparents NoSlip component

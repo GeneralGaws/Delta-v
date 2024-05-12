@@ -87,8 +87,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public string FemaleFirstNames { get; private set; } = "names_first_female";
 
+    // Corvax-LastnameGender-Start: Split lastname field by gender
     [DataField]
-    public string LastNames { get; private set; } = "names_last";
+    public string MaleLastNames { get; private set; } = "names_last_male";
+
+    [DataField]
+    public string FemaleLastNames { get; private set; } = "names_last_female";
+    // Corvax-LastnameGender-End
 
     [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
@@ -120,6 +125,44 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
+
+    // Parkstation-HeightSlider Start
+    /// <summary>
+    ///     The minimum height for this species
+    /// </summary>
+    [DataField]
+    public float MinHeight = 0.95f;
+
+    /// <summary>
+    ///     The default height for this species
+    /// </summary>
+    [DataField]
+    public float DefaultHeight = 1f;
+
+    /// <summary>
+    ///     The maximum height for this species
+    /// </summary>
+    [DataField]
+    public float MaxHeight = 1.05f;
+
+    /// <summary>
+    ///     The minimum width for this species
+    /// </summary>
+    [DataField]
+    public float MinWidth = 0.95f;
+
+    /// <summary>
+    ///     The default width for this species
+    /// </summary>
+    [DataField]
+    public float DefaultWidth = 1f;
+
+    /// <summary>
+    ///     The maximum width for this species
+    /// </summary>
+    [DataField]
+    public float MaxWidth = 1.05f;
+    // Parkstation-HeightSlider End
 
     /// <summary>
     ///     The Style used for the guidebook info link in the character profile editor

@@ -1,0 +1,77 @@
+- type: entity
+  id: WizardGloves
+  parent: ClothingHandsGlovesColorYellowUnsulated
+  name: Электроперчатки
+  description: Позволяет ударить в указанное существо оглущающей молнией
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Clothing/Gloves.rsi
+  - type: Clothing
+    sprite: Stray/wizard/Clothing/Gloves.rsi
+
+- type: entity
+  id: WizardInvisibilityCloak
+  parent: BedsheetBase
+  name: Плащ невидимости
+  description: Позволяет уйти в невидимость
+  components:
+  - type: Sprite
+    state: sheetwiz
+  - type: Clothing
+    sprite: Clothing/Neck/Bedsheets/wiz.rsi
+  - type: ClothingGrantPsionicPower
+    power: PsionicInvisibilityPower
+  - type: Psionic
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: WizardSpeedBoots
+  name: Ботинки скорости
+  description: Ботинки, заряженные магией ускоряют ваше передвижение
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Clothing/Boots.rsi
+  - type: Clothing
+    sprite: Stray/wizard/Clothing/Boots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.6
+    sprintModifier: 1.6
+
+- type: entity
+  parent: ClothingOuterBase
+  id: FireRobe
+  name: Роба огня
+  suffix: Маг
+  description: Частично защищает от огня
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/cultrobes.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Misc/cultrobes.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+
+- type: entity
+  parent: ClothingOuterArmorHeavy
+  id: BattleMageArmor
+  name: Броня боевого мага
+  description: Обладает хорошими параметрами защиты
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/magusblue.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/magusblue.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.5

@@ -1,0 +1,57 @@
+- type: polymorph
+  id: WizardAetherForm
+  configuration:
+    entity: MobAetherFormWizard
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 5
+    cooldown: 60
+
+- type: entity
+  id: ActionPolymorphWizardAetherForm
+  name: Эфирная форма
+  description: Превратиться в эфирное облако, позволяющее проходить через препятствия
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 60
+    event: !type:AetherFormSpellEvent
+      speech: NEC CANTIO!
+    itemIconStyle: NoItem
+    icon:
+      sprite: Stray/wizard/Actions/actions.rsi
+      state: aether_form
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Stray/Wizard/Magic/ethereal_enter.ogg
+
+- type: entity
+  id: MobAetherFormWizard
+  name: Эфир
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Effects/spookysmoke.rsi
+    state: spookysmoke
+    scale: 0.8, 0.8
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: KinematicController
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 13
+        mask:
+        - GhostImpassable
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+    baseWalkSpeed: 3
+  - type: MovementIgnoreGravity
+  - type: InputMover
+  - type: Appearance
+  - type: Eye
+    drawFov: false

@@ -1,0 +1,28 @@
+- type: entity
+  parent: ClothingEyesGlassesSecurity
+  id: ClothingEyesGlassesSecurityPrescription
+  name: prescription security sunglasses
+  description: Someone decided to mix the prescription and tinted lenses. Why hasn't this been thought of sooner?
+  components:
+  - type: VisionCorrection
+  - type: ClothingGrantTag
+    tag: GlassesNearsight
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: ClothingEyesGlassesCorpsman
+  name: corpsman sunglasses
+  description: Strangely ancient technology used to help provide rudimentary eye cover. Enhanced shielding blocks many flashes. Often worn by budget corpsman.
+  components:
+  - type: Sprite
+    sprite: SimpleStation14/Clothing/Eyes/Glasses/corpsmanglasses.rsi
+  - type: Clothing
+    sprite: SimpleStation14/Clothing/Eyes/Glasses/corpsmanglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: ClothingGrantComponent
+    component:
+    - type: ShowHealthBars
+      damageContainers: 
+      - Biological

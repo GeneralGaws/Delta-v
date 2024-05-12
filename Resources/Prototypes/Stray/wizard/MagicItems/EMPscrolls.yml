@@ -1,0 +1,44 @@
+- type: entity
+  parent: ActionActivateEmpImplant
+  id: WizardEMPAction
+  name: ЭМИ руна
+  description: Вызывает ЭМИ
+  noSpawn: true
+  components:
+    - type: InstantAction
+      charges: 3
+      useDelay: 30
+      itemIconStyle: BigAction
+      priority: -20
+      event: !type:ActivateImplantEvent
+      icon:
+        sprite: Stray/wizard/Actions/actions.rsi
+        state: emp
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: WizardEMPScroll
+  name: ЭМИ руна
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: WizardEMPAction
+    - type: TriggerImplantAction
+    - type: EmpOnTrigger
+      range: 4
+      energyConsumption: 50000
+      disableDuration: 10
+
+- type: entity
+  id: EmpRune
+  name: ЭМИ руна
+  description: Использование дарит 3 ЭМИ заряда
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+    - type: Item
+      sprite: Stray/wizard/Objects/EMPartifact.rsi
+    - type: Sprite
+      sprite: Stray/wizard/Objects/EMPartifact.rsi
+      state: implanter1
+    - type: Implanter
+      implant: WizardEMPScroll

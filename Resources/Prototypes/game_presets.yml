@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: true # secret # DeltaV - Me when the survival. Used for periapsis.
+  showInVote: true
   description: survival-description
   rules:
     - RampingStationEventScheduler
@@ -13,7 +13,7 @@
   id: AllAtOnce
   name: all-at-once-title
   description: all-at-once-description
-  showInVote: false
+  showInVote: true
   rules:
     - Nukeops
     - Traitor
@@ -27,7 +27,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #2boring2vote # DeltaV - I'd like to disagree, used for periapsis.
+  showInVote: true
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -39,7 +39,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true
   description: greenshift-description
   rules:
   - BasicRoundstartVariation
@@ -80,7 +80,6 @@
   name: sandbox-title
   description: sandbox-description
   showInVote: false # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
-  maxPlayers: 5
   rules:
     - Sandbox
 
@@ -90,7 +89,7 @@
     - traitor
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true
   rules:
     - Traitor
     - SubGamemodesRule
@@ -104,8 +103,8 @@
     - dm
   name: death-match-title
   description: death-match-description
-  #maxPlayers: 15
-  showInVote: false # DeltaV - No.
+  maxPlayers: 10
+  showInVote: true
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
@@ -116,7 +115,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
     - Nukeops
     - SubGamemodesRule
@@ -131,7 +130,7 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: false
+  showInVote: true
   rules:
     - Revolutionary
     - SubGamemodesRule
@@ -148,7 +147,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true
   rules:
   - Zombie
   - BasicStationEventScheduler
@@ -160,7 +159,7 @@
     - pirates
   name: pirates-title
   description: pirates-description
-  showInVote: false
+  showInVote: true
   rules:
     - Pirates
     - BasicStationEventScheduler

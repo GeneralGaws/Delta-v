@@ -1,0 +1,27 @@
+- type: entity
+  parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
+  id: MugwortPotion
+  suffix: Полынь
+  name: Настойка из полыни
+  description: Довольно горькая трава. Когда-то считалось, что она обладает магическими защитными свойствами.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 20
+        reagents:
+        - ReagentId: Mugwort
+          Quantity: 20
+  - type: Sprite
+    sprite: Stray/wizard/Objects/Consumable/Drinks/healpotion.rsi
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: fill-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+  - type: Openable
+    closeable: false

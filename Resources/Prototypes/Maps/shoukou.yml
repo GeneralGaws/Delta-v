@@ -3,7 +3,6 @@
   mapName: 'Shōkō'
   mapPath: /Maps/shoukou.yml
   minPlayers: 0
-  maxPlayers: 60
   stations:
     Shoukou:
       stationProto: StandardNanotrasenStation
@@ -12,7 +11,7 @@
           mapNameTemplate: '{0} Shōkō "Little Port" {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'NY'
+            prefixCreator: '14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml
         - type: StationJobs
@@ -45,7 +44,6 @@
             MedicalDoctor: [ 3, 3 ]
             Chemist: [ 1, 2 ]
             MedicalIntern: [ 2, 3 ]
-            Psychologist: [ 1, 1 ]
           #Security
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 2, 4 ]
@@ -66,4 +64,13 @@
             SalvageSpecialist: [ 2, 4 ]
             MailCarrier: [ 1, 2 ]
             CargoTechnician: [ 2, 3 ]
-
+            Slugcat: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Borgsec: [ 1, 1 ]
+            Borgmed: [ 1, 1 ]
+            Borgeng: [ 1, 1 ]
+            Borgser: [ 1, 1 ]
+            Borgcwn: [ 1, 1 ]
+            Borgjan: [ 1, 1 ]
+            Borgmin: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]

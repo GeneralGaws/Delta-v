@@ -1,0 +1,18 @@
+- type: reagent
+  id: Mugwort
+  name: mugwort
+  group: Medicine
+  desc: awlful
+  physicalDesc: Salty
+  flavor: medicine
+  color: "#fcf7f9"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -3
+            Toxin: -3
+            Airloss: -3
+            Brute: -3

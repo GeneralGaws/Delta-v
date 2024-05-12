@@ -1,0 +1,37 @@
+- type: entity
+  id: RandomHumanoidSpawnerWizard
+  name: Wizard
+  components:
+    - type: Sprite
+      sprite: Clothing/Head/Hats/wizardhat.rsi
+      state: icon
+    - type: RandomMetadata
+      nameSegments:
+        - names_wizard_first
+        - names_wizard_last
+    - type: RandomHumanoidSpawner
+      settings: Wizard
+    - type: InitialInfectedExempt
+    - type: NpcFactionMember
+      factions:
+      - Wizard
+
+
+- type: randomHumanoidSettings
+  id: Wizard
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: Маг
+      description: Уничтожить весь экипаж
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ WizardEventGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_wizard_first
+        - names_wizard_last
+    - type: InitialInfectedExempt
+    - type: NpcFactionMember
+      factions:
+      - Wizard

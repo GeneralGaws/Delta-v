@@ -1,0 +1,151 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingWizardDuffel
+  name: Набор мага
+  description: Содержит приобретённые предметы
+  components:
+  - type: Sprite
+    sprite: Stray/wizard/Clothing/Back/duffel.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+# наборы из аплинка
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardArcher
+  name: Набор громового лука
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: LightningBow
+    - id: LightningQuiverFilled
+
+# наборы с класс селектора
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardHealer
+  name: Набор жреца
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponStaffHealing
+    - id: WizardHealSpellbook
+    - id: MugwortPotion
+      amount: 3
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardFireCaster
+  name: Набор мага огня
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: FireballSpellbook
+    - id: WeaponWandFireball
+    - id: WizardSmokeSpellbook
+    - id: FireRobe
+    # pyrokinesis
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardPolymorper
+  name: Набор мастера превращения
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: HulkSpellbook
+    - id: WeaponWandPolymorphDoor
+    - id: WeaponWandPolymorphMonkey
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardSummoner
+  name: Набор призывателя
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: WizardCarpSpellbook
+    - id: WizardBearSpellbook
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardTrickster
+  name: Набор ловкача
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: BlinkBook
+    - id: AetherSpellbook
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardTechFob
+  name: Набор технофоба
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: EmpSpellbook
+    - id: WizardGloves
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardZeus
+  name: Набор последователя Зевса
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: WizardLightningSphereSpellbook
+    - id: WizardMjoilnir
+    - id: ClothingHeadHelmetThunderdome
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardCrusader
+  name: Набор хранителя
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ForceWallSpellbook
+    - id: BoxHoloparasite
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardNecromant
+  name: Набор некроманта
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: WizardAnimateSpellbook
+    - id: WizardSacrificeSpellbook
+    - id: ClothingHeadHatWitch1
+
+- type: entity
+  parent: ClothingWizardDuffel
+  id: ClothingDuffelWizardBattleMage
+  name: Набор боевого мага
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RuneBlade
+    - id: LightningBow
+    - id: LightningQuiverFilled
+    - id: BattleMageArmor

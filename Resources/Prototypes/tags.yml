@@ -1108,6 +1108,9 @@
   id: Shiv
 
 - type: Tag
+  id: ShoesRequiredStepTriggerImmune
+
+- type: Tag
   id: Shovel
 
 - type: Tag
@@ -1130,6 +1133,9 @@
 
 - type: Tag
   id: Smokable
+
+- type: Tag
+  id: SnapPop
 
 - type: Tag
   id: SnowyLabs
@@ -1328,4 +1334,5 @@
 - type: Tag
   id: WriteIgnoreStamps
 
-# ALPHABETICAL
+- type: Tag
+  id: GameCard
