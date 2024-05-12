@@ -22,9 +22,6 @@
   - type: EntityTargetAction
     useDelay: 40
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     canTargetSelf: true
     interactOnMiss: false
     sound: !type:SoundPathSpecifier
@@ -212,9 +209,6 @@
     useDelay: 30
     range: 7
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     canTargetSelf: false
     interactOnMiss: false
     icon:
@@ -234,9 +228,6 @@
   - type: InstantAction
     useDelay: 90
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: saint_fire
@@ -254,9 +245,6 @@
   - type: InstantAction
     useDelay: 50
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: repulse
@@ -275,9 +263,6 @@
     useDelay: 60
     range: 5
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: pacification
@@ -295,9 +280,6 @@
   - type: InstantAction
     useDelay: 60
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     icon:
       sprite: Stray/wizard/Actions/actions.rsi
       state: dyrnwyn

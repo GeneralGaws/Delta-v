@@ -1,9 +1,9 @@
 - type: reagent
   id: Mugwort
-  name: mugwort
+  name: reagent-name-mugwort
   group: Medicine
-  desc: awlful
-  physicalDesc: Salty
+  desc: reagent-desc-mugwort
+  physicalDesc: reagent-physical-desc-strong-smelling
   flavor: medicine
   color: "#fcf7f9"
   metabolisms:

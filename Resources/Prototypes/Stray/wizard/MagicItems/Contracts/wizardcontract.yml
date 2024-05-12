@@ -7,7 +7,6 @@
     sprite: Stray/wizard/Objects/сontract.rsi
     state: old-radio
   - type: ThiefUndeterminedBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - FireCaster
     - Healer
