@@ -2,8 +2,7 @@
   id: Glacier
   mapName: Glacier
   mapPath: /Maps/glacier.yml
-  minPlayers: 15
-  maxPlayers: 70
+  minPlayers: 0
   stations:
     Glacier:
       stationProto: StandardNanotrasenStation
@@ -67,3 +66,13 @@
           CargoTechnician: [ 2, 3 ]
         #civilian
           Passenger: [ -1, -1 ]
+          Slugcat: [ 1, 1 ]
+          Roboticist: [ 1, 1 ]
+          Borgsec: [ 1, 1 ]
+          Borgmed: [ 1, 1 ]
+          Borgeng: [ 1, 1 ]
+          Borgser: [ 1, 1 ]
+          Borgcwn: [ 1, 1 ]
+          Borgjan: [ 1, 1 ]
+          Borgmin: [ 1, 1 ]
+          Blueshield: [ 1, 1 ]
